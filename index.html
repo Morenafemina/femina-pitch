@@ -269,16 +269,17 @@
        SLIDE — PARTNERSHIPS
     ════════════════════════════════════════════ */
     .s-partners { background: var(--ivory); align-items: center; justify-content: center; flex-direction: column; }
-    .partners-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2vw; width: 90%; max-width: 1000px; margin-top: 2rem; }
+    .partners-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2vw; width: 92%; max-width: 1060px; margin-top: 1.8rem; }
     .partner-card {
-      border: 1px solid rgba(109,18,63,0.15);
+      border: 1px solid rgba(109,18,63,0.18);
       padding: 2rem 1.8rem;
       background: white;
+      box-shadow: 0 4px 24px rgba(109,18,63,0.06);
     }
-    .partner-type { font-family: 'Jost', sans-serif; font-size: 7px; letter-spacing: 0.4em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.8rem; }
-    .partner-name { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.1rem, 2vw, 1.5rem); font-weight: 400; color: var(--black); margin-bottom: 0.6rem; line-height: 1.2; }
-    .partner-desc { font-family: 'Jost', sans-serif; font-size: 0.68rem; color: var(--gray); line-height: 1.6; }
-    .partner-tag { display: inline-block; margin-top: 1rem; font-family: 'Jost', sans-serif; font-size: 7px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--plum); border: 1px solid rgba(109,18,63,0.2); padding: 3px 8px; }
+    .partner-type { font-family: 'Jost', sans-serif; font-size: 8.5px; letter-spacing: 0.35em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.8rem; opacity: 1; }
+    .partner-name { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.4rem, 2.4vw, 2rem); font-weight: 400; color: var(--black); margin-bottom: 0.7rem; line-height: 1.15; }
+    .partner-desc { font-family: 'Jost', sans-serif; font-size: 0.74rem; color: rgba(60,40,40,0.78); line-height: 1.65; }
+    .partner-tag { display: inline-block; margin-top: 1.1rem; font-family: 'Jost', sans-serif; font-size: 8px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--plum); border: 1.5px solid rgba(109,18,63,0.35); padding: 4px 10px; background: rgba(109,18,63,0.04); }
 
     /* ════════════════════════════════════════════
        SLIDE — ROADMAP
@@ -1602,46 +1603,95 @@
        04 — LA SOLUZIONE
   ═══════════════════════════════════════ -->
   <section class="slide s-solution" id="slide-4">
-    <div style="width:100%;height:100%;background:var(--plum);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:5vh 10vw;text-align:center;position:relative;overflow:hidden">
+    <div style="width:100%;height:100%;background:var(--plum);display:grid;grid-template-columns:1fr 1fr;gap:0;position:relative;overflow:hidden">
 
-      <!-- ghost watermark -->
+      <!-- ghost F -->
       <div style="position:absolute;right:-0.05em;bottom:-0.1em;font-family:'Cormorant Garamond',serif;font-size:30vw;font-weight:300;color:rgba(248,247,243,0.02);line-height:1;pointer-events:none;user-select:none">F</div>
 
-      <div class="eyebrow" style="color:rgba(216,164,164,0.5);margin-bottom:1.5rem">02 · La Soluzione</div>
+      <!-- LEFT: today — tre cuori -->
+      <div style="display:flex;flex-direction:column;justify-content:center;padding:6vh 3vw 6vh 8vw;border-right:1px solid rgba(216,164,164,0.18)">
+        <div class="eyebrow" style="color:rgba(216,164,164,0.85);margin-bottom:1.5vh;letter-spacing:0.3em">02 · La Soluzione</div>
+        <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,4vw,4.5rem);font-weight:300;color:var(--ivory);line-height:1;margin-bottom:0.5vh">Orchestrare</h2>
+        <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,4vw,4.5rem);font-weight:300;color:#D8A4A4;line-height:1;margin-bottom:3vh"><em>sollievo.</em></h2>
 
-      <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,5.5vw,6rem);font-weight:300;color:var(--ivory);line-height:1.05;margin-bottom:1.5rem">
-        Una nuova categoria.
-      </h2>
-      <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1rem,1.8vw,1.5rem);color:rgba(216,164,164,0.7);margin-bottom:2.5rem;line-height:1.5">
-        Non un'agenzia. Non un marketplace.<br>
-        Un ecosistema di fiducia tra servizio, community e formazione.
-      </p>
+        <div style="font-family:'Jost',sans-serif;font-size:8px;letter-spacing:0.35em;text-transform:uppercase;color:rgba(248,247,243,0.6);margin-bottom:1.5vh">Tre cuori · oggi</div>
 
-      <div style="width:40px;height:1px;background:rgba(216,164,164,0.4);margin:0 auto 2.5rem"></div>
-
-      <!-- 3 pillars -->
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:3vw;width:100%;max-width:860px;margin-bottom:2.5rem">
-        <div style="border:1px solid rgba(216,164,164,0.15);padding:1.5rem 1rem">
-          <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.1rem,1.8vw,1.6rem);color:var(--ivory);margin-bottom:0.6rem">Selezione verificata</div>
-          <div style="font-family:'Jost',sans-serif;font-size:0.62rem;letter-spacing:0.08em;color:rgba(216,164,164,0.5);text-transform:uppercase">Ogni professionista è certificata</div>
+        <!-- HOME -->
+        <div style="display:flex;gap:1.2rem;align-items:flex-start;margin-bottom:1.8vh;padding-bottom:1.8vh;border-bottom:1px solid rgba(216,164,164,0.15)">
+          <div style="font-size:1.4rem;line-height:1;flex-shrink:0">🏠</div>
+          <div>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.1rem,1.7vw,1.4rem);color:var(--ivory);margin-bottom:4px;letter-spacing:0.05em">HOME</div>
+            <div style="font-family:'Jost',sans-serif;font-size:0.75rem;color:rgba(248,247,243,0.75);line-height:1.5">Manutenzione · montaggio mobili · piccoli traslochi</div>
+          </div>
         </div>
-        <div style="border:1px solid rgba(216,164,164,0.15);padding:1.5rem 1rem">
-          <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.1rem,1.8vw,1.6rem);color:var(--ivory);margin-bottom:0.6rem">Servizi trasversali</div>
-          <div style="font-family:'Jost',sans-serif;font-size:0.62rem;letter-spacing:0.08em;color:rgba(216,164,164,0.5);text-transform:uppercase">Casa · Tecnici · Benessere · Concierge</div>
+        <!-- CONCIERGE -->
+        <div style="display:flex;gap:1.2rem;align-items:flex-start;margin-bottom:1.8vh;padding-bottom:1.8vh;border-bottom:1px solid rgba(216,164,164,0.15)">
+          <div style="font-size:1.4rem;line-height:1;flex-shrink:0">✨</div>
+          <div>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.1rem,1.7vw,1.4rem);color:var(--ivory);margin-bottom:4px;letter-spacing:0.05em">CONCIERGE</div>
+            <div style="font-family:'Jost',sans-serif;font-size:0.75rem;color:rgba(248,247,243,0.75);line-height:1.5">Pulizie smart · meal prep · decluttering · pet sitting</div>
+          </div>
         </div>
-        <div style="border:1px solid rgba(216,164,164,0.15);padding:1.5rem 1rem">
-          <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.1rem,1.8vw,1.6rem);color:var(--ivory);margin-bottom:0.6rem">Community + Academy</div>
-          <div style="font-family:'Jost',sans-serif;font-size:0.62rem;letter-spacing:0.08em;color:rgba(216,164,164,0.5);text-transform:uppercase">Non solo servizi — crescita reale</div>
+        <!-- CURE -->
+        <div style="display:flex;gap:1.2rem;align-items:flex-start;margin-bottom:2vh">
+          <div style="font-size:1.4rem;line-height:1;flex-shrink:0">🌿</div>
+          <div>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.1rem,1.7vw,1.4rem);color:var(--ivory);margin-bottom:4px;letter-spacing:0.05em">CURE</div>
+            <div style="font-family:'Jost',sans-serif;font-size:0.75rem;color:rgba(248,247,243,0.75);line-height:1.5">Kinesiologia · embodiment · consulenza automotive · Academy</div>
+          </div>
+        </div>
+
+        <div style="font-family:'Jost',sans-serif;font-size:0.72rem;color:rgba(216,164,164,0.8);font-style:italic;margin-bottom:2vh">Prenotazioni flessibili. Sempre la stessa professionista. 24/7.</div>
+
+        <!-- elimina — hero statement -->
+        <div style="border-top:1px solid rgba(216,164,164,0.2);padding-top:2vh">
+          <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(0.75rem,1.1vw,0.95rem);color:rgba(248,247,243,0.55);margin-bottom:1.2vh;line-height:1.4">
+            Fémina non è diversa per ciò che fa.<br>Ma per ciò che <em style="color:#D8A4A4">elimina.</em>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:0.3vh">
+            <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.4rem,2.2vw,2rem);font-weight:300;color:rgba(248,247,243,0.9);letter-spacing:-0.01em">Frizione</div>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.4rem,2.2vw,2rem);font-weight:300;color:rgba(248,247,243,0.75);letter-spacing:-0.01em">Carico mentale</div>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.4rem,2.2vw,2rem);font-weight:300;color:rgba(248,247,243,0.6);letter-spacing:-0.01em">Stress quotidiano</div>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.4rem,2.2vw,2rem);font-weight:300;color:rgba(216,164,164,0.5);letter-spacing:-0.01em">Micro-preoccupazioni</div>
+          </div>
         </div>
       </div>
 
-      <!-- what it eliminates -->
-      <div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap;justify-content:center">
-        <span style="font-family:'Jost',sans-serif;font-size:0.62rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(216,164,164,0.4)">elimina →</span>
-        <span style="font-family:'Jost',sans-serif;font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;border:1px solid rgba(216,164,164,0.25);padding:5px 14px;color:rgba(248,247,243,0.6)">frizione</span>
-        <span style="font-family:'Jost',sans-serif;font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;border:1px solid rgba(216,164,164,0.25);padding:5px 14px;color:rgba(248,247,243,0.6)">carico mentale</span>
-        <span style="font-family:'Jost',sans-serif;font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;border:1px solid rgba(216,164,164,0.25);padding:5px 14px;color:rgba(248,247,243,0.6)">stress quotidiano</span>
-        <span style="font-family:'Jost',sans-serif;font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;border:1px solid rgba(216,164,164,0.25);padding:5px 14px;color:rgba(248,247,243,0.6)">micro-preoccupazioni</span>
+      <!-- RIGHT: tomorrow — Fémina OS -->
+      <div style="display:flex;flex-direction:column;justify-content:center;padding:6vh 8vw 6vh 3vw">
+        <div style="font-family:'Jost',sans-serif;font-size:8px;letter-spacing:0.35em;text-transform:uppercase;color:rgba(184,154,99,0.9);margin-bottom:1.5vh">Fémina OS · domani</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.1rem,1.6vw,1.35rem);color:rgba(248,247,243,0.9);line-height:1.6;margin-bottom:2.5vh">
+          L'AI capisce <em>come stai oggi</em><br>e organizza casa e vita di conseguenza.
+        </div>
+
+        <!-- House Modes -->
+        <div style="display:flex;flex-direction:column;gap:1.2vh">
+
+          <div style="padding:1.2vh 1.2vw;background:rgba(248,247,243,0.06);border-left:2px solid rgba(216,164,164,0.7)">
+            <div style="font-family:'Jost',sans-serif;font-size:9.5px;letter-spacing:0.2em;text-transform:uppercase;color:#D8A4A4;margin-bottom:4px">🌊 Burnout Mode</div>
+            <div style="font-family:'Jost',sans-serif;font-size:0.72rem;color:rgba(248,247,243,0.75);line-height:1.4">Solo l'essenziale. Meal prep + cleaning light. Nessuna pressione.</div>
+          </div>
+
+          <div style="padding:1.2vh 1.2vw;background:rgba(248,247,243,0.06);border-left:2px solid rgba(184,154,99,0.7)">
+            <div style="font-family:'Jost',sans-serif;font-size:9.5px;letter-spacing:0.2em;text-transform:uppercase;color:var(--rose);margin-bottom:4px">🕯️ Hosting Mode</div>
+            <div style="font-family:'Jost',sans-serif;font-size:0.72rem;color:rgba(248,247,243,0.75);line-height:1.4">Deep clean · grocery · flowers · chef. Feeling prepared.</div>
+          </div>
+
+          <div style="padding:1.2vh 1.2vw;background:rgba(248,247,243,0.06);border-left:2px solid rgba(248,247,243,0.4)">
+            <div style="font-family:'Jost',sans-serif;font-size:9.5px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(248,247,243,0.9);margin-bottom:4px">☀️ Sunday Recovery</div>
+            <div style="font-family:'Jost',sans-serif;font-size:0.72rem;color:rgba(248,247,243,0.75);line-height:1.4">House reset · laundry · meal prep. Reset il sistema nervoso.</div>
+          </div>
+
+          <div style="padding:1.2vh 1.2vw;background:rgba(248,247,243,0.06);border-left:2px solid rgba(216,164,164,0.35)">
+            <div style="font-family:'Jost',sans-serif;font-size:9.5px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(248,247,243,0.75);margin-bottom:4px">⚡ Deep Focus Mode</div>
+            <div style="font-family:'Jost',sans-serif;font-size:0.72rem;color:rgba(248,247,243,0.75);line-height:1.4">Silenzio. Casa gestita. Tu lavori. Executive assistant energy.</div>
+          </div>
+
+        </div>
+
+        <div style="margin-top:2vh;padding-top:1.5vh;border-top:1px solid rgba(248,247,243,0.1)">
+          <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:0.9rem;color:rgba(216,164,164,0.85)">Smart home · AI assistant · matching automatico</div>
+        </div>
       </div>
 
     </div>
@@ -1759,18 +1809,18 @@
         <div style="position:relative;width:min(44vh,42vw);height:min(44vh,42vw)">
 
           <!-- Quadrant backgrounds -->
-          <div style="position:absolute;right:0;top:0;width:50%;height:50%;background:rgba(216,164,164,0.07);border:1px solid rgba(216,164,164,0.18)"></div>
+          <div style="position:absolute;right:0;top:0;width:50%;height:50%;background:rgba(216,164,164,0.12);border:1px solid rgba(216,164,164,0.35)"></div>
 
           <!-- Vertical axis line -->
-          <div style="position:absolute;left:50%;top:0;bottom:0;width:1px;background:rgba(248,247,243,0.2)"></div>
+          <div style="position:absolute;left:50%;top:0;bottom:0;width:1px;background:rgba(248,247,243,0.4)"></div>
           <!-- Horizontal axis line -->
-          <div style="position:absolute;top:50%;left:0;right:0;height:1px;background:rgba(248,247,243,0.2)"></div>
+          <div style="position:absolute;top:50%;left:0;right:0;height:1px;background:rgba(248,247,243,0.4)"></div>
 
           <!-- Axis labels -->
-          <div style="position:absolute;top:-24px;left:50%;transform:translateX(-50%);font-family:'Jost',sans-serif;font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(248,247,243,0.75);white-space:nowrap">Solo Donne ↑</div>
-          <div style="position:absolute;bottom:-24px;left:50%;transform:translateX(-50%);font-family:'Jost',sans-serif;font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(248,247,243,0.4);white-space:nowrap">↓ Misto</div>
-          <div style="position:absolute;right:-52px;top:50%;transform:translateY(-50%) rotate(90deg);font-family:'Jost',sans-serif;font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(248,247,243,0.75);white-space:nowrap">Premium →</div>
-          <div style="position:absolute;left:-48px;top:50%;transform:translateY(-50%) rotate(-90deg);font-family:'Jost',sans-serif;font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(248,247,243,0.4);white-space:nowrap">← Generico</div>
+          <div style="position:absolute;top:-26px;left:50%;transform:translateX(-50%);font-family:'Jost',sans-serif;font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(248,247,243,0.9);white-space:nowrap">Solo Donne ↑</div>
+          <div style="position:absolute;bottom:-26px;left:50%;transform:translateX(-50%);font-family:'Jost',sans-serif;font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(248,247,243,0.5);white-space:nowrap">↓ Misto</div>
+          <div style="position:absolute;right:-56px;top:50%;transform:translateY(-50%) rotate(90deg);font-family:'Jost',sans-serif;font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(248,247,243,0.9);white-space:nowrap">Premium →</div>
+          <div style="position:absolute;left:-52px;top:50%;transform:translateY(-50%) rotate(-90deg);font-family:'Jost',sans-serif;font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(248,247,243,0.5);white-space:nowrap">← Generico</div>
 
           <!-- Competitor dots — bigger, more visible -->
           <!-- ProntoPro: bottom-left (generic + mixed) -->
@@ -1823,7 +1873,7 @@
       <!-- LEFT: Instagram card BIG + 3 numbers -->
       <div style="display:flex;flex-direction:column;justify-content:center;padding:4vh 3vw 4vh 6vw;gap:2.5vh;border-right:1px solid rgba(248,247,243,0.06)">
 
-        <div class="eyebrow" style="color:rgba(216,164,164,0.4)">05 · Traction · Maggio 2026</div>
+        <div class="eyebrow" style="color:#D8A4A4;font-size:10px;letter-spacing:0.35em">05 · Traction · Maggio 2026</div>
 
         <!-- Instagram screenshot reale -->
         <div style="width:100%;border-radius:12px;overflow:hidden;box-shadow:0 8px 40px rgba(0,0,0,0.35)">
@@ -1834,15 +1884,15 @@
         <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid rgba(248,247,243,0.07);padding-top:2vh">
           <div style="text-align:center;padding-right:1.5vw;border-right:1px solid rgba(248,247,243,0.07)">
             <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,4vw,4.5rem);font-weight:300;color:var(--ivory);line-height:0.9">150<sup style="font-size:0.3em;color:var(--rose)">+</sup></div>
-            <div style="font-family:'Jost',sans-serif;font-size:6.5px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(216,164,164,0.55);margin-top:0.5rem">form & candidature</div>
+            <div style="font-family:'Jost',sans-serif;font-size:8px;letter-spacing:0.2em;text-transform:uppercase;color:#D8A4A4;margin-top:0.5rem">form & candidature</div>
           </div>
           <div style="text-align:center;padding:0 1vw;border-right:1px solid rgba(248,247,243,0.07)">
             <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,4vw,4.5rem);font-weight:300;color:var(--ivory);line-height:0.9">20<sup style="font-size:0.3em;color:var(--rose)">+</sup></div>
-            <div style="font-family:'Jost',sans-serif;font-size:6.5px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(216,164,164,0.55);margin-top:0.5rem">servizi erogati</div>
+            <div style="font-family:'Jost',sans-serif;font-size:8px;letter-spacing:0.2em;text-transform:uppercase;color:#D8A4A4;margin-top:0.5rem">servizi erogati</div>
           </div>
           <div style="text-align:center;padding-left:1.5vw">
             <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,4vw,4.5rem);font-weight:300;color:var(--ivory);line-height:0.9">4</div>
-            <div style="font-family:'Jost',sans-serif;font-size:6.5px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(216,164,164,0.55);margin-top:0.5rem">abbonamenti attivi</div>
+            <div style="font-family:'Jost',sans-serif;font-size:8px;letter-spacing:0.2em;text-transform:uppercase;color:#D8A4A4;margin-top:0.5rem">abbonamenti attivi</div>
             <div style="font-family:'Jost',sans-serif;font-size:6px;letter-spacing:0.15em;color:rgba(184,154,99,0.7);margin-top:0.3rem">incl. 1 B2B studio</div>
           </div>
         </div>
@@ -1981,8 +2031,8 @@
   ═══════════════════════════════════════ -->
   <section class="slide s-partners" id="slide-8">
     <div style="text-align:center;margin-bottom:0.5rem">
-      <div class="eyebrow" style="color:var(--gold);margin-bottom:0.5rem">07 · Partnership & Ecosistema</div>
-      <h2 class="display-title" style="color:var(--black);font-size:clamp(1.6rem,3vw,3rem)">Non siamo soli.<br><em style="color:var(--plum)">Siamo già un sistema.</em></h2>
+      <div class="eyebrow" style="color:var(--gold);margin-bottom:0.6rem;opacity:1">08 · Partnership & Ecosistema</div>
+      <h2 class="display-title" style="color:var(--black);font-size:clamp(2rem,3.8vw,4rem);line-height:1.1">Non siamo soli.<br><em style="color:var(--plum)">Siamo già un sistema.</em></h2>
     </div>
     <div class="partners-grid">
       <div class="partner-card">
@@ -2022,7 +2072,7 @@
         <div class="partner-tag" style="background:rgba(109,18,63,0.06);color:var(--plum)">Consulenza retribuita ✦</div>
       </div>
     </div>
-    <div style="margin-top:2.5rem;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(0.85rem,1.3vw,1.05rem);color:var(--gray);text-align:center">
+    <div style="margin-top:2rem;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1rem,1.6vw,1.4rem);color:var(--plum);text-align:center;opacity:0.9;letter-spacing:0.02em">
       Relazioni reali, già operative. Il sistema funziona.
     </div>
   </section>
@@ -2077,6 +2127,13 @@
           <div class="rm-date">Gen 2027</div>
           <div class="rm-title" style="color:var(--rose)">Milano,<br>you're next 👀</div>
           <div class="rm-desc">Mercato più ricco, nuclei più piccoli, donne più sole. Il modello Torino replicato in 90 giorni.</div>
+        </div>
+
+        <div class="rm-item">
+          <div class="rm-dot" style="background:linear-gradient(135deg,var(--plum),#D8A4A4);color:var(--ivory);border-color:var(--plum);font-size:0.6rem">OS</div>
+          <div class="rm-date">2027 – 2028</div>
+          <div class="rm-title" style="color:#D8A4A4">Fémina OS</div>
+          <div class="rm-desc">AI assistant · House Modes · smart home integration · l'app capisce come stai e coordina casa e vita. Da marketplace a sistema operativo.</div>
         </div>
 
       </div>
@@ -2223,7 +2280,7 @@
       <!-- Footer note -->
       <div style="border-top:1px solid rgba(248,247,243,0.06);padding-top:1.5vh;display:flex;justify-content:space-between;align-items:center">
         <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(0.8rem,1.1vw,0.95rem);color:rgba(248,247,243,0.2)">
-          Scenario post-raise €100K · Modello asset-light · zero buste paga · +€30K Invitalia non diluitivo
+          Scenario post-raise €180K · Modello asset-light · zero buste paga · +€30K Invitalia non diluitivo
         </p>
         <p style="font-family:'Jost',sans-serif;font-size:7px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold)">
           Break-even fine Anno 2
@@ -2248,11 +2305,11 @@
         <div class="eyebrow" style="color:rgba(216,164,164,0.5);margin-bottom:2.5vh">10 · La Richiesta</div>
 
         <!-- Big amount -->
-        <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(4rem,9vw,10rem);font-weight:300;color:var(--ivory);line-height:0.85;margin-bottom:1.5vh">€100K</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(4rem,9vw,10rem);font-weight:300;color:var(--ivory);line-height:0.85;margin-bottom:1.5vh">€180K</div>
 
         <!-- Terms -->
         <div style="font-family:'Jost',sans-serif;font-size:8px;letter-spacing:0.35em;text-transform:uppercase;color:rgba(248,247,243,0.45);margin-bottom:3vh">
-          Pre-Seed · 12% equity · Val. pre-money €700K
+          Pre-Seed · 15% equity · Val. pre-money €1M
         </div>
 
         <!-- Invitalia badge -->
@@ -2263,18 +2320,18 @@
 
         <!-- 3 milestones -->
         <div style="display:flex;flex-direction:column;gap:1rem">
-          <div style="font-family:'Jost',sans-serif;font-size:6.5px;letter-spacing:0.35em;text-transform:uppercase;color:rgba(248,247,243,0.3);margin-bottom:0.2rem">Con €100K raggiungiamo</div>
+          <div style="font-family:'Jost',sans-serif;font-size:6.5px;letter-spacing:0.35em;text-transform:uppercase;color:rgba(248,247,243,0.3);margin-bottom:0.2rem">Con €180K raggiungiamo</div>
           <div style="display:flex;gap:1rem;align-items:flex-start">
             <span style="color:var(--rose);font-size:0.6rem;margin-top:0.1rem">✦</span>
             <span style="font-family:'Jost',sans-serif;font-size:0.78rem;font-weight:300;color:rgba(248,247,243,0.7);line-height:1.4">150 clienti attive · 40 professioniste & imprese onboarded (cleaning, meal prep, lifestyle)</span>
           </div>
           <div style="display:flex;gap:1rem;align-items:flex-start">
             <span style="color:var(--rose);font-size:0.6rem;margin-top:0.1rem">✦</span>
-            <span style="font-family:'Jost',sans-serif;font-size:0.78rem;font-weight:300;color:rgba(248,247,243,0.7);line-height:1.4">App mobile live + prenotazioni digitali Q1 2027</span>
+            <span style="font-family:'Jost',sans-serif;font-size:0.78rem;font-weight:300;color:rgba(248,247,243,0.7);line-height:1.4">App mobile + AI prototype Fémina OS · Academy primi corsi</span>
           </div>
           <div style="display:flex;gap:1rem;align-items:flex-start">
             <span style="color:var(--rose);font-size:0.6rem;margin-top:0.1rem">✦</span>
-            <span style="font-family:'Jost',sans-serif;font-size:0.78rem;font-weight:300;color:rgba(248,247,243,0.7);line-height:1.4">Prime clienti a Milano · 12 mesi di runway</span>
+            <span style="font-family:'Jost',sans-serif;font-size:0.78rem;font-weight:300;color:rgba(248,247,243,0.7);line-height:1.4">Prime clienti a Milano · 16 mesi di runway</span>
           </div>
         </div>
       </div>
@@ -2284,23 +2341,23 @@
 
         <!-- Use of funds — clean list, no bars -->
         <div>
-          <div style="font-family:'Jost',sans-serif;font-size:6.5px;letter-spacing:0.4em;text-transform:uppercase;color:rgba(248,247,243,0.3);margin-bottom:1.5vh">Utilizzo dei fondi</div>
-          <div style="display:flex;flex-direction:column;gap:1.1rem">
-            <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid rgba(248,247,243,0.05);padding-bottom:1rem">
-              <span style="font-family:'Jost',sans-serif;font-size:0.78rem;font-weight:300;color:rgba(248,247,243,0.55)">Tecnologia &amp; prodotto</span>
-              <span style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:300;color:var(--ivory)">40%</span>
+          <div style="font-family:'Jost',sans-serif;font-size:8px;letter-spacing:0.4em;text-transform:uppercase;color:rgba(248,247,243,0.55);margin-bottom:1.8vh">Utilizzo dei fondi</div>
+          <div style="display:flex;flex-direction:column;gap:1.2rem">
+            <div style="display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(248,247,243,0.08);padding-bottom:1rem">
+              <span style="font-family:'Jost',sans-serif;font-size:0.92rem;font-weight:400;color:rgba(248,247,243,0.9)">Tecnologia &amp; prodotto</span>
+              <span style="font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;color:#D8A4A4">40%</span>
             </div>
-            <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid rgba(248,247,243,0.05);padding-bottom:1rem">
-              <span style="font-family:'Jost',sans-serif;font-size:0.78rem;font-weight:300;color:rgba(248,247,243,0.55)">Marketing &amp; acquisizione</span>
-              <span style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:300;color:var(--ivory)">30%</span>
+            <div style="display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(248,247,243,0.08);padding-bottom:1rem">
+              <span style="font-family:'Jost',sans-serif;font-size:0.92rem;font-weight:400;color:rgba(248,247,243,0.9)">Marketing &amp; acquisizione</span>
+              <span style="font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;color:#D8A4A4">30%</span>
             </div>
-            <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid rgba(248,247,243,0.05);padding-bottom:1rem">
-              <span style="font-family:'Jost',sans-serif;font-size:0.78rem;font-weight:300;color:rgba(248,247,243,0.55)">Operazioni &amp; onboarding</span>
-              <span style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:300;color:var(--ivory)">20%</span>
+            <div style="display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(248,247,243,0.08);padding-bottom:1rem">
+              <span style="font-family:'Jost',sans-serif;font-size:0.92rem;font-weight:400;color:rgba(248,247,243,0.9)">Operazioni &amp; onboarding</span>
+              <span style="font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;color:#D8A4A4">20%</span>
             </div>
-            <div style="display:flex;justify-content:space-between;align-items:baseline">
-              <span style="font-family:'Jost',sans-serif;font-size:0.78rem;font-weight:300;color:rgba(248,247,243,0.55)">Legal &amp; Academy</span>
-              <span style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:300;color:var(--ivory)">10%</span>
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <span style="font-family:'Jost',sans-serif;font-size:0.92rem;font-weight:400;color:rgba(248,247,243,0.9)">Legal &amp; Academy</span>
+              <span style="font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;color:#D8A4A4">10%</span>
             </div>
           </div>
         </div>
