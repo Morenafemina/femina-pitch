@@ -1526,24 +1526,17 @@
        02 — IL PROBLEMA
   ═══════════════════════════════════════ -->
   <section class="slide s-problem" id="slide-2">
-    <div style="display:grid;grid-template-columns:0.85fr 1.15fr;width:100%;height:100%">
+    <div style="display:grid;grid-template-columns:0.95fr 1.05fr;width:100%;height:100%">
 
-      <!-- LEFT: elegant vignette -->
-      <div style="position:relative;background:linear-gradient(160deg,#f3ede5 0%,#e8ddd2 100%);overflow:hidden;display:flex;align-items:center;justify-content:center;border-right:1px solid var(--rose-light)">
-        <!-- Photo placeholder (drop img/trasloco.jpg to replace) -->
-        <img src="img/trasloco.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.9" onerror="this.style.display='none'">
-
-        <!-- CSS-only editorial vignette (visible as fallback or overlay) -->
-        <div style="position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;gap:3vh;padding:6vh 3vw;text-align:center">
-          <!-- ornament: doorway/threshold abstract -->
-          <div style="width:1px;height:8vh;background:linear-gradient(to bottom,transparent,rgba(109,18,63,0.4))"></div>
-          <div style="width:clamp(60px,8vw,110px);height:clamp(60px,8vw,110px);border:1px solid rgba(109,18,63,0.3);border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(248,247,243,0.4);backdrop-filter:blur(4px)">
-            <div style="width:60%;height:1px;background:rgba(109,18,63,0.5)"></div>
-          </div>
-          <div style="width:1px;height:8vh;background:linear-gradient(to top,transparent,rgba(109,18,63,0.4))"></div>
-          <!-- caption -->
-          <div style="position:absolute;bottom:4vh;left:50%;transform:translateX(-50%);font-family:'Jost',sans-serif;font-size:8px;letter-spacing:0.4em;text-transform:uppercase;color:rgba(31,27,24,0.5);white-space:nowrap">Torino · 2024</div>
+      <!-- LEFT: photo (drop img/trasloco.jpg) -->
+      <div style="position:relative;background:#1a1410;overflow:hidden;border-right:1px solid var(--rose-light)">
+        <img src="img/trasloco.jpg" alt="Trasloco · agosto 2025" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <!-- fallback: ivory placeholder with caption when no img -->
+        <div style="display:none;position:absolute;inset:0;background:linear-gradient(160deg,#f3ede5 0%,#e8ddd2 100%);flex-direction:column;align-items:center;justify-content:center;gap:2vh;padding:4vh">
+          <div style="font-family:'Jost',sans-serif;font-size:9px;letter-spacing:0.4em;text-transform:uppercase;color:rgba(109,18,63,0.45);text-align:center">↓ inserisci qui<br>img/trasloco.jpg</div>
         </div>
+        <!-- caption overlay -->
+        <div style="position:absolute;bottom:3vh;left:3vw;font-family:'Jost',sans-serif;font-size:8px;letter-spacing:0.4em;text-transform:uppercase;color:rgba(248,247,243,0.85);white-space:nowrap;z-index:3;mix-blend-mode:difference">Torino · Agosto 2025</div>
       </div>
 
       <!-- RIGHT: storia editorial -->
@@ -1554,7 +1547,7 @@
         </h2>
         <div style="width:40px;height:1px;background:var(--rose);margin-bottom:2rem"></div>
         <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.2rem,1.8vw,1.55rem);color:var(--gray);line-height:1.6;max-width:40ch">
-          Per settimane, persone sconosciute<br>in casa mia.<br><br>
+          Agosto 2025. Per settimane,<br>persone sconosciute in casa mia.<br><br>
           <span style="color:var(--plum);font-style:normal">Il problema non era il servizio.<br>Era la fiducia.</span>
         </p>
       </div>
@@ -1613,30 +1606,39 @@
       <div>
         <div class="eyebrow" style="margin-bottom:1.2rem">03 · Il Dolore</div>
         <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.6vw,4rem);font-weight:300;color:var(--black);line-height:1.05">
-          Cosa cercano <em style="color:var(--plum)">davvero</em>?
+          Quello che oggi <em style="color:var(--plum)">non funziona.</em>
         </h2>
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:3vh;border-top:1px solid var(--rose-light)">
+      <div style="display:flex;flex-direction:column;gap:0;border-top:1px solid var(--rose-light)">
 
         <div style="padding:3vh 0;border-bottom:1px solid var(--rose-light);display:flex;align-items:baseline;gap:3vw">
-          <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(0.85rem,1.1vw,1rem);color:rgba(31,27,24,0.4);letter-spacing:0.05em;flex-shrink:0;width:60px">01</div>
-          <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.8rem,3.2vw,3.6rem);font-weight:300;color:var(--black);line-height:1.15">
-            "Chi entra in <span style="color:var(--plum)">casa mia</span>?"
+          <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(0.85rem,1.1vw,1rem);color:rgba(31,27,24,0.4);letter-spacing:0.05em;flex-shrink:0;width:50px">01</div>
+          <div style="flex:1">
+            <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.7rem,3vw,3.4rem);font-weight:300;color:var(--black);line-height:1.15">
+              "Pago. Eppure <span style="color:var(--plum)">penso a tutto io</span>."
+            </div>
+            <div style="font-family:'Jost',sans-serif;font-size:0.74rem;letter-spacing:0.18em;text-transform:uppercase;color:rgba(31,27,24,0.45);margin-top:0.8rem">Il carico mentale non si delega con un bonifico.</div>
           </div>
         </div>
 
         <div style="padding:3vh 0;border-bottom:1px solid var(--rose-light);display:flex;align-items:baseline;gap:3vw">
-          <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(0.85rem,1.1vw,1rem);color:rgba(31,27,24,0.4);letter-spacing:0.05em;flex-shrink:0;width:60px">02</div>
-          <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.8rem,3.2vw,3.6rem);font-weight:300;color:var(--black);line-height:1.15">
-            "Devo gestire <span style="color:var(--plum)">tutto io</span>."
+          <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(0.85rem,1.1vw,1rem);color:rgba(31,27,24,0.4);letter-spacing:0.05em;flex-shrink:0;width:50px">02</div>
+          <div style="flex:1">
+            <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.7rem,3vw,3.4rem);font-weight:300;color:var(--black);line-height:1.15">
+              "Apro la porta. <span style="color:var(--plum)">Mi fido a memoria</span>."
+            </div>
+            <div style="font-family:'Jost',sans-serif;font-size:0.74rem;letter-spacing:0.18em;text-transform:uppercase;color:rgba(31,27,24,0.45);margin-top:0.8rem">Nessuna verifica reale. Solo passaparola e speranza.</div>
           </div>
         </div>
 
         <div style="padding:3vh 0;display:flex;align-items:baseline;gap:3vw">
-          <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(0.85rem,1.1vw,1rem);color:rgba(31,27,24,0.4);letter-spacing:0.05em;flex-shrink:0;width:60px">03</div>
-          <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.8rem,3.2vw,3.6rem);font-weight:300;color:var(--black);line-height:1.15">
-            "Trovo qualcuna brava, <span style="color:var(--plum)">la perdo</span>."
+          <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(0.85rem,1.1vw,1rem);color:rgba(31,27,24,0.4);letter-spacing:0.05em;flex-shrink:0;width:50px">03</div>
+          <div style="flex:1">
+            <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.7rem,3vw,3.4rem);font-weight:300;color:var(--black);line-height:1.15">
+              "Quando una è brava, <span style="color:var(--plum)">la perdo</span>."
+            </div>
+            <div style="font-family:'Jost',sans-serif;font-size:0.74rem;letter-spacing:0.18em;text-transform:uppercase;color:rgba(31,27,24,0.45);margin-top:0.8rem">Zero continuità. Ogni volta ricomincio da capo.</div>
           </div>
         </div>
 
@@ -2162,56 +2164,124 @@
   <section class="slide s-roadmap" id="slide-10">
     <div style="text-align:center">
       <div class="eyebrow" style="color:rgba(184,154,99,0.6);margin-bottom:0.5rem">09 · Roadmap</div>
-      <h2 class="display-title" style="color:var(--ivory);font-size:clamp(1.6rem,2.8vw,3rem)">Da Torino all'Italia.<br><em style="color:var(--gold)">Entro il 2027.</em></h2>
+      <h2 class="display-title" style="color:var(--ivory);font-size:clamp(1.6rem,2.8vw,3rem)">Due binari paralleli.<br><em style="color:var(--gold)">Stessa destinazione.</em></h2>
     </div>
-    <div class="roadmap-track">
-      <div class="roadmap-line"></div>
-      <div class="roadmap-line-done"></div>
-      <div class="roadmap-items">
 
-        <div class="rm-item done">
-          <div class="rm-dot done">✓</div>
-          <div class="rm-date">Q1 2026</div>
-          <div class="rm-title">Validazione</div>
-          <div class="rm-desc">150+ form · domanda confermata</div>
+    <!-- DOUBLE TRACK ROADMAP -->
+    <div style="width:92%;max-width:1180px;margin-top:3.5vh;position:relative">
+
+      <!-- TRACK 1: BUSINESS (main) -->
+      <div style="position:relative;margin-bottom:2vh">
+        <!-- track label -->
+        <div style="position:absolute;left:0;top:18px;transform:translateX(-100%);padding-right:1.5vw;font-family:'Jost',sans-serif;font-size:8px;letter-spacing:0.32em;text-transform:uppercase;color:var(--gold);white-space:nowrap">Business →</div>
+        <!-- horizontal line -->
+        <div style="position:absolute;top:18px;left:0;right:0;height:1px;background:rgba(248,247,243,0.12)"></div>
+        <div style="position:absolute;top:18px;left:0;width:42%;height:2px;background:var(--gold)"></div>
+        <!-- items -->
+        <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:1rem;position:relative">
+
+          <div class="rm-item done">
+            <div class="rm-dot done">✓</div>
+            <div class="rm-date">Q1 2026</div>
+            <div class="rm-title">Validazione</div>
+            <div class="rm-desc">150+ form</div>
+          </div>
+
+          <div class="rm-item done">
+            <div class="rm-dot done">✓</div>
+            <div class="rm-date">Q2 2026</div>
+            <div class="rm-title">MVP & Invitalia</div>
+            <div class="rm-desc">4 abbonamenti</div>
+          </div>
+
+          <div class="rm-item active">
+            <div class="rm-dot active">→</div>
+            <div class="rm-date">Q3 2026</div>
+            <div class="rm-title">SRL & Crescita</div>
+            <div class="rm-desc">60 clienti · 40 pro</div>
+          </div>
+
+          <div class="rm-item">
+            <div class="rm-dot">4</div>
+            <div class="rm-date">Q4 2026</div>
+            <div class="rm-title">Scale Torino</div>
+            <div class="rm-desc">120 clienti · app v1</div>
+          </div>
+
+          <div class="rm-item">
+            <div class="rm-dot" style="background:var(--plum);color:var(--ivory);border-color:var(--plum)">✦</div>
+            <div class="rm-date">H1 2027</div>
+            <div class="rm-title" style="color:var(--rose)">Milano</div>
+            <div class="rm-desc">Replica · 90 gg</div>
+          </div>
+
+          <div class="rm-item">
+            <div class="rm-dot" style="background:var(--plum);color:var(--ivory);border-color:var(--plum)">★</div>
+            <div class="rm-date">H2 2027</div>
+            <div class="rm-title" style="color:var(--rose)">Italia ↑</div>
+            <div class="rm-desc">Roma · Bologna</div>
+          </div>
+
         </div>
-
-        <div class="rm-item done">
-          <div class="rm-dot done">✓</div>
-          <div class="rm-date">Q2 2026</div>
-          <div class="rm-title">MVP & Invitalia</div>
-          <div class="rm-desc">20+ servizi · 4 abbonamenti · domanda inviata</div>
-        </div>
-
-        <div class="rm-item active">
-          <div class="rm-dot active">→</div>
-          <div class="rm-date">Q3 2026</div>
-          <div class="rm-title">Costituzione</div>
-          <div class="rm-desc">SRL innovativa · 40 pro · 60 clienti</div>
-        </div>
-
-        <div class="rm-item">
-          <div class="rm-dot">4</div>
-          <div class="rm-date">Q4 2026</div>
-          <div class="rm-title">Scale Torino</div>
-          <div class="rm-desc">120 clienti · app v1 · Academy</div>
-        </div>
-
-        <div class="rm-item">
-          <div class="rm-dot" style="background:var(--plum);color:var(--ivory);border-color:var(--plum)">✦</div>
-          <div class="rm-date">Q1–Q2 2027</div>
-          <div class="rm-title" style="color:var(--rose)">Milano</div>
-          <div class="rm-desc">Replica modello · 90 giorni</div>
-        </div>
-
-        <div class="rm-item">
-          <div class="rm-dot" style="background:linear-gradient(135deg,var(--plum),#D8A4A4);color:var(--ivory);border-color:var(--plum);font-size:0.6rem">OS</div>
-          <div class="rm-date">Q4 2027</div>
-          <div class="rm-title" style="color:#D8A4A4">Fémina OS<br>attivo</div>
-          <div class="rm-desc">AI · House Modes · da marketplace a sistema operativo</div>
-        </div>
-
       </div>
+
+      <!-- FORK indicator: vertical dashed line from Q3 -->
+      <div style="position:relative;height:5vh;display:grid;grid-template-columns:repeat(6,1fr);gap:1rem">
+        <div></div><div></div>
+        <div style="position:relative;display:flex;justify-content:center">
+          <div style="width:1px;height:100%;background:repeating-linear-gradient(to bottom,rgba(216,164,164,0.5) 0,rgba(216,164,164,0.5) 3px,transparent 3px,transparent 7px)"></div>
+        </div>
+        <div></div><div></div><div></div>
+      </div>
+
+      <!-- TRACK 2: OS (parallel, starts at Q3 2026) -->
+      <div style="position:relative">
+        <!-- track label -->
+        <div style="position:absolute;left:0;top:18px;transform:translateX(-100%);padding-right:1.5vw;font-family:'Jost',sans-serif;font-size:8px;letter-spacing:0.32em;text-transform:uppercase;color:#D8A4A4;white-space:nowrap">Fémina OS →</div>
+        <!-- horizontal line (starts from column 3) -->
+        <div style="position:absolute;top:18px;left:calc(33.33% + 0.5rem);right:0;height:1px;background:repeating-linear-gradient(to right,rgba(216,164,164,0.4) 0,rgba(216,164,164,0.4) 4px,transparent 4px,transparent 8px)"></div>
+        <!-- items -->
+        <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:1rem;position:relative">
+
+          <!-- empty Q1 26 + Q2 26 -->
+          <div></div>
+          <div></div>
+
+          <!-- Q3 2026: R&D start -->
+          <div class="rm-item">
+            <div class="rm-dot" style="background:rgba(216,164,164,0.2);border-color:#D8A4A4;color:#D8A4A4;font-size:0.55rem">R&amp;D</div>
+            <div class="rm-date" style="color:rgba(216,164,164,0.7)">Set 2026</div>
+            <div class="rm-title" style="color:#D8A4A4">Research</div>
+            <div class="rm-desc">Quiz mood · proto-AI</div>
+          </div>
+
+          <!-- Q4 2026: Alpha -->
+          <div class="rm-item">
+            <div class="rm-dot" style="background:rgba(216,164,164,0.35);border-color:#D8A4A4;color:#fff;font-size:0.55rem">α</div>
+            <div class="rm-date" style="color:rgba(216,164,164,0.7)">Q4 2026</div>
+            <div class="rm-title" style="color:#D8A4A4">Alpha</div>
+            <div class="rm-desc">House Modes v1</div>
+          </div>
+
+          <!-- H1 2027: Beta -->
+          <div class="rm-item">
+            <div class="rm-dot" style="background:rgba(216,164,164,0.6);border-color:#D8A4A4;color:#fff;font-size:0.55rem">β</div>
+            <div class="rm-date" style="color:rgba(216,164,164,0.7)">H1 2027</div>
+            <div class="rm-title" style="color:#D8A4A4">Beta privata</div>
+            <div class="rm-desc">50 clienti pilota</div>
+          </div>
+
+          <!-- H2 2027: LIVE -->
+          <div class="rm-item">
+            <div class="rm-dot" style="background:linear-gradient(135deg,var(--plum),#D8A4A4);color:var(--ivory);border-color:var(--plum);font-size:0.55rem">OS</div>
+            <div class="rm-date" style="color:#D8A4A4">Q4 2027</div>
+            <div class="rm-title" style="color:#D8A4A4">OS attivo</div>
+            <div class="rm-desc">AI live · smart home</div>
+          </div>
+
+        </div>
+      </div>
+
     </div>
     <div class="ghost-num" style="color:rgba(255,255,255,0.025)">9</div>
   </section>
