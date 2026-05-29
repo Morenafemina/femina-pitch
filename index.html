@@ -1526,31 +1526,36 @@
        02 — IL PROBLEMA
   ═══════════════════════════════════════ -->
   <section class="slide s-problem" id="slide-2">
-    <div style="display:grid;grid-template-columns:1fr 1fr;width:100%;height:100%">
+    <div style="display:grid;grid-template-columns:0.85fr 1.15fr;width:100%;height:100%">
 
-      <!-- LEFT: storia editorial -->
-      <div style="display:flex;flex-direction:column;justify-content:center;padding:6vh 5vw 6vh 9vw;border-right:1px solid var(--rose-light)">
-        <div class="eyebrow" style="margin-bottom:1.5rem">01 · La Storia</div>
-        <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,4vw,4.8rem);font-weight:300;color:var(--black);line-height:1.05;margin-bottom:2.5rem">
+      <!-- LEFT: elegant vignette -->
+      <div style="position:relative;background:linear-gradient(160deg,#f3ede5 0%,#e8ddd2 100%);overflow:hidden;display:flex;align-items:center;justify-content:center;border-right:1px solid var(--rose-light)">
+        <!-- Photo placeholder (drop img/trasloco.jpg to replace) -->
+        <img src="img/trasloco.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.9" onerror="this.style.display='none'">
+
+        <!-- CSS-only editorial vignette (visible as fallback or overlay) -->
+        <div style="position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;gap:3vh;padding:6vh 3vw;text-align:center">
+          <!-- ornament: doorway/threshold abstract -->
+          <div style="width:1px;height:8vh;background:linear-gradient(to bottom,transparent,rgba(109,18,63,0.4))"></div>
+          <div style="width:clamp(60px,8vw,110px);height:clamp(60px,8vw,110px);border:1px solid rgba(109,18,63,0.3);border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(248,247,243,0.4);backdrop-filter:blur(4px)">
+            <div style="width:60%;height:1px;background:rgba(109,18,63,0.5)"></div>
+          </div>
+          <div style="width:1px;height:8vh;background:linear-gradient(to top,transparent,rgba(109,18,63,0.4))"></div>
+          <!-- caption -->
+          <div style="position:absolute;bottom:4vh;left:50%;transform:translateX(-50%);font-family:'Jost',sans-serif;font-size:8px;letter-spacing:0.4em;text-transform:uppercase;color:rgba(31,27,24,0.5);white-space:nowrap">Torino · 2024</div>
+        </div>
+      </div>
+
+      <!-- RIGHT: storia editorial -->
+      <div style="display:flex;flex-direction:column;justify-content:center;padding:6vh 9vw 6vh 7vw">
+        <div class="eyebrow" style="margin-bottom:2rem">01 · La Storia</div>
+        <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,4.4vw,5.2rem);font-weight:300;color:var(--black);line-height:1.02;margin-bottom:3rem">
           Tutto è iniziato<br>con un <em style="color:var(--plum)">trasloco.</em>
         </h2>
         <div style="width:40px;height:1px;background:var(--rose);margin-bottom:2rem"></div>
-        <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.05rem,1.55vw,1.35rem);color:var(--gray);line-height:1.7;max-width:38ch">
-          Per settimane ho dovuto ospitare in casa mia<br>persone che non conoscevo. Tecnici, traslocatori,<br>fornitori. Ogni mattina mi chiedevo <span style="color:var(--plum);font-style:normal">chi sarebbe entrato.</span><br>Ogni sera contavo le ore al ritorno a casa.
-        </p>
-      </div>
-
-      <!-- RIGHT: insight + signature -->
-      <div style="display:flex;flex-direction:column;justify-content:center;padding:6vh 9vw 6vh 6vw">
-        <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.5rem,2.4vw,2.4rem);color:var(--black);line-height:1.35;margin-bottom:3rem;font-weight:300">
-          Lì ho capito.<br><br>
-          <span style="color:var(--plum)">Il problema non era<br>trovare un servizio.</span><br><br>
-          Era trovare qualcuno<br>di cui <em>fidarsi davvero.</em>
-        </div>
-        <div style="width:40px;height:1px;background:var(--rose);margin-bottom:1.5rem"></div>
-        <p style="font-family:'Jost',sans-serif;font-size:0.8rem;letter-spacing:0.18em;text-transform:uppercase;color:rgba(31,27,24,0.5);line-height:1.6">
-          Fémina è nata da quel disagio.<br>
-          <span style="color:var(--plum);letter-spacing:0.12em">Per le donne che non vogliono più sentirlo.</span>
+        <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.2rem,1.8vw,1.55rem);color:var(--gray);line-height:1.6;max-width:40ch">
+          Per settimane, persone sconosciute<br>in casa mia.<br><br>
+          <span style="color:var(--plum);font-style:normal">Il problema non era il servizio.<br>Era la fiducia.</span>
         </p>
       </div>
 
@@ -1564,48 +1569,35 @@
   <section class="slide s-market" id="slide-3">
     <div class="inner">
       <div class="eyebrow" style="color:var(--rose)">02 · Il Problema</div>
-      <h2 class="display-title" style="color:var(--ivory); font-size:clamp(2rem,3.8vw,4rem); margin-bottom:0.6rem">
-        Non è il <em style="color:var(--rose);font-style:italic">mio</em> problema.<br>È il problema di <em style="color:var(--rose);font-style:italic">milioni di donne.</em>
+      <h2 class="display-title" style="color:var(--ivory); font-size:clamp(2.2rem,4.2vw,4.6rem); margin-bottom:5vh;line-height:1.05">
+        Milioni di donne.<br><em style="color:var(--rose);font-style:italic">Sole.</em>
       </h2>
-      <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1rem,1.5vw,1.3rem);color:rgba(248,247,243,0.55);margin-bottom:3.5rem;max-width:60ch">
-        Una popolazione che cresce. Un carico che non si distribuisce.<br>Un mercato ancora fatto di passaparola, rischio e fiducia mancata.
-      </p>
 
-      <!-- 4-tier grid of sourced data -->
-      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid rgba(248,247,243,0.08)">
+      <!-- 3-tier grid -->
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid rgba(248,247,243,0.1);border-bottom:1px solid rgba(248,247,243,0.1)">
 
-        <div style="padding:3vh 1.5vw 3vh 0;border-right:1px solid rgba(248,247,243,0.08)">
-          <div style="font-family:'Jost',sans-serif;font-size:7.5px;letter-spacing:0.32em;text-transform:uppercase;color:rgba(216,164,164,0.6);margin-bottom:1.5vh">Donne sole · oggi</div>
-          <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.6rem,4.6vw,5.4rem);font-weight:300;color:var(--ivory);line-height:0.95;letter-spacing:-0.02em">5,3M</div>
-          <div style="font-family:'Jost',sans-serif;font-size:0.7rem;color:rgba(248,247,243,0.55);line-height:1.55;margin-top:0.8rem">Donne che vivono da sole in Italia. <span style="color:var(--rose)">+18% al 2050</span> → 6,2M.</div>
-          <div style="font-family:'Jost',sans-serif;font-size:7px;letter-spacing:0.22em;color:rgba(184,154,99,0.7);margin-top:0.9rem">ISTAT 2024</div>
+        <div style="padding:5vh 2vw 5vh 0;border-right:1px solid rgba(248,247,243,0.1)">
+          <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(3.2rem,6vw,7rem);font-weight:300;color:var(--ivory);line-height:0.9;letter-spacing:-0.02em">5,3M</div>
+          <div style="font-family:'Jost',sans-serif;font-size:0.78rem;color:rgba(248,247,243,0.65);line-height:1.55;margin-top:1.2rem">Donne che vivono da sole in Italia.</div>
+          <div style="font-family:'Jost',sans-serif;font-size:0.7rem;color:var(--rose);margin-top:0.4rem">+18% al 2050</div>
         </div>
 
-        <div style="padding:3vh 1.5vw 3vh 1.5vw;border-right:1px solid rgba(248,247,243,0.08)">
-          <div style="font-family:'Jost',sans-serif;font-size:7.5px;letter-spacing:0.32em;text-transform:uppercase;color:rgba(216,164,164,0.6);margin-bottom:1.5vh">Carico domestico</div>
-          <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.6rem,4.6vw,5.4rem);font-weight:300;color:var(--ivory);line-height:0.95;letter-spacing:-0.02em">4h 44'</div>
-          <div style="font-family:'Jost',sans-serif;font-size:0.7rem;color:rgba(248,247,243,0.55);line-height:1.55;margin-top:0.8rem">Al giorno di lavoro domestico per le donne 25+. <span style="color:var(--rose)">vs 2h 06' degli uomini.</span></div>
-          <div style="font-family:'Jost',sans-serif;font-size:7px;letter-spacing:0.22em;color:rgba(184,154,99,0.7);margin-top:0.9rem">ISTAT Uso del Tempo</div>
+        <div style="padding:5vh 2vw 5vh 2vw;border-right:1px solid rgba(248,247,243,0.1)">
+          <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(3.2rem,6vw,7rem);font-weight:300;color:var(--ivory);line-height:0.9;letter-spacing:-0.02em">4h 44'</div>
+          <div style="font-family:'Jost',sans-serif;font-size:0.78rem;color:rgba(248,247,243,0.65);line-height:1.55;margin-top:1.2rem">Al giorno di lavoro domestico.</div>
+          <div style="font-family:'Jost',sans-serif;font-size:0.7rem;color:var(--rose);margin-top:0.4rem">vs 2h 06' degli uomini</div>
         </div>
 
-        <div style="padding:3vh 1.5vw 3vh 1.5vw;border-right:1px solid rgba(248,247,243,0.08)">
-          <div style="font-family:'Jost',sans-serif;font-size:7.5px;letter-spacing:0.32em;text-transform:uppercase;color:rgba(216,164,164,0.6);margin-bottom:1.5vh">Famiglie unipersonali</div>
-          <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.6rem,4.6vw,5.4rem);font-weight:300;color:var(--ivory);line-height:0.95;letter-spacing:-0.02em">37,1%</div>
-          <div style="font-family:'Jost',sans-serif;font-size:0.7rem;color:rgba(248,247,243,0.55);line-height:1.55;margin-top:0.8rem">Del totale famiglie italiane. <span style="color:var(--rose)">Era 25,9% vent'anni fa.</span> Trend strutturale.</div>
-          <div style="font-family:'Jost',sans-serif;font-size:7px;letter-spacing:0.22em;color:rgba(184,154,99,0.7);margin-top:0.9rem">ISTAT Famiglie 2024</div>
-        </div>
-
-        <div style="padding:3vh 0 3vh 1.5vw">
-          <div style="font-family:'Jost',sans-serif;font-size:7.5px;letter-spacing:0.32em;text-transform:uppercase;color:rgba(216,164,164,0.6);margin-bottom:1.5vh">Mercato irregolare</div>
-          <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.6rem,4.6vw,5.4rem);font-weight:300;color:var(--ivory);line-height:0.95;letter-spacing:-0.02em">49%</div>
-          <div style="font-family:'Jost',sans-serif;font-size:0.7rem;color:rgba(248,247,243,0.55);line-height:1.55;margin-top:0.8rem">Dei lavoratori domestici in Italia opera in nero. <span style="color:var(--rose)">Solo 902K famiglie</span> con rapporto formalizzato.</div>
-          <div style="font-family:'Jost',sans-serif;font-size:7px;letter-spacing:0.22em;color:rgba(184,154,99,0.7);margin-top:0.9rem">Osservatorio DOMINA 2024</div>
+        <div style="padding:5vh 0 5vh 2vw">
+          <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(3.2rem,6vw,7rem);font-weight:300;color:var(--ivory);line-height:0.9;letter-spacing:-0.02em">37%</div>
+          <div style="font-family:'Jost',sans-serif;font-size:0.78rem;color:rgba(248,247,243,0.65);line-height:1.55;margin-top:1.2rem">Delle famiglie italiane è unipersonale.</div>
+          <div style="font-family:'Jost',sans-serif;font-size:0.7rem;color:var(--rose);margin-top:0.4rem">era 26% vent'anni fa</div>
         </div>
 
       </div>
 
-      <div class="market-footnote" style="margin-top:2vh">
-        Fonti: <a href="https://www.istat.it/wp-content/uploads/2025/07/Report_Previsioni-della-popolazione-residente-e-delle-famiglie_Base-Base-112024.pdf" style="color:rgba(184,154,99,0.8);text-decoration:underline" target="_blank">ISTAT Previsioni Popolazione 2024</a> · <a href="https://www.istat.it/it/files/2024/04/3.pdf" style="color:rgba(184,154,99,0.8);text-decoration:underline" target="_blank">ISTAT Lavoro Domestico</a> · <a href="https://www.grusol.it/apriInformazioniN.asp?id=9516" style="color:rgba(184,154,99,0.8);text-decoration:underline" target="_blank">DOMINA Osservatorio 2024</a>
+      <div class="market-footnote" style="margin-top:3vh">
+        Fonti: <a href="https://www.istat.it/wp-content/uploads/2025/07/Report_Previsioni-della-popolazione-residente-e-delle-famiglie_Base-Base-112024.pdf" style="color:rgba(184,154,99,0.8);text-decoration:underline" target="_blank">ISTAT Previsioni Popolazione 2024</a> · <a href="https://www.istat.it/it/files/2024/04/3.pdf" style="color:rgba(184,154,99,0.8);text-decoration:underline" target="_blank">ISTAT Uso del Tempo</a>
       </div>
     </div>
     <div class="ghost-num">02</div>
@@ -1613,9 +1605,52 @@
 
 
   <!-- ═══════════════════════════════════════
-       04 — LA SOLUZIONE
+       04 — IL DOLORE (Pain points)
   ═══════════════════════════════════════ -->
-  <section class="slide s-solution" id="slide-4">
+  <section class="slide s-problem" id="slide-4">
+    <div style="width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;padding:8vh 12vw;gap:5vh">
+
+      <div>
+        <div class="eyebrow" style="margin-bottom:1.2rem">03 · Il Dolore</div>
+        <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.6vw,4rem);font-weight:300;color:var(--black);line-height:1.05">
+          Cosa cercano <em style="color:var(--plum)">davvero</em>?
+        </h2>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:3vh;border-top:1px solid var(--rose-light)">
+
+        <div style="padding:3vh 0;border-bottom:1px solid var(--rose-light);display:flex;align-items:baseline;gap:3vw">
+          <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(0.85rem,1.1vw,1rem);color:rgba(31,27,24,0.4);letter-spacing:0.05em;flex-shrink:0;width:60px">01</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.8rem,3.2vw,3.6rem);font-weight:300;color:var(--black);line-height:1.15">
+            "Chi entra in <span style="color:var(--plum)">casa mia</span>?"
+          </div>
+        </div>
+
+        <div style="padding:3vh 0;border-bottom:1px solid var(--rose-light);display:flex;align-items:baseline;gap:3vw">
+          <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(0.85rem,1.1vw,1rem);color:rgba(31,27,24,0.4);letter-spacing:0.05em;flex-shrink:0;width:60px">02</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.8rem,3.2vw,3.6rem);font-weight:300;color:var(--black);line-height:1.15">
+            "Devo gestire <span style="color:var(--plum)">tutto io</span>."
+          </div>
+        </div>
+
+        <div style="padding:3vh 0;display:flex;align-items:baseline;gap:3vw">
+          <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(0.85rem,1.1vw,1rem);color:rgba(31,27,24,0.4);letter-spacing:0.05em;flex-shrink:0;width:60px">03</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.8rem,3.2vw,3.6rem);font-weight:300;color:var(--black);line-height:1.15">
+            "Trovo qualcuna brava, <span style="color:var(--plum)">la perdo</span>."
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="ghost-num" style="color:rgba(109,18,63,0.04)">03</div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       05 — LA SOLUZIONE
+  ═══════════════════════════════════════ -->
+  <section class="slide s-solution" id="slide-5">
     <div style="width:100%;height:100%;background:var(--plum);display:grid;grid-template-columns:1fr 1fr;gap:0;position:relative;overflow:hidden">
 
       <!-- ghost F -->
@@ -1623,7 +1658,7 @@
 
       <!-- LEFT: today — tre cuori -->
       <div style="display:flex;flex-direction:column;justify-content:center;padding:6vh 3vw 6vh 8vw;border-right:1px solid rgba(216,164,164,0.18)">
-        <div class="eyebrow" style="color:rgba(216,164,164,0.85);margin-bottom:1.5vh;letter-spacing:0.3em">03 · La Soluzione</div>
+        <div class="eyebrow" style="color:rgba(216,164,164,0.85);margin-bottom:1.5vh;letter-spacing:0.3em">04 · La Soluzione</div>
         <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,4vw,4.5rem);font-weight:300;color:var(--ivory);line-height:1;margin-bottom:0.5vh">Non un servizio.</h2>
         <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,4vw,4.5rem);font-weight:300;color:#D8A4A4;line-height:1;margin-bottom:3vh"><em>Un sistema.</em></h2>
 
@@ -1714,9 +1749,9 @@
   <!-- ═══════════════════════════════════════
        05 — MERCATO TAM/SAM/SOM
   ═══════════════════════════════════════ -->
-  <section class="slide s-market" id="slide-5">
+  <section class="slide s-market" id="slide-6">
     <div class="inner">
-      <div class="eyebrow" style="color:var(--rose)">04 · Dimensione del Mercato</div>
+      <div class="eyebrow" style="color:var(--rose)">05 · Dimensione del Mercato</div>
       <h2 class="display-title" style="color:var(--ivory); font-size:clamp(2rem,3.8vw,4rem); margin-bottom:0.6rem">
         Un mercato da <em style="color:var(--rose);font-style:italic">€13 miliardi.</em><br>Ancora servito male.
       </h2>
@@ -1753,11 +1788,11 @@
   <!-- ═══════════════════════════════════════
        05b — COMPETITIVE LANDSCAPE
   ═══════════════════════════════════════ -->
-  <section class="slide s-competitors" id="slide-6">
+  <section class="slide s-competitors" id="slide-7">
     <div style="width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;padding:5vh 8vw">
 
       <div style="margin-bottom:3vh">
-        <div class="eyebrow" style="color:#D8A4A4;opacity:0.8;margin-bottom:1.5vh;letter-spacing:0.3em">05 · Panorama Competitivo</div>
+        <div class="eyebrow" style="color:#D8A4A4;opacity:0.8;margin-bottom:1.5vh;letter-spacing:0.3em">06 · Panorama Competitivo</div>
         <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.4vw,3.6rem);font-weight:300;color:#F8F7F3;line-height:1.05;margin-bottom:0.8rem">
           Il podio premium <em style="color:#D8A4A4">è libero.</em>
         </h2>
@@ -1876,15 +1911,15 @@
   <!-- ═══════════════════════════════════════
        07 — TRACTION (Instagram)
   ═══════════════════════════════════════ -->
-  <section class="slide s-instagram" id="slide-7">
-    <!-- 3D Glitter canvas -->
-    <canvas id="glitter-canvas" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:10"></canvas>
+  <section class="slide s-instagram" id="slide-8">
+    <!-- Glitter disabled -->
+    <canvas id="glitter-canvas" style="display:none"></canvas>
     <div style="width:100%;height:100%;display:grid;grid-template-columns:1fr 1fr;gap:0;position:relative;z-index:1">
 
       <!-- LEFT: Instagram card BIG + 3 numbers -->
       <div style="display:flex;flex-direction:column;justify-content:center;padding:4vh 3vw 4vh 6vw;gap:2.5vh;border-right:1px solid rgba(248,247,243,0.06)">
 
-        <div class="eyebrow" style="color:#D8A4A4;font-size:10px;letter-spacing:0.35em">06 · Trazione · Maggio 2026</div>
+        <div class="eyebrow" style="color:#D8A4A4;font-size:10px;letter-spacing:0.35em">07 · Trazione · Maggio 2026</div>
 
         <!-- Instagram screenshot reale -->
         <div style="width:100%;border-radius:12px;overflow:hidden;box-shadow:0 8px 40px rgba(0,0,0,0.35)">
@@ -1941,8 +1976,8 @@
             <span style="font-family:'Jost',sans-serif;font-size:6.5px;letter-spacing:0.15em;text-transform:uppercase;color:rgba(248,247,243,0.55);line-height:1.4">richieste in arrivo<br>da fuori regione</span>
           </div>
           <div style="flex:1;display:flex;align-items:center;gap:0.6rem;padding:0.7vh 1vw;background:rgba(248,247,243,0.05);border-left:2px solid rgba(248,247,243,0.3)">
-            <span style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:rgba(248,247,243,0.9);font-weight:300">€0</span>
-            <span style="font-family:'Jost',sans-serif;font-size:6.5px;letter-spacing:0.15em;text-transform:uppercase;color:rgba(248,247,243,0.55);line-height:1.4">spesi in<br>advertising</span>
+            <span style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:rgba(248,247,243,0.9);font-weight:300">CAC ~€__</span>
+            <span style="font-family:'Jost',sans-serif;font-size:6.5px;letter-spacing:0.15em;text-transform:uppercase;color:rgba(248,247,243,0.55);line-height:1.4">test Meta<br>1 lead acquisita</span>
           </div>
         </div>
 
@@ -2066,9 +2101,9 @@
   <!-- ═══════════════════════════════════════
        08 — PARTNERSHIPS
   ═══════════════════════════════════════ -->
-  <section class="slide s-partners" id="slide-8">
+  <section class="slide s-partners" id="slide-9">
     <div style="text-align:center;margin-bottom:0.5rem">
-      <div class="eyebrow" style="color:var(--gold);margin-bottom:0.6rem;opacity:1">07 · Partnership & Ecosistema</div>
+      <div class="eyebrow" style="color:var(--gold);margin-bottom:0.6rem;opacity:1">08 · Partnership &amp; Ecosistema</div>
       <h2 class="display-title" style="color:var(--black);font-size:clamp(2rem,3.8vw,4rem);line-height:1.1">Non siamo sole.<br><em style="color:var(--plum)">Siamo già un sistema.</em></h2>
       <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1rem,1.4vw,1.2rem);color:var(--gray);max-width:62ch;margin:1.2rem auto 0;line-height:1.55">
         Le nostre clienti non vivono nei centri commerciali. Vivono <span style="color:var(--plum);font-style:normal">negli studi pilates premium, nei cocktail bar indipendenti, nei brand di design urbano.</span><br>Lì le incontriamo. Lì costruiamo fiducia.
@@ -2124,10 +2159,10 @@
   <!-- ═══════════════════════════════════════
        09 — ROADMAP
   ═══════════════════════════════════════ -->
-  <section class="slide s-roadmap" id="slide-9">
+  <section class="slide s-roadmap" id="slide-10">
     <div style="text-align:center">
-      <div class="eyebrow" style="color:rgba(184,154,99,0.6);margin-bottom:0.5rem">08 · Roadmap</div>
-      <h2 class="display-title" style="color:var(--ivory);font-size:clamp(1.4rem,2.6vw,2.8rem)">Da Torino all'Italia.<br><em style="color:var(--gold)">Un passo alla volta, già in moto.</em></h2>
+      <div class="eyebrow" style="color:rgba(184,154,99,0.6);margin-bottom:0.5rem">09 · Roadmap</div>
+      <h2 class="display-title" style="color:var(--ivory);font-size:clamp(1.6rem,2.8vw,3rem)">Da Torino all'Italia.<br><em style="color:var(--gold)">Entro il 2027.</em></h2>
     </div>
     <div class="roadmap-track">
       <div class="roadmap-line"></div>
@@ -2136,44 +2171,44 @@
 
         <div class="rm-item done">
           <div class="rm-dot done">✓</div>
-          <div class="rm-date">Gen – Mar 2026</div>
+          <div class="rm-date">Q1 2026</div>
           <div class="rm-title">Validazione</div>
-          <div class="rm-desc">150+ form da clienti e professioniste · modello di domanda confermato · zero advertising</div>
+          <div class="rm-desc">150+ form · domanda confermata</div>
         </div>
 
         <div class="rm-item done">
           <div class="rm-dot done">✓</div>
-          <div class="rm-date">Apr – Mag 2026</div>
-          <div class="rm-title">MVP live &<br>Invitalia</div>
-          <div class="rm-desc">20+ servizi erogati · 4 abbonamenti attivi (incl. 1 B2B) · ~45% clienti da referral · onboarding professioniste con score · domanda Invitalia inviata</div>
+          <div class="rm-date">Q2 2026</div>
+          <div class="rm-title">MVP & Invitalia</div>
+          <div class="rm-desc">20+ servizi · 4 abbonamenti · domanda inviata</div>
         </div>
 
         <div class="rm-item active">
           <div class="rm-dot active">→</div>
-          <div class="rm-date">Giu – Set 2026</div>
-          <div class="rm-title">Costituzione<br>& Crescita</div>
-          <div class="rm-desc">SRL startup innovativa · 40 professioniste · 60 clienti attive · altri servizi in pipeline</div>
+          <div class="rm-date">Q3 2026</div>
+          <div class="rm-title">Costituzione</div>
+          <div class="rm-desc">SRL innovativa · 40 pro · 60 clienti</div>
         </div>
 
         <div class="rm-item">
           <div class="rm-dot">4</div>
-          <div class="rm-date">Set – Dic 2026</div>
+          <div class="rm-date">Q4 2026</div>
           <div class="rm-title">Scale Torino</div>
-          <div class="rm-desc">120 clienti · 50 professioniste · sviluppo app · partnership corporate · Academy primi corsi</div>
+          <div class="rm-desc">120 clienti · app v1 · Academy</div>
         </div>
 
         <div class="rm-item">
           <div class="rm-dot" style="background:var(--plum);color:var(--ivory);border-color:var(--plum)">✦</div>
-          <div class="rm-date">Gen 2027</div>
-          <div class="rm-title" style="color:var(--rose)">Milano,<br>you're next 👀</div>
-          <div class="rm-desc">Mercato più ricco, nuclei più piccoli, donne più sole. Il modello Torino replicato in 90 giorni.</div>
+          <div class="rm-date">Q1–Q2 2027</div>
+          <div class="rm-title" style="color:var(--rose)">Milano</div>
+          <div class="rm-desc">Replica modello · 90 giorni</div>
         </div>
 
         <div class="rm-item">
           <div class="rm-dot" style="background:linear-gradient(135deg,var(--plum),#D8A4A4);color:var(--ivory);border-color:var(--plum);font-size:0.6rem">OS</div>
           <div class="rm-date">Q4 2027</div>
-          <div class="rm-title" style="color:#D8A4A4">Fémina OS</div>
-          <div class="rm-desc">Prototipo AI · House Modes · l'app capisce come stai e coordina casa e vita. Da marketplace a sistema operativo. <em style="color:rgba(216,164,164,0.7)">Vedi slide 10 →</em></div>
+          <div class="rm-title" style="color:#D8A4A4">Fémina OS<br>attivo</div>
+          <div class="rm-desc">AI · House Modes · da marketplace a sistema operativo</div>
         </div>
 
       </div>
@@ -2187,12 +2222,12 @@
   <!-- ═══════════════════════════════════════
        08 — TEAM
   ═══════════════════════════════════════ -->
-  <section class="slide s-team" id="slide-10">
+  <section class="slide s-team" id="slide-11">
     <div style="width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;padding:5vh 9vw;gap:3vh">
 
       <!-- Header -->
       <div>
-        <div class="eyebrow" style="color:rgba(216,164,164,0.6);margin-bottom:0.6rem">09 · Modello di Business</div>
+        <div class="eyebrow" style="color:rgba(216,164,164,0.6);margin-bottom:0.6rem">10 · Modello di Business</div>
         <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.6vw,4rem);color:var(--ivory);font-weight:300;line-height:1.05">
           Tre flussi di ricavo.<br><em style="color:#D8A4A4">Un sistema che si compone.</em>
         </h2>
@@ -2258,7 +2293,7 @@
   <!-- ═══════════════════════════════════════
        11 — VISION · FÉMINA OS
   ═══════════════════════════════════════ -->
-  <section class="slide s-financials" id="slide-11">
+  <section class="slide s-financials" id="slide-12">
     <div style="width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;padding:5vh 9vw;gap:3vh;position:relative">
 
       <!-- ghost OS letters background -->
@@ -2266,7 +2301,7 @@
 
       <!-- Header -->
       <div style="position:relative;z-index:2">
-        <div class="eyebrow" style="color:rgba(216,164,164,0.6);margin-bottom:1rem">10 · Vision · Fémina OS</div>
+        <div class="eyebrow" style="color:rgba(216,164,164,0.6);margin-bottom:1rem">11 · Vision · Fémina OS</div>
         <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.8vw,4.2rem);font-weight:300;color:var(--ivory);line-height:1.05">
           Da marketplace<br>a <em style="color:#D8A4A4">sistema operativo della casa.</em>
         </h2>
@@ -2337,84 +2372,26 @@
   <!-- ═══════════════════════════════════════
        10 — THE ASK
   ═══════════════════════════════════════ -->
-  <section class="slide s-ask" id="slide-12">
-    <!-- ghost number -->
-    <div style="position:absolute;bottom:-8vh;right:-2vw;font-family:'Cormorant Garamond',serif;font-size:38vw;font-weight:300;color:rgba(248,247,243,0.03);line-height:1;pointer-events:none;user-select:none">€</div>
+  <section class="slide s-ask" id="slide-13">
+    <!-- ghost F -->
+    <div style="position:absolute;bottom:-15vh;right:-5vw;font-family:'Cormorant Garamond',serif;font-size:55vw;font-weight:300;color:rgba(216,164,164,0.04);line-height:1;pointer-events:none;user-select:none">F</div>
 
-    <div style="width:100%;height:100%;display:grid;grid-template-columns:1fr 1fr;gap:0">
+    <div style="width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:8vh 10vw;text-align:center;position:relative;z-index:2">
 
-      <!-- LEFT: ask + milestones -->
-      <div style="display:flex;flex-direction:column;justify-content:center;padding:6vh 5vw 6vh 9vw;border-right:1px solid rgba(248,247,243,0.08)">
-        <div class="eyebrow" style="color:rgba(216,164,164,0.5);margin-bottom:2.5vh">11 · La Richiesta</div>
+      <div class="eyebrow" style="color:rgba(216,164,164,0.5);margin-bottom:6vh">Fémina</div>
 
-        <!-- Big amount -->
-        <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(4rem,9vw,10rem);font-weight:300;color:var(--ivory);line-height:0.85;margin-bottom:1.5vh">€180K</div>
+      <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,4.6vw,5.6rem);font-weight:300;color:var(--ivory);line-height:1.1;max-width:22ch">
+        Rendere visibile<br>un <em style="color:#D8A4A4">carico invisibile.</em>
+      </h2>
 
-        <!-- Terms -->
-        <div style="font-family:'Jost',sans-serif;font-size:8px;letter-spacing:0.35em;text-transform:uppercase;color:rgba(248,247,243,0.45);margin-bottom:3vh">
-          Pre-Seed · 15% equity · Val. pre-money €1M
-        </div>
+      <div style="width:60px;height:1px;background:rgba(216,164,164,0.6);margin:5vh 0 4vh"></div>
 
-        <!-- Invitalia badge -->
-        <div style="margin-bottom:3vh;padding:1rem 1.2rem;border:1px solid rgba(184,154,99,0.3);background:rgba(184,154,99,0.05)">
-          <div style="font-family:'Jost',sans-serif;font-size:6.5px;letter-spacing:0.4em;text-transform:uppercase;color:var(--gold);margin-bottom:0.5rem">Invitalia / MiSE · Domanda inviata Maggio 2026</div>
-          <div style="font-family:'Cormorant Garamond',serif;font-size:0.95rem;color:var(--ivory);line-height:1.4">€14.400 fondo perduto + €15.600 mutuo 0% · <em>capitale non diluitivo</em></div>
-        </div>
+      <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.1rem,1.7vw,1.5rem);color:rgba(248,247,243,0.55);line-height:1.55;max-width:38ch">
+        Da donne, per donne.<br>Costruito da chi vive il problema.
+      </p>
 
-        <!-- 3 milestones -->
-        <div style="display:flex;flex-direction:column;gap:1rem">
-          <div style="font-family:'Jost',sans-serif;font-size:6.5px;letter-spacing:0.35em;text-transform:uppercase;color:rgba(248,247,243,0.3);margin-bottom:0.2rem">Con €180K raggiungiamo</div>
-          <div style="display:flex;gap:1rem;align-items:flex-start">
-            <span style="color:var(--rose);font-size:0.6rem;margin-top:0.1rem">✦</span>
-            <span style="font-family:'Jost',sans-serif;font-size:0.78rem;font-weight:300;color:rgba(248,247,243,0.7);line-height:1.4">150 clienti attive · 40 professioniste & imprese onboarded (cleaning, meal prep, lifestyle)</span>
-          </div>
-          <div style="display:flex;gap:1rem;align-items:flex-start">
-            <span style="color:var(--rose);font-size:0.6rem;margin-top:0.1rem">✦</span>
-            <span style="font-family:'Jost',sans-serif;font-size:0.78rem;font-weight:300;color:rgba(248,247,243,0.7);line-height:1.4">App mobile + AI prototype Fémina OS · Academy primi corsi</span>
-          </div>
-          <div style="display:flex;gap:1rem;align-items:flex-start">
-            <span style="color:var(--rose);font-size:0.6rem;margin-top:0.1rem">✦</span>
-            <span style="font-family:'Jost',sans-serif;font-size:0.78rem;font-weight:300;color:rgba(248,247,243,0.7);line-height:1.4">Prime clienti a Milano · 16 mesi di runway</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- RIGHT: allocation + closing -->
-      <div style="display:flex;flex-direction:column;justify-content:center;padding:6vh 9vw 6vh 5vw;gap:3vh">
-
-        <!-- Use of funds — clean list, no bars -->
-        <div>
-          <div style="font-family:'Jost',sans-serif;font-size:8px;letter-spacing:0.4em;text-transform:uppercase;color:rgba(248,247,243,0.55);margin-bottom:1.8vh">Utilizzo dei fondi</div>
-          <div style="display:flex;flex-direction:column;gap:1.2rem">
-            <div style="display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(248,247,243,0.08);padding-bottom:1rem">
-              <span style="font-family:'Jost',sans-serif;font-size:0.92rem;font-weight:400;color:rgba(248,247,243,0.9)">Tecnologia &amp; prodotto</span>
-              <span style="font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;color:#D8A4A4">40%</span>
-            </div>
-            <div style="display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(248,247,243,0.08);padding-bottom:1rem">
-              <span style="font-family:'Jost',sans-serif;font-size:0.92rem;font-weight:400;color:rgba(248,247,243,0.9)">Marketing &amp; acquisizione</span>
-              <span style="font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;color:#D8A4A4">30%</span>
-            </div>
-            <div style="display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(248,247,243,0.08);padding-bottom:1rem">
-              <span style="font-family:'Jost',sans-serif;font-size:0.92rem;font-weight:400;color:rgba(248,247,243,0.9)">Operazioni &amp; onboarding</span>
-              <span style="font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;color:#D8A4A4">20%</span>
-            </div>
-            <div style="display:flex;justify-content:space-between;align-items:center">
-              <span style="font-family:'Jost',sans-serif;font-size:0.92rem;font-weight:400;color:rgba(248,247,243,0.9)">Legal &amp; Academy</span>
-              <span style="font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;color:#D8A4A4">10%</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Closing statement -->
-        <div style="border-top:1px solid rgba(248,247,243,0.08);padding-top:2.5vh">
-          <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1rem,1.6vw,1.3rem);color:rgba(248,247,243,0.6);line-height:1.55">
-            Non un'app. Non un'agenzia.<br>
-            <em style="color:var(--ivory)">Un ecosistema di fiducia, costruito da chi vive il problema dall'interno.</em>
-          </p>
-          <div style="margin-top:1.5vh;font-family:'Jost',sans-serif;font-size:7px;letter-spacing:0.3em;text-transform:uppercase;color:rgba(184,154,99,0.6)">
-            ✦ feminaconcierge.it · femina.concierge@gmail.com
-          </div>
-        </div>
+      <div style="margin-top:8vh;font-family:'Jost',sans-serif;font-size:8px;letter-spacing:0.4em;text-transform:uppercase;color:rgba(184,154,99,0.6)">
+        feminaconcierge.it · femina.concierge@gmail.com
       </div>
 
     </div>
@@ -2423,7 +2400,7 @@
 </div><!-- .deck -->
 
 <script>
-  const totalSlides = 12;
+  const totalSlides = 13;
   let current = 1;
 
   function changeSlide(dir) {
@@ -2609,7 +2586,7 @@
 
     // Watch for slide activation
     const observer = new MutationObserver(() => {
-      const slide6 = document.getElementById('slide-7');
+      const slide6 = document.getElementById('slide-8');
       if (slide6 && slide6.classList.contains('active')) {
         startGlitter();
       } else {
@@ -2617,7 +2594,7 @@
       }
     });
 
-    const slide6 = document.getElementById('slide-7');
+    const slide6 = document.getElementById('slide-8');
     if (slide6) {
       observer.observe(slide6, { attributes: true, attributeFilter: ['class'] });
       // Also watch parent for opacity changes
@@ -2628,7 +2605,7 @@
     const origChange = window.changeSlide;
     window.changeSlide = function(dir) {
       origChange(dir);
-      const s6 = document.getElementById('slide-7');
+      const s6 = document.getElementById('slide-8');
       if (s6 && s6.classList.contains('active')) startGlitter();
       else stopGlitter();
     };
