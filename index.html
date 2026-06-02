@@ -1955,54 +1955,53 @@
           </h2>
         </div>
 
-        <!-- CHART: bar chart momentum -->
+        <!-- SPARKLINE elegante -->
         <div>
-          <div style="font-family:'Jost',sans-serif;font-size:7px;letter-spacing:0.3em;text-transform:uppercase;color:rgba(248,247,243,0.4);margin-bottom:1.2vh">Lead form ricevuti per mese</div>
-          <div style="display:flex;align-items:flex-end;gap:1.2vw;height:14vh;border-bottom:1px solid rgba(248,247,243,0.12);padding-bottom:0.4vh">
+          <div style="font-family:'Jost',sans-serif;font-size:7px;letter-spacing:0.3em;text-transform:uppercase;color:rgba(248,247,243,0.4);margin-bottom:1.5vh">Lead form ricevuti · gen→mag 2026</div>
 
-            <!-- GEN: 55 -->
-            <div style="flex:1;display:flex;flex-direction:column;align-items:center;height:100%;justify-content:flex-end">
-              <div style="font-family:'Cormorant Garamond',serif;font-size:0.95rem;color:var(--ivory);margin-bottom:0.4vh">55</div>
-              <div style="width:100%;height:74%;background:linear-gradient(to top,rgba(216,164,164,0.4),rgba(216,164,164,0.7));border-radius:2px 2px 0 0"></div>
-            </div>
+          <!-- SVG sparkline -->
+          <svg viewBox="0 0 400 110" preserveAspectRatio="none" style="width:100%;height:14vh;overflow:visible">
+            <defs>
+              <linearGradient id="rose-area" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#D8A4A4" stop-opacity="0.45"/>
+                <stop offset="100%" stop-color="#D8A4A4" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
 
-            <!-- FEB: 74 (peak) -->
-            <div style="flex:1;display:flex;flex-direction:column;align-items:center;height:100%;justify-content:flex-end">
-              <div style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:#D8A4A4;font-weight:500;margin-bottom:0.4vh">74</div>
-              <div style="width:100%;height:100%;background:linear-gradient(to top,rgba(216,164,164,0.6),#D8A4A4);border-radius:2px 2px 0 0;box-shadow:0 0 20px rgba(216,164,164,0.3)"></div>
-            </div>
+            <!-- Subtle baseline -->
+            <line x1="0" y1="100" x2="400" y2="100" stroke="rgba(248,247,243,0.12)" stroke-width="1"/>
 
-            <!-- MAR: 27 -->
-            <div style="flex:1;display:flex;flex-direction:column;align-items:center;height:100%;justify-content:flex-end">
-              <div style="font-family:'Cormorant Garamond',serif;font-size:0.85rem;color:rgba(248,247,243,0.65);margin-bottom:0.4vh">27</div>
-              <div style="width:100%;height:36%;background:rgba(248,247,243,0.18);border-radius:2px 2px 0 0"></div>
-            </div>
+            <!-- Area under curve: Gen(40,40) Feb(120,5) Mar(200,72) Apr(280,95) Mag(360,99) -->
+            <!-- y = 100 - (value/74)*90 ; max 74 -> 100-90=10, min 1 -> 100-1.2=98.8 -->
+            <path d="M 40,33 C 80,15 100,5 120,5 C 160,5 180,55 200,72 C 240,90 260,95 280,95 C 320,98 340,99 360,99 L 360,100 L 40,100 Z" fill="url(#rose-area)"/>
 
-            <!-- APR: 5 -->
-            <div style="flex:1;display:flex;flex-direction:column;align-items:center;height:100%;justify-content:flex-end">
-              <div style="font-family:'Cormorant Garamond',serif;font-size:0.75rem;color:rgba(248,247,243,0.5);margin-bottom:0.4vh">5</div>
-              <div style="width:100%;height:7%;background:rgba(248,247,243,0.18);border-radius:2px 2px 0 0"></div>
-            </div>
+            <!-- Line curve -->
+            <path d="M 40,33 C 80,15 100,5 120,5 C 160,5 180,55 200,72 C 240,90 260,95 280,95 C 320,98 340,99 360,99" stroke="#D8A4A4" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 
-            <!-- MAG: 1 -->
-            <div style="flex:1;display:flex;flex-direction:column;align-items:center;height:100%;justify-content:flex-end">
-              <div style="font-family:'Cormorant Garamond',serif;font-size:0.7rem;color:rgba(248,247,243,0.4);margin-bottom:0.4vh">1</div>
-              <div style="width:100%;height:2%;background:rgba(248,247,243,0.18);border-radius:2px 2px 0 0"></div>
-            </div>
+            <!-- Data points -->
+            <circle cx="40" cy="33" r="3" fill="#D8A4A4"/>
+            <circle cx="120" cy="5" r="4.5" fill="#D8A4A4" stroke="#0a0a0a" stroke-width="2"/>
+            <circle cx="200" cy="72" r="2.5" fill="rgba(216,164,164,0.6)"/>
+            <circle cx="280" cy="95" r="2" fill="rgba(216,164,164,0.4)"/>
+            <circle cx="360" cy="99" r="2" fill="rgba(216,164,164,0.3)"/>
 
-          </div>
+            <!-- Peak label -->
+            <text x="120" y="-4" text-anchor="middle" font-family="Cormorant Garamond" font-size="14" font-style="italic" fill="#D8A4A4">74 lead</text>
+          </svg>
+
           <!-- X axis labels -->
-          <div style="display:flex;gap:1.2vw;margin-top:0.6vh">
-            <div style="flex:1;text-align:center;font-family:'Jost',sans-serif;font-size:7px;letter-spacing:0.2em;text-transform:uppercase;color:#D8A4A4">Gen</div>
-            <div style="flex:1;text-align:center;font-family:'Jost',sans-serif;font-size:7px;letter-spacing:0.2em;text-transform:uppercase;color:#D8A4A4">Feb</div>
-            <div style="flex:1;text-align:center;font-family:'Jost',sans-serif;font-size:7px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(248,247,243,0.4)">Mar</div>
-            <div style="flex:1;text-align:center;font-family:'Jost',sans-serif;font-size:7px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(248,247,243,0.4)">Apr</div>
-            <div style="flex:1;text-align:center;font-family:'Jost',sans-serif;font-size:7px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(248,247,243,0.4)">Mag</div>
+          <div style="display:flex;justify-content:space-between;margin-top:1vh;padding:0 1%">
+            <div style="font-family:'Jost',sans-serif;font-size:7px;letter-spacing:0.22em;text-transform:uppercase;color:#D8A4A4">Gen</div>
+            <div style="font-family:'Jost',sans-serif;font-size:7px;letter-spacing:0.22em;text-transform:uppercase;color:#D8A4A4">Feb</div>
+            <div style="font-family:'Jost',sans-serif;font-size:7px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(248,247,243,0.4)">Mar</div>
+            <div style="font-family:'Jost',sans-serif;font-size:7px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(248,247,243,0.4)">Apr</div>
+            <div style="font-family:'Jost',sans-serif;font-size:7px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(248,247,243,0.4)">Mag</div>
           </div>
-          <!-- Annotation -->
-          <div style="display:flex;gap:1.2vw;margin-top:0.6vh">
-            <div style="flex:2;font-family:'Jost',sans-serif;font-size:6.5px;letter-spacing:0.18em;text-transform:uppercase;color:#D8A4A4;text-align:center;border-top:1px solid rgba(216,164,164,0.5);padding-top:0.4vh">— Meta ads attive —</div>
-            <div style="flex:3;font-family:'Jost',sans-serif;font-size:6.5px;letter-spacing:0.18em;text-transform:uppercase;color:rgba(248,247,243,0.4);text-align:center;border-top:1px solid rgba(248,247,243,0.15);padding-top:0.4vh">— Solo organico (trickle) —</div>
+
+          <!-- Period annotations -->
+          <div style="display:flex;margin-top:0.8vh">
+            <div style="flex:2;font-family:'Jost',sans-serif;font-size:6.5px;letter-spacing:0.2em;text-transform:uppercase;color:#D8A4A4;text-align:center;border-top:1px solid rgba(216,164,164,0.4);padding-top:0.5vh">Meta ads attive · €234</div>
+            <div style="flex:3;font-family:'Jost',sans-serif;font-size:6.5px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(248,247,243,0.4);text-align:center;border-top:1px solid rgba(248,247,243,0.12);padding-top:0.5vh">Solo organico</div>
           </div>
         </div>
 
