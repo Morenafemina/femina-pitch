@@ -1526,30 +1526,29 @@
        02 — IL PROBLEMA
   ═══════════════════════════════════════ -->
   <section class="slide s-problem" id="slide-2">
-    <div style="display:grid;grid-template-columns:0.95fr 1.05fr;width:100%;height:100%">
+    <div style="display:grid;grid-template-columns:1.05fr 0.95fr;width:100%;height:100%">
 
-      <!-- LEFT: photo (drop img/trasloco.jpg) -->
-      <div style="position:relative;background:#1a1410;overflow:hidden;border-right:1px solid var(--rose-light)">
-        <img src="img/trasloco.jpg" alt="Trasloco · agosto 2025" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-        <!-- fallback: ivory placeholder with caption when no img -->
-        <div style="display:none;position:absolute;inset:0;background:linear-gradient(160deg,#f3ede5 0%,#e8ddd2 100%);flex-direction:column;align-items:center;justify-content:center;gap:2vh;padding:4vh">
-          <div style="font-family:'Jost',sans-serif;font-size:9px;letter-spacing:0.4em;text-transform:uppercase;color:rgba(109,18,63,0.45);text-align:center">↓ inserisci qui<br>img/trasloco.jpg</div>
+      <!-- LEFT: full-bleed photo trasloco -->
+      <div style="position:relative;background:#1a1410;overflow:hidden">
+        <img src="img/trasloco.jpg" alt="Trasloco · agosto 2025" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+        <!-- gradient overlay top to add depth -->
+        <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0.15) 0%,transparent 30%,transparent 70%,rgba(0,0,0,0.45) 100%);z-index:2"></div>
+        <!-- caption overlay bottom-left -->
+        <div style="position:absolute;bottom:4vh;left:3vw;z-index:3">
+          <div style="font-family:'Jost',sans-serif;font-size:9px;letter-spacing:0.45em;text-transform:uppercase;color:rgba(248,247,243,0.95);white-space:nowrap;text-shadow:0 1px 8px rgba(0,0,0,0.6)">Torino · Agosto 2025</div>
         </div>
-        <!-- caption overlay -->
-        <div style="position:absolute;bottom:3vh;left:3vw;font-family:'Jost',sans-serif;font-size:8px;letter-spacing:0.4em;text-transform:uppercase;color:rgba(248,247,243,0.85);white-space:nowrap;z-index:3;mix-blend-mode:difference">Torino · Agosto 2025</div>
       </div>
 
-      <!-- RIGHT: storia editorial -->
-      <div style="display:flex;flex-direction:column;justify-content:center;padding:6vh 9vw 6vh 7vw">
-        <div class="eyebrow" style="margin-bottom:2rem">01 · La Storia</div>
-        <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,4vw,4.8rem);font-weight:300;color:var(--black);line-height:1.02;margin-bottom:2.5rem">
+      <!-- RIGHT: editorial story -->
+      <div style="display:flex;flex-direction:column;justify-content:center;padding:6vh 8vw 6vh 6vw;background:var(--ivory)">
+        <div class="eyebrow" style="margin-bottom:3rem">01 · La Storia</div>
+        <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,4.6vw,5.6rem);font-weight:300;color:var(--black);line-height:1;margin-bottom:3rem">
           Avevo 27 anni.<br>Ho traslocato.<br><em style="color:var(--plum)">Da sola.</em>
         </h2>
-        <div style="width:40px;height:1px;background:var(--rose);margin-bottom:2rem"></div>
-        <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.05rem,1.55vw,1.4rem);color:var(--gray);line-height:1.6;max-width:42ch">
-          Per settimane, sconosciuti in casa.<br>Professionisti — <span style="color:var(--plum);font-style:normal">tipicamente uomini, in settori maschili.</span><br><br>
-          Non si capiva mai se stessero provando a fregarmi.<br>N preventivi per capire di chi fidarsi.<br><br>
-          <span style="color:var(--plum);font-style:normal">E al di là della presa in giro — si parla di soldi.</span>
+        <div style="width:48px;height:1px;background:var(--rose);margin-bottom:2.5rem"></div>
+        <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.15rem,1.7vw,1.5rem);color:var(--gray);line-height:1.55;max-width:38ch;margin:0">
+          Sconosciuti in casa. <span style="color:var(--plum);font-style:normal">Uomini, in settori maschili.</span><br><br>
+          Mai capito se stessero <em>provando a fregarmi.</em>
         </p>
       </div>
 
@@ -1562,37 +1561,34 @@
   ═══════════════════════════════════════ -->
   <section class="slide s-market" id="slide-3">
     <div class="inner">
-      <div class="eyebrow" style="color:var(--rose)">02 · Il Problema</div>
-      <h2 class="display-title" style="color:var(--ivory); font-size:clamp(2.2rem,4.2vw,4.6rem); margin-bottom:1.5vh;line-height:1.05">
-        Milioni di donne. <em style="color:var(--rose);font-style:italic">Sole.</em><br>
-        <span style="font-size:0.6em;color:rgba(248,247,243,0.85)">E in <em style="color:var(--rose)">crescita strutturale.</em></span>
+      <div class="eyebrow" style="color:var(--rose);margin-bottom:2vh">02 · Il Problema</div>
+
+      <h2 class="display-title" style="color:var(--ivory); font-size:clamp(2.2rem,4.2vw,4.6rem); margin-bottom:8vh;line-height:1.05;text-align:center">
+        Milioni di donne. <em style="color:var(--rose);font-style:italic">Sole.</em>
       </h2>
 
-      <!-- 3-tier grid -->
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid rgba(248,247,243,0.1);border-bottom:1px solid rgba(248,247,243,0.1);margin-top:3vh">
+      <!-- 3 huge numbers, centered -->
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0;text-align:center">
 
-        <div style="padding:5vh 2vw 5vh 0;border-right:1px solid rgba(248,247,243,0.1)">
-          <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(3.2rem,6vw,7rem);font-weight:300;color:var(--ivory);line-height:0.9;letter-spacing:-0.02em">5,3M</div>
-          <div style="font-family:'Jost',sans-serif;font-size:0.78rem;color:rgba(248,247,243,0.65);line-height:1.55;margin-top:1.2rem">Donne che vivono da sole in Italia oggi.</div>
-          <div style="font-family:'Jost',sans-serif;font-size:0.7rem;color:var(--rose);margin-top:0.4rem">↗ verso 6M+ entro il 2050</div>
+        <div style="padding:0 2vw;border-right:1px solid rgba(248,247,243,0.12)">
+          <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(4.5rem,8.5vw,10rem);font-weight:300;color:var(--ivory);line-height:0.9;letter-spacing:-0.03em">5,3M</div>
+          <div style="font-family:'Jost',sans-serif;font-size:0.78rem;color:rgba(248,247,243,0.6);letter-spacing:0.05em;margin-top:2vh">Donne sole in Italia</div>
         </div>
 
-        <div style="padding:5vh 2vw 5vh 2vw;border-right:1px solid rgba(248,247,243,0.1)">
-          <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(3.2rem,6vw,7rem);font-weight:300;color:var(--ivory);line-height:0.9;letter-spacing:-0.02em">+1,4M</div>
-          <div style="font-family:'Jost',sans-serif;font-size:0.78rem;color:rgba(248,247,243,0.65);line-height:1.55;margin-top:1.2rem">Famiglie unipersonali in più entro il 2043.</div>
-          <div style="font-family:'Jost',sans-serif;font-size:0.7rem;color:var(--rose);margin-top:0.4rem">da 9,3M a 10,7M (+15%)</div>
+        <div style="padding:0 2vw;border-right:1px solid rgba(248,247,243,0.12)">
+          <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(4.5rem,8.5vw,10rem);font-weight:300;color:var(--rose);line-height:0.9;letter-spacing:-0.03em">+1,4M</div>
+          <div style="font-family:'Jost',sans-serif;font-size:0.78rem;color:rgba(248,247,243,0.6);letter-spacing:0.05em;margin-top:2vh">Famiglie unipersonali entro il 2043</div>
         </div>
 
-        <div style="padding:5vh 0 5vh 2vw">
-          <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(3.2rem,6vw,7rem);font-weight:300;color:var(--ivory);line-height:0.9;letter-spacing:-0.02em">4h 44'</div>
-          <div style="font-family:'Jost',sans-serif;font-size:0.78rem;color:rgba(248,247,243,0.65);line-height:1.55;margin-top:1.2rem">Al giorno di lavoro domestico per le donne.</div>
-          <div style="font-family:'Jost',sans-serif;font-size:0.7rem;color:var(--rose);margin-top:0.4rem">vs 2h 06' degli uomini</div>
+        <div style="padding:0 2vw">
+          <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(4.5rem,8.5vw,10rem);font-weight:300;color:var(--ivory);line-height:0.9;letter-spacing:-0.03em">4h 44'</div>
+          <div style="font-family:'Jost',sans-serif;font-size:0.78rem;color:rgba(248,247,243,0.6);letter-spacing:0.05em;margin-top:2vh">Lavoro domestico/giorno<br><span style="color:var(--rose)">vs 2h 06' uomini</span></div>
         </div>
 
       </div>
 
-      <div class="market-footnote" style="margin-top:3vh">
-        Fonti: <a href="https://www.istat.it/wp-content/uploads/2024/07/Previsioni-popolazione-famiglie_2023.pdf" style="color:rgba(184,154,99,0.8);text-decoration:underline" target="_blank">ISTAT Previsioni Popolazione e Famiglie 2024</a> · <a href="https://www.istat.it/it/files/2024/04/3.pdf" style="color:rgba(184,154,99,0.8);text-decoration:underline" target="_blank">ISTAT Uso del Tempo</a>
+      <div class="market-footnote" style="margin-top:8vh;text-align:center;font-size:0.7rem">
+        <a href="https://www.istat.it/wp-content/uploads/2024/07/Previsioni-popolazione-famiglie_2023.pdf" style="color:rgba(184,154,99,0.7);text-decoration:underline" target="_blank">ISTAT Previsioni 2024</a> · <a href="https://www.istat.it/it/files/2024/04/3.pdf" style="color:rgba(184,154,99,0.7);text-decoration:underline" target="_blank">ISTAT Uso del Tempo</a>
       </div>
     </div>
     <div class="ghost-num">02</div>
@@ -1605,43 +1601,26 @@
   <section class="slide s-problem" id="slide-4">
     <div style="width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;padding:8vh 12vw;gap:5vh">
 
-      <div>
+      <div style="margin-bottom:6vh">
         <div class="eyebrow" style="margin-bottom:1.2rem">03 · Il Dolore</div>
-        <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.6vw,4rem);font-weight:300;color:var(--black);line-height:1.05">
-          Quello che oggi <em style="color:var(--plum)">non funziona.</em>
-        </h2>
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:0;border-top:1px solid var(--rose-light)">
+      <div style="display:flex;flex-direction:column;gap:5vh">
 
-        <div style="padding:3vh 0;border-bottom:1px solid var(--rose-light);display:flex;align-items:baseline;gap:3vw">
-          <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(0.85rem,1.1vw,1rem);color:rgba(31,27,24,0.4);letter-spacing:0.05em;flex-shrink:0;width:50px">01</div>
-          <div style="flex:1">
-            <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.7rem,3vw,3.4rem);font-weight:300;color:var(--black);line-height:1.15">
-              "Nascondo i valori <span style="color:var(--plum)">prima che entri</span>."
-            </div>
-            <div style="font-family:'Jost',sans-serif;font-size:0.74rem;letter-spacing:0.18em;text-transform:uppercase;color:rgba(31,27,24,0.45);margin-top:0.8rem">La fiducia non è dichiarata. È controllata.</div>
-          </div>
+        <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.8rem,3.6vw,4.2rem);font-weight:300;color:var(--black);line-height:1.1;text-align:center">
+          "Nascondo i valori <span style="color:var(--plum)">prima che entri</span>."
         </div>
 
-        <div style="padding:3vh 0;border-bottom:1px solid var(--rose-light);display:flex;align-items:baseline;gap:3vw">
-          <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(0.85rem,1.1vw,1rem);color:rgba(31,27,24,0.4);letter-spacing:0.05em;flex-shrink:0;width:50px">02</div>
-          <div style="flex:1">
-            <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.7rem,3vw,3.4rem);font-weight:300;color:var(--black);line-height:1.15">
-              "Quando ne trovo una brava, <span style="color:var(--plum)">non la mollo. È una guerra</span>."
-            </div>
-            <div style="font-family:'Jost',sans-serif;font-size:0.74rem;letter-spacing:0.18em;text-transform:uppercase;color:rgba(31,27,24,0.45);margin-top:0.8rem">La continuità oggi è personale, non strutturale.</div>
-          </div>
+        <div style="width:60px;height:1px;background:var(--rose);margin:0 auto"></div>
+
+        <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.8rem,3.6vw,4.2rem);font-weight:300;color:var(--black);line-height:1.1;text-align:center">
+          "Quando ne trovo una brava, <span style="color:var(--plum)">è una guerra</span>."
         </div>
 
-        <div style="padding:3vh 0;display:flex;align-items:baseline;gap:3vw">
-          <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(0.85rem,1.1vw,1rem);color:rgba(31,27,24,0.4);letter-spacing:0.05em;flex-shrink:0;width:50px">03</div>
-          <div style="flex:1">
-            <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.7rem,3vw,3.4rem);font-weight:300;color:var(--black);line-height:1.15">
-              "Pago, eppure <span style="color:var(--plum)">controllo se ha pulito davvero</span>."
-            </div>
-            <div style="font-family:'Jost',sans-serif;font-size:0.74rem;letter-spacing:0.18em;text-transform:uppercase;color:rgba(31,27,24,0.45);margin-top:0.8rem">Il carico mentale non scende con la spesa.</div>
-          </div>
+        <div style="width:60px;height:1px;background:var(--rose);margin:0 auto"></div>
+
+        <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.8rem,3.6vw,4.2rem);font-weight:300;color:var(--black);line-height:1.1;text-align:center">
+          "Pago. <span style="color:var(--plum)">E controllo lo stesso</span>."
         </div>
 
       </div>
@@ -2282,75 +2261,27 @@
        11 — VISION · FÉMINA OS
   ═══════════════════════════════════════ -->
   <section class="slide s-financials" id="slide-11">
-    <div style="width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;padding:5vh 9vw;gap:3vh;position:relative">
+    <div style="width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:8vh 10vw;position:relative;text-align:center">
 
       <!-- ghost OS letters background -->
-      <div style="position:absolute;right:-2vw;top:5vh;font-family:'Cormorant Garamond',serif;font-size:42vw;font-weight:300;color:rgba(216,164,164,0.025);line-height:0.85;pointer-events:none;user-select:none;letter-spacing:-0.05em">OS</div>
+      <div style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-family:'Cormorant Garamond',serif;font-size:55vw;font-weight:300;color:rgba(216,164,164,0.04);line-height:0.85;pointer-events:none;user-select:none;letter-spacing:-0.05em;z-index:1">OS</div>
 
-      <!-- Header -->
       <div style="position:relative;z-index:2">
-        <div class="eyebrow" style="color:rgba(216,164,164,0.6);margin-bottom:1rem">10 · Vision · Fémina OS</div>
-        <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.8vw,4.2rem);font-weight:300;color:var(--ivory);line-height:1.05">
-          Da marketplace<br>a <em style="color:#D8A4A4">sistema operativo della casa.</em>
+        <div class="eyebrow" style="color:rgba(216,164,164,0.7);margin-bottom:4vh">10 · Domani</div>
+
+        <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,4.6vw,5.4rem);font-weight:300;color:var(--ivory);line-height:1.05;margin-bottom:5vh;max-width:24ch;margin-left:auto;margin-right:auto">
+          Fémina diventa il<br><em style="color:#D8A4A4">sistema operativo</em><br>della casa.
         </h2>
-      </div>
 
-      <!-- Description + modes -->
-      <div style="display:grid;grid-template-columns:1fr 1.3fr;gap:5vw;position:relative;z-index:2">
+        <div style="width:60px;height:1px;background:rgba(216,164,164,0.6);margin:0 auto 4vh"></div>
 
-        <!-- LEFT: Vision narrative -->
-        <div style="display:flex;flex-direction:column;justify-content:center;gap:2vh">
-          <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.05rem,1.55vw,1.4rem);color:rgba(248,247,243,0.85);line-height:1.55">
-            Oggi Fémina è un marketplace verificato.<br><br>
-            <span style="color:#D8A4A4">Domani</span> diventa l'AI che capisce <em>come stai</em> — e organizza casa e vita di conseguenza.
-          </p>
-          <div style="border-top:1px solid rgba(248,247,243,0.12);padding-top:2vh;display:flex;flex-direction:column;gap:1vh">
-            <div style="display:flex;gap:1rem;align-items:flex-start">
-              <span style="font-family:'Jost',sans-serif;font-size:7px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);width:60px;flex-shrink:0;padding-top:3px">Layer 1</span>
-              <span style="font-family:'Jost',sans-serif;font-size:0.8rem;color:rgba(248,247,243,0.7);line-height:1.5">Marketplace donna-per-donna · oggi operativo</span>
-            </div>
-            <div style="display:flex;gap:1rem;align-items:flex-start">
-              <span style="font-family:'Jost',sans-serif;font-size:7px;letter-spacing:0.3em;text-transform:uppercase;color:#D8A4A4;width:60px;flex-shrink:0;padding-top:3px">Layer 2</span>
-              <span style="font-family:'Jost',sans-serif;font-size:0.8rem;color:rgba(248,247,243,0.85);line-height:1.5">AI assistant · House Modes · smart home · Q4 2027</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- RIGHT: 4 House Modes -->
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.2vh 1vw">
-
-          <div style="padding:1.5vh 1.2vw;background:rgba(216,164,164,0.08);border-left:2px solid rgba(216,164,164,0.7)">
-            <div style="font-family:'Jost',sans-serif;font-size:9.5px;letter-spacing:0.22em;text-transform:uppercase;color:#D8A4A4;margin-bottom:6px">🌊 Burnout Mode</div>
-            <div style="font-family:'Jost',sans-serif;font-size:0.74rem;color:rgba(248,247,243,0.75);line-height:1.45">Solo l'essenziale.<br>Meal prep + cleaning light.</div>
-          </div>
-
-          <div style="padding:1.5vh 1.2vw;background:rgba(184,154,99,0.07);border-left:2px solid rgba(184,154,99,0.7)">
-            <div style="font-family:'Jost',sans-serif;font-size:9.5px;letter-spacing:0.22em;text-transform:uppercase;color:var(--rose);margin-bottom:6px">🕯️ Hosting Mode</div>
-            <div style="font-family:'Jost',sans-serif;font-size:0.74rem;color:rgba(248,247,243,0.75);line-height:1.45">Deep clean · grocery<br>flowers · chef. Pronta.</div>
-          </div>
-
-          <div style="padding:1.5vh 1.2vw;background:rgba(248,247,243,0.06);border-left:2px solid rgba(248,247,243,0.4)">
-            <div style="font-family:'Jost',sans-serif;font-size:9.5px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(248,247,243,0.9);margin-bottom:6px">☀️ Sunday Recovery</div>
-            <div style="font-family:'Jost',sans-serif;font-size:0.74rem;color:rgba(248,247,243,0.75);line-height:1.45">House reset · laundry<br>meal prep. Reset.</div>
-          </div>
-
-          <div style="padding:1.5vh 1.2vw;background:rgba(216,164,164,0.05);border-left:2px solid rgba(216,164,164,0.35)">
-            <div style="font-family:'Jost',sans-serif;font-size:9.5px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(248,247,243,0.75);margin-bottom:6px">⚡ Deep Focus Mode</div>
-            <div style="font-family:'Jost',sans-serif;font-size:0.74rem;color:rgba(248,247,243,0.75);line-height:1.45">Silenzio. Casa gestita.<br>Tu lavori.</div>
-          </div>
-
-        </div>
-
-      </div>
-
-      <!-- Footer -->
-      <div style="border-top:1px solid rgba(248,247,243,0.08);padding-top:1.5vh;display:flex;justify-content:space-between;align-items:center;position:relative;z-index:2">
-        <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(0.9rem,1.3vw,1.1rem);color:rgba(216,164,164,0.85);line-height:1.5">
-          Le donne non vogliono solo aiuto. Vogliono un sistema che le <em>conosca.</em>
+        <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.1rem,1.7vw,1.5rem);color:rgba(248,247,243,0.7);line-height:1.5;max-width:42ch;margin:0 auto">
+          L'AI che capisce <em style="color:#D8A4A4;font-style:normal">come stai</em><br>e organizza casa e vita di conseguenza.
         </p>
-        <p style="font-family:'Jost',sans-serif;font-size:7.5px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold)">
-          Layer 2 in prototipazione · 2027
-        </p>
+
+        <div style="margin-top:6vh;font-family:'Jost',sans-serif;font-size:8px;letter-spacing:0.4em;text-transform:uppercase;color:var(--gold)">
+          Layer 2 · prototipo Q4 2027
+        </div>
       </div>
 
     </div>
