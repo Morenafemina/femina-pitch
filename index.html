@@ -130,7 +130,7 @@
       position: absolute;
       right: -0.05em;
       bottom: -0.15em;
-      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-family: 'Inria Serif', Georgia, serif;
       font-weight: 300;
       font-size: 28vw;
       line-height: 1;
@@ -163,10 +163,28 @@
     .rule-plum { background: var(--plum); }
 
     .display-title {
-      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-family: 'Inria Serif', Georgia, serif;
       font-weight: 300;
-      line-height: 1.02;
-      letter-spacing: -0.02em;
+      line-height: 1.1;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    /* All slide headings in uppercase to match logo style */
+    .slide h1,
+    .slide h2 {
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    /* Italic emphasis inside uppercase headings keeps wider tracking */
+    .slide h1 em,
+    .slide h2 em {
+      letter-spacing: 0.04em;
+    }
+    /* Quotes stay in sentence case for readability */
+    .slide blockquote,
+    .slide p {
+      text-transform: none;
     }
 
     .body-text {
@@ -192,7 +210,7 @@
       text-align: center;
     }
     .values-center-name {
-      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-family: 'Inria Serif', Georgia, serif;
       font-size: clamp(1.6rem, 3.8vw, 3.2rem);
       font-weight: 400;
       letter-spacing: 0.18em;
@@ -250,7 +268,7 @@
     .ig-username { font-family: 'Jost', sans-serif; font-size: 0.78rem; font-weight: 500; color: var(--black); }
     .ig-tagline { font-family: 'Jost', sans-serif; font-size: 0.68rem; font-weight: 300; color: var(--cocoa); margin-top: 2px; }
     .ig-stats { display: flex; gap: 2rem; margin: 1rem 0; }
-    .ig-stat-num { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 500; color: var(--black); }
+    .ig-stat-num { font-family: 'Inria Serif', serif; font-size: 1.1rem; font-weight: 500; color: var(--black); }
     .ig-stat-label { font-family: 'Jost', sans-serif; font-size: 0.6rem; color: var(--gray); text-transform: uppercase; letter-spacing: 0.08em; }
     .ig-bio { font-family: 'Jost', sans-serif; font-size: 0.72rem; color: var(--black); line-height: 1.7; }
     .ig-url { font-family: 'Jost', sans-serif; font-size: 0.72rem; color: var(--plum); font-weight: 500; margin-top: 0.5rem; }
@@ -261,7 +279,7 @@
       text-transform: uppercase; color: rgba(184,154,99,0.7); margin-bottom: 0.4rem;
     }
     .ig-insight-val {
-      font-family: 'Cormorant Garamond', serif; font-size: clamp(3rem, 6.5vw, 6rem);
+      font-family: 'Inria Serif', serif; font-size: clamp(3rem, 6.5vw, 6rem);
       color: var(--ivory); font-weight: 300; line-height: 0.9;
     }
     .ig-insight-val em { color: var(--gold); font-style: normal; }
@@ -279,7 +297,7 @@
       box-shadow: 0 4px 24px rgba(109,18,63,0.06);
     }
     .partner-type { font-family: 'Jost', sans-serif; font-size: 8.5px; letter-spacing: 0.35em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.8rem; opacity: 1; }
-    .partner-name { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.4rem, 2.4vw, 2rem); font-weight: 400; color: var(--black); margin-bottom: 0.7rem; line-height: 1.15; }
+    .partner-name { font-family: 'Inria Serif', serif; font-size: clamp(1.4rem, 2.4vw, 2rem); font-weight: 400; color: var(--black); margin-bottom: 0.7rem; line-height: 1.15; }
     .partner-desc { font-family: 'Jost', sans-serif; font-size: 0.74rem; color: rgba(60,40,40,0.78); line-height: 1.65; }
     .partner-tag { display: inline-block; margin-top: 1.1rem; font-family: 'Jost', sans-serif; font-size: 8px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--plum); border: 1.5px solid rgba(109,18,63,0.35); padding: 4px 10px; background: rgba(109,18,63,0.04); }
 
@@ -304,7 +322,7 @@
     .rm-dot.done { background: var(--gold); border-color: var(--gold); color: var(--black); font-weight: 600; }
     .rm-dot.active { border-color: var(--rose); color: var(--rose); }
     .rm-date { font-family: 'Jost', sans-serif; font-size: 7px; letter-spacing: 0.35em; text-transform: uppercase; color: rgba(248,247,243,0.3); margin-bottom: 0.5rem; }
-    .rm-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(0.85rem, 1.4vw, 1.1rem); color: var(--ivory); font-weight: 300; line-height: 1.3; margin-bottom: 0.4rem; }
+    .rm-title { font-family: 'Inria Serif', serif; font-size: clamp(0.85rem, 1.4vw, 1.1rem); color: var(--ivory); font-weight: 300; line-height: 1.3; margin-bottom: 0.4rem; }
     .rm-desc { font-family: 'Jost', sans-serif; font-size: 0.58rem; color: rgba(248,247,243,0.35); line-height: 1.5; }
     .rm-item.done .rm-title { color: var(--gold); }
     .rm-item.done .rm-date { color: var(--gold); opacity: 0.7; }
@@ -329,7 +347,7 @@
       margin-bottom: 3rem;
     }
     .s-cover h1 {
-      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-family: 'Inria Serif', Georgia, serif;
       text-transform: uppercase;
       font-size: clamp(5rem, 12vw, 12rem);
       font-weight: 400;
@@ -341,12 +359,13 @@
       z-index: 1;
     }
     .s-cover .cover-tagline {
-      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-family: 'Inria Serif', Georgia, serif;
       font-style: italic;
       font-weight: 300;
       font-size: clamp(0.95rem, 1.8vw, 1.5rem);
       color: var(--rose);
-      letter-spacing: 0.01em;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
       margin-top: 2.5rem;
       margin-bottom: 5rem;
       text-align: center;
@@ -374,7 +393,7 @@
     }
     .cover-bg-num {
       position: absolute;
-      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-family: 'Inria Serif', Georgia, serif;
       font-weight: 400;
       font-size: 60vw;
       color: rgba(255,255,255,0.055);
@@ -419,7 +438,7 @@
     }
     .stat-block {}
     .stat-block .stat-num {
-      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-family: 'Inria Serif', Georgia, serif;
       font-weight: 300;
       font-size: clamp(3.5rem, 7vw, 8rem);
       color: var(--plum);
@@ -439,7 +458,7 @@
     .problem-insight {
       padding-top: 2rem;
       border-top: 1px solid var(--rose-light);
-      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-family: 'Inria Serif', Georgia, serif;
       font-style: italic;
       font-weight: 300;
       font-size: clamp(1rem, 1.6vw, 1.35rem);
@@ -504,7 +523,7 @@
     }
     .differentiator:last-child { margin-bottom: 0; }
     .diff-marker {
-      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-family: 'Inria Serif', Georgia, serif;
       font-weight: 300;
       font-size: 0.95rem;
       color: var(--rose);
@@ -575,7 +594,7 @@
       margin-bottom: 1rem;
     }
     .market-tier .tier-num {
-      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-family: 'Inria Serif', Georgia, serif;
       font-weight: 300;
       font-size: clamp(3rem, 6vw, 7rem);
       color: var(--ivory);
@@ -596,7 +615,7 @@
       margin-top: 3rem;
       padding-top: 2rem;
       border-top: 1px solid rgba(248,247,243,0.08);
-      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-family: 'Inria Serif', Georgia, serif;
       font-style: italic;
       font-size: clamp(0.9rem, 1.4vw, 1.15rem);
       color: rgba(248,247,243,0.3);
@@ -658,7 +677,7 @@
       vertical-align: middle;
     }
     .services-table tbody td:last-child {
-      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-family: 'Inria Serif', Georgia, serif;
       font-size: clamp(1rem, 1.5vw, 1.3rem);
       color: var(--plum);
       font-weight: 400;
@@ -719,7 +738,7 @@
       margin-top: 0.1rem;
     }
     .sub-price {
-      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-family: 'Inria Serif', Georgia, serif;
       font-size: clamp(1.1rem, 1.6vw, 1.4rem);
       font-weight: 300;
       color: var(--ivory);
@@ -740,7 +759,7 @@
       margin-bottom: 0.5rem;
     }
     .unit-econ .econ-num {
-      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-family: 'Inria Serif', Georgia, serif;
       font-size: clamp(1.5rem, 2.5vw, 2.2rem);
       font-weight: 300;
       color: var(--rose);
@@ -788,7 +807,7 @@
     }
     .traction-item:last-child { margin-bottom: 0; }
     .traction-marker {
-      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-family: 'Inria Serif', Georgia, serif;
       font-size: 0.9rem;
       color: var(--rose);
       margin-top: 0.05em;
@@ -848,7 +867,7 @@
       font-weight: 500;
     }
     .comp-table tr.femina-row td:first-child {
-      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-family: 'Inria Serif', Georgia, serif;
       font-size: 1.1rem;
       font-weight: 400;
     }
@@ -859,7 +878,7 @@
       margin-top: 1.5rem;
       padding-top: 1.2rem;
       border-top: 1px solid var(--rose-light);
-      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-family: 'Inria Serif', Georgia, serif;
       font-style: italic;
       font-size: clamp(0.85rem, 1.3vw, 1.05rem);
       color: var(--gray);
@@ -900,7 +919,7 @@
     }
     .phase:last-child { margin-bottom: 0; }
     .phase-year {
-      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-family: 'Inria Serif', Georgia, serif;
       font-weight: 300;
       font-size: clamp(1.8rem, 2.8vw, 2.5rem);
       color: var(--rose);
@@ -1006,13 +1025,13 @@
       margin-bottom: 1.5rem;
     }
     .team-photo-placeholder span {
-      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-family: 'Inria Serif', Georgia, serif;
       font-size: clamp(2rem, 4vw, 3.5rem);
       font-weight: 300;
       color: rgba(216,164,164,0.4);
     }
     .team-name {
-      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-family: 'Inria Serif', Georgia, serif;
       font-weight: 400;
       font-size: clamp(1.3rem, 2vw, 1.8rem);
       color: var(--ivory);
@@ -1055,7 +1074,7 @@
       margin-bottom: 0.4rem;
     }
     .cred-title {
-      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-family: 'Inria Serif', Georgia, serif;
       font-weight: 400;
       font-size: clamp(1.1rem, 1.7vw, 1.4rem);
       color: var(--ivory);
@@ -1077,7 +1096,7 @@
       background: rgba(216,164,164,0.06);
     }
     .founder-quote p {
-      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-family: 'Inria Serif', Georgia, serif;
       font-style: italic;
       font-weight: 300;
       font-size: clamp(0.85rem, 1.3vw, 1.05rem);
@@ -1160,7 +1179,7 @@
       letter-spacing: 0.05em;
     }
     .fin-table tbody tr.fin-key td {
-      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-family: 'Inria Serif', Georgia, serif;
       font-size: clamp(1rem, 1.5vw, 1.3rem);
       font-weight: 400;
       color: var(--ivory);
@@ -1180,7 +1199,7 @@
       margin-top: 2rem;
       padding-top: 1.5rem;
       border-top: 1px solid rgba(248,247,243,0.06);
-      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-family: 'Inria Serif', Georgia, serif;
       font-style: italic;
       font-size: clamp(0.85rem, 1.3vw, 1.05rem);
       color: rgba(248,247,243,0.25);
@@ -1210,7 +1229,7 @@
     }
     .ask-left .eyebrow { color: var(--rose); margin-bottom: 2.5rem; }
     .ask-amount {
-      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-family: 'Inria Serif', Georgia, serif;
       font-weight: 300;
       font-size: clamp(5rem, 11vw, 12rem);
       color: var(--ivory);
@@ -1288,7 +1307,7 @@
       color: rgba(248,247,243,0.6);
     }
     .use-bar-pct {
-      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-family: 'Inria Serif', Georgia, serif;
       font-size: clamp(1rem, 1.5vw, 1.2rem);
       font-weight: 300;
       color: var(--rose);
@@ -1309,7 +1328,7 @@
       margin-top: 3rem;
       padding-top: 2rem;
       border-top: 1px solid rgba(248,247,243,0.08);
-      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-family: 'Inria Serif', Georgia, serif;
       font-style: italic;
       font-weight: 300;
       font-size: clamp(0.9rem, 1.4vw, 1.15rem);
@@ -1364,7 +1383,7 @@
 
     .sparkle-dot {
       position: absolute;
-      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-family: 'Inria Serif', Georgia, serif;
       font-weight: 300;
       color: var(--gold);
       pointer-events: none;
@@ -1401,7 +1420,7 @@
     }
 
     .traction-hero-title {
-      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-family: 'Inria Serif', Georgia, serif;
       font-weight: 300;
       font-size: clamp(2.4rem, 4.5vw, 5rem);
       color: var(--ivory);
@@ -1424,7 +1443,7 @@
     .t-block { text-align: center; }
 
     .t-num-wrap {
-      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-family: 'Inria Serif', Georgia, serif;
       font-weight: 300;
       font-size: clamp(5rem, 11vw, 12rem);
       color: var(--gold);
@@ -1459,7 +1478,7 @@
     }
 
     .traction-hero-sub {
-      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-family: 'Inria Serif', Georgia, serif;
       font-style: italic;
       font-weight: 300;
       font-size: clamp(0.95rem, 1.5vw, 1.25rem);
@@ -1550,7 +1569,7 @@
       <!-- RIGHT: editorial story — centrata -->
       <div style="display:flex;flex-direction:column;justify-content:center;align-items:center;padding:6vh 6vw;background:var(--ivory);text-align:center">
         <div class="eyebrow" style="margin-bottom:4rem">01 · La Storia</div>
-        <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,5.2vw,6.4rem);font-weight:300;color:var(--black);line-height:1;margin:0">
+        <h2 style="font-family:'Inria Serif',serif;font-size:clamp(2.8rem,5.2vw,6.4rem);font-weight:300;color:var(--black);line-height:1;margin:0">
           Avevo 27 anni.<br>Ho traslocato.<br><em style="color:var(--plum)">Da sola.</em>
         </h2>
       </div>
@@ -1574,12 +1593,12 @@
       <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:0;text-align:center;max-width:1100px;margin:0 auto">
 
         <div style="padding:0 3vw;border-right:1px solid rgba(248,247,243,0.12)">
-          <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(5.5rem,10vw,12rem);font-weight:300;color:var(--ivory);line-height:0.9;letter-spacing:-0.03em">5,3M</div>
+          <div style="font-family:'Inria Serif',serif;font-size:clamp(5.5rem,10vw,12rem);font-weight:300;color:var(--ivory);line-height:0.9;letter-spacing:-0.03em">5,3M</div>
           <div style="font-family:'Jost',sans-serif;font-size:0.95rem;color:rgba(248,247,243,0.75);letter-spacing:0.08em;margin-top:2.5vh">Donne sole in Italia</div>
         </div>
 
         <div style="padding:0 3vw">
-          <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(5.5rem,10vw,12rem);font-weight:300;color:var(--rose);line-height:0.9;letter-spacing:-0.03em">+1,4M</div>
+          <div style="font-family:'Inria Serif',serif;font-size:clamp(5.5rem,10vw,12rem);font-weight:300;color:var(--rose);line-height:0.9;letter-spacing:-0.03em">+1,4M</div>
           <div style="font-family:'Jost',sans-serif;font-size:0.95rem;color:rgba(248,247,243,0.75);letter-spacing:0.08em;margin-top:2.5vh">Famiglie unipersonali entro il 2043</div>
         </div>
 
@@ -1604,21 +1623,21 @@
       <div style="display:flex;flex-direction:column;gap:4.5vh;max-width:60ch;margin:0 auto">
 
         <div style="border-left:2px solid var(--plum);padding-left:2.5vw">
-          <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.6rem,3vw,2.6rem);color:var(--black);line-height:1.2;margin:0">
+          <p style="font-family:'Inria Serif',serif;font-style:italic;font-size:clamp(1.6rem,3vw,2.6rem);color:var(--black);line-height:1.2;margin:0">
             "Il mio cervello ha un file <em style="color:var(--plum);font-style:normal">sempre aperto.</em>"
           </p>
           <div style="font-family:'Jost',sans-serif;font-size:9px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gray);margin-top:1.2vh">Annalisa Monfreda · sul carico mentale</div>
         </div>
 
         <div style="border-left:2px solid var(--plum);padding-left:2.5vw">
-          <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.6rem,3vw,2.6rem);color:var(--black);line-height:1.2;margin:0">
+          <p style="font-family:'Inria Serif',serif;font-style:italic;font-size:clamp(1.6rem,3vw,2.6rem);color:var(--black);line-height:1.2;margin:0">
             "Vorrei chiedere aiuto ma <em style="color:var(--plum);font-style:normal">non so a chi.</em>"
           </p>
           <div style="font-family:'Jost',sans-serif;font-size:9px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gray);margin-top:1.2vh">Romina Cardia · sulla solitudine quotidiana</div>
         </div>
 
         <div style="border-left:2px solid var(--plum);padding-left:2.5vw">
-          <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.6rem,3vw,2.6rem);color:var(--black);line-height:1.2;margin:0">
+          <p style="font-family:'Inria Serif',serif;font-style:italic;font-size:clamp(1.6rem,3vw,2.6rem);color:var(--black);line-height:1.2;margin:0">
             "Non riuscirei a fidarmi di <em style="color:var(--plum);font-style:normal">un estraneo in casa.</em>"
           </p>
           <div style="font-family:'Jost',sans-serif;font-size:9px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gray);margin-top:1.2vh">utente forum · sulla diffidenza in casa</div>
@@ -1639,7 +1658,7 @@
 
       <div class="eyebrow" style="color:var(--rose)">04 · Il Lusso del Tempo</div>
 
-      <h2 style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(3rem,6.2vw,7rem);font-weight:300;color:var(--ivory);line-height:1.05;margin:0;max-width:18ch">
+      <h2 style="font-family:'Inria Serif',serif;font-style:italic;font-size:clamp(3rem,6.2vw,7rem);font-weight:300;color:var(--ivory);line-height:1.05;margin:0;max-width:18ch">
         Il vero lusso,<br>oggi,<br>è il <em style="color:var(--rose);font-style:italic">tempo.</em>
       </h2>
 
@@ -1657,7 +1676,7 @@
     <div class="inner">
       <div class="eyebrow" style="color:var(--rose);margin-bottom:3vh;text-align:center">05 · Trend di mercato</div>
 
-      <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.2rem,1.8vw,1.6rem);color:rgba(248,247,243,0.8);margin:0 auto 5vh;max-width:54ch;line-height:1.5;text-align:center">
+      <p style="font-family:'Inria Serif',serif;font-style:italic;font-size:clamp(1.2rem,1.8vw,1.6rem);color:rgba(248,247,243,0.8);margin:0 auto 5vh;max-width:54ch;line-height:1.5;text-align:center">
         Settori che crescono <em style="color:var(--gold);font-style:normal">a doppia cifra.</em>
       </p>
 
@@ -1666,8 +1685,8 @@
 
         <!-- LONGEVITY -->
         <div style="padding:5vh 1.5vw 5vh 0;border-right:1px solid rgba(248,247,243,0.1);text-align:center">
-          <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.3rem,2vw,1.8rem);color:var(--ivory);line-height:1.15;margin-bottom:2vh">Longevity</div>
-          <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.4vw,3rem);font-weight:300;color:#D8A4A4;line-height:0.9">+15%</div>
+          <div style="font-family:'Inria Serif',serif;font-style:italic;font-size:clamp(1.3rem,2vw,1.8rem);color:var(--ivory);line-height:1.15;margin-bottom:2vh">Longevity</div>
+          <div style="font-family:'Inria Serif',serif;font-size:clamp(2rem,3.4vw,3rem);font-weight:300;color:#D8A4A4;line-height:0.9">+15%</div>
           <div style="font-family:'Jost',sans-serif;font-size:7px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(248,247,243,0.5);margin-top:0.6vh">CAGR globale</div>
           <!-- Sparkline exponential -->
           <svg viewBox="0 0 100 30" preserveAspectRatio="none" style="width:100%;height:6vh;margin-top:2vh;display:block">
@@ -1679,8 +1698,8 @@
 
         <!-- FUNCTIONAL FITNESS -->
         <div style="padding:5vh 1.5vw;border-right:1px solid rgba(248,247,243,0.1);text-align:center">
-          <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.3rem,2vw,1.8rem);color:var(--ivory);line-height:1.15;margin-bottom:2vh">Functional<br>fitness</div>
-          <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.4vw,3rem);font-weight:300;color:#D8A4A4;line-height:0.9">+50%</div>
+          <div style="font-family:'Inria Serif',serif;font-style:italic;font-size:clamp(1.3rem,2vw,1.8rem);color:var(--ivory);line-height:1.15;margin-bottom:2vh">Functional<br>fitness</div>
+          <div style="font-family:'Inria Serif',serif;font-size:clamp(2rem,3.4vw,3rem);font-weight:300;color:#D8A4A4;line-height:0.9">+50%</div>
           <div style="font-family:'Jost',sans-serif;font-size:7px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(248,247,243,0.5);margin-top:0.6vh">YoY Italia</div>
           <svg viewBox="0 0 100 30" preserveAspectRatio="none" style="width:100%;height:6vh;margin-top:2vh;display:block">
             <defs><linearGradient id="g-fit" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D8A4A4" stop-opacity="0.45"/><stop offset="1" stop-color="#D8A4A4" stop-opacity="0"/></linearGradient></defs>
@@ -1691,8 +1710,8 @@
 
         <!-- MENTAL WELLNESS -->
         <div style="padding:5vh 1.5vw;border-right:1px solid rgba(248,247,243,0.1);text-align:center">
-          <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.3rem,2vw,1.8rem);color:var(--ivory);line-height:1.15;margin-bottom:2vh">Mental<br>wellness</div>
-          <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.4vw,3rem);font-weight:300;color:#D8A4A4;line-height:0.9">+19%</div>
+          <div style="font-family:'Inria Serif',serif;font-style:italic;font-size:clamp(1.3rem,2vw,1.8rem);color:var(--ivory);line-height:1.15;margin-bottom:2vh">Mental<br>wellness</div>
+          <div style="font-family:'Inria Serif',serif;font-size:clamp(2rem,3.4vw,3rem);font-weight:300;color:#D8A4A4;line-height:0.9">+19%</div>
           <div style="font-family:'Jost',sans-serif;font-size:7px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(248,247,243,0.5);margin-top:0.6vh">CAGR Italia</div>
           <svg viewBox="0 0 100 30" preserveAspectRatio="none" style="width:100%;height:6vh;margin-top:2vh;display:block">
             <defs><linearGradient id="g-mind" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D8A4A4" stop-opacity="0.45"/><stop offset="1" stop-color="#D8A4A4" stop-opacity="0"/></linearGradient></defs>
@@ -1703,8 +1722,8 @@
 
         <!-- CURA CASA -->
         <div style="padding:5vh 0 5vh 1.5vw;text-align:center">
-          <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.3rem,2vw,1.8rem);color:var(--ivory);line-height:1.15;margin-bottom:2vh">Cura della<br>casa</div>
-          <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.4vw,3rem);font-weight:300;color:#D8A4A4;line-height:0.9">+10%</div>
+          <div style="font-family:'Inria Serif',serif;font-style:italic;font-size:clamp(1.3rem,2vw,1.8rem);color:var(--ivory);line-height:1.15;margin-bottom:2vh">Cura della<br>casa</div>
+          <div style="font-family:'Inria Serif',serif;font-size:clamp(2rem,3.4vw,3rem);font-weight:300;color:#D8A4A4;line-height:0.9">+10%</div>
           <div style="font-family:'Jost',sans-serif;font-size:7px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(248,247,243,0.5);margin-top:0.6vh">CAGR premium</div>
           <svg viewBox="0 0 100 30" preserveAspectRatio="none" style="width:100%;height:6vh;margin-top:2vh;display:block">
             <defs><linearGradient id="g-home" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D8A4A4" stop-opacity="0.45"/><stop offset="1" stop-color="#D8A4A4" stop-opacity="0"/></linearGradient></defs>
@@ -1730,21 +1749,21 @@
     <div style="width:100%;height:100%;background:var(--plum);display:flex;flex-direction:column;justify-content:center;padding:7vh 10vw;gap:5vh;position:relative;overflow:hidden">
 
       <!-- ghost F -->
-      <div style="position:absolute;right:-0.05em;bottom:-0.1em;font-family:'Cormorant Garamond',serif;font-size:35vw;font-weight:300;color:rgba(248,247,243,0.025);line-height:1;pointer-events:none;user-select:none">F</div>
+      <div style="position:absolute;right:-0.05em;bottom:-0.1em;font-family:'Inria Serif',serif;font-size:35vw;font-weight:300;color:rgba(248,247,243,0.025);line-height:1;pointer-events:none;user-select:none">F</div>
 
       <!-- Fémina logo (matches official mark: serif uppercase, wide-spaced) -->
       <div style="position:relative;z-index:2;text-align:center;margin-bottom:-1vh">
-        <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,3.6vw,3.6rem);font-weight:400;color:var(--ivory);letter-spacing:0.22em;line-height:1;padding-left:0.22em">FÉMINA</div>
+        <div style="font-family:'Inria Serif',serif;font-size:clamp(2.2rem,3.6vw,3.6rem);font-weight:400;color:var(--ivory);letter-spacing:0.22em;line-height:1;padding-left:0.22em">FÉMINA</div>
         <div style="width:48px;height:1px;background:rgba(216,164,164,0.5);margin:1.4vh auto 0"></div>
       </div>
 
       <!-- HEADER -->
       <div style="position:relative;z-index:2;text-align:center">
         <div class="eyebrow" style="color:rgba(216,164,164,0.85);margin-bottom:2vh;letter-spacing:0.3em">06 · La Soluzione</div>
-        <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,4.2vw,4.6rem);font-weight:300;color:var(--ivory);line-height:1.1">
+        <h2 style="font-family:'Inria Serif',serif;font-size:clamp(2.2rem,4.2vw,4.6rem);font-weight:300;color:var(--ivory);line-height:1.1">
           Un ecosistema<br>di <em style="color:#D8A4A4">fiducia.</em>
         </h2>
-        <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1rem,1.5vw,1.35rem);color:rgba(248,247,243,0.8);margin:2.5vh auto 0;max-width:54ch;line-height:1.5">
+        <p style="font-family:'Inria Serif',serif;font-style:italic;font-size:clamp(1rem,1.5vw,1.35rem);color:rgba(248,247,243,0.8);margin:2.5vh auto 0;max-width:54ch;line-height:1.5">
           La piattaforma che <em style="color:#D8A4A4;font-style:normal">mette in contatto professioniste donne</em><br>con donne che scelgono di <em style="color:#D8A4A4;font-style:normal">avere più tempo.</em>
         </p>
       </div>
@@ -1756,15 +1775,15 @@
         <div style="border-top:1px solid rgba(216,164,164,0.25);border-bottom:1px solid rgba(216,164,164,0.25);padding:5vh 0;display:flex;flex-direction:column;gap:4vh">
           <div style="display:flex;gap:1.5rem;align-items:center">
             <div style="font-size:2.6rem;line-height:1">🏠</div>
-            <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.4rem,2.2vw,2rem);color:var(--ivory);letter-spacing:0.1em">HOME</div>
+            <div style="font-family:'Inria Serif',serif;font-size:clamp(1.4rem,2.2vw,2rem);color:var(--ivory);letter-spacing:0.1em">HOME</div>
           </div>
           <div style="display:flex;gap:1.5rem;align-items:center">
             <div style="font-size:2.6rem;line-height:1">✨</div>
-            <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.4rem,2.2vw,2rem);color:var(--ivory);letter-spacing:0.1em">CONCIERGE</div>
+            <div style="font-family:'Inria Serif',serif;font-size:clamp(1.4rem,2.2vw,2rem);color:var(--ivory);letter-spacing:0.1em">CONCIERGE</div>
           </div>
           <div style="display:flex;gap:1.5rem;align-items:center">
             <div style="font-size:2.6rem;line-height:1">🌿</div>
-            <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.4rem,2.2vw,2rem);color:var(--ivory);letter-spacing:0.1em">RITUAL</div>
+            <div style="font-family:'Inria Serif',serif;font-size:clamp(1.4rem,2.2vw,2rem);color:var(--ivory);letter-spacing:0.1em">RITUAL</div>
           </div>
         </div>
 
@@ -1822,7 +1841,7 @@
 
       <div style="text-align:center">
         <div class="eyebrow" style="color:#D8A4A4;opacity:0.8;margin-bottom:1.5vh;letter-spacing:0.3em">08 · Panorama Competitivo</div>
-        <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.6vw,4rem);font-weight:300;color:#F8F7F3;line-height:1.05">
+        <h2 style="font-family:'Inria Serif',serif;font-size:clamp(2rem,3.6vw,4rem);font-weight:300;color:#F8F7F3;line-height:1.05">
           Una categoria <em style="color:#D8A4A4">che non esiste.</em>
         </h2>
       </div>
@@ -1839,14 +1858,14 @@
           <div style="text-align:center;font-family:'Jost',sans-serif;font-size:clamp(9px,1vw,11px);letter-spacing:0.3em;text-transform:uppercase;color:rgba(248,247,243,0.55);line-height:1.4">
             Quintessentially<br>S2 London
           </div>
-          <div style="text-align:center;font-family:'Cormorant Garamond',serif;font-size:clamp(1.4rem,2.2vw,2rem);color:#D8A4A4;letter-spacing:0.06em;line-height:1">
+          <div style="text-align:center;font-family:'Inria Serif',serif;font-size:clamp(1.4rem,2.2vw,2rem);color:#D8A4A4;letter-spacing:0.06em;line-height:1">
             Fémina
           </div>
         </div>
 
         <!-- ROW: Multi-categoria -->
         <div style="display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:0;padding:2.4vh 0;border-bottom:1px solid rgba(248,247,243,0.08);align-items:center">
-          <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.1rem,1.7vw,1.5rem);color:var(--ivory)">Multi-categoria</div>
+          <div style="font-family:'Inria Serif',serif;font-style:italic;font-size:clamp(1.1rem,1.7vw,1.5rem);color:var(--ivory)">Multi-categoria</div>
           <div style="text-align:center;font-size:clamp(1.4rem,2vw,1.8rem);color:rgba(248,247,243,0.35)">✗</div>
           <div style="text-align:center;font-size:clamp(1.4rem,2vw,1.8rem);color:rgba(248,247,243,0.85)">✓</div>
           <div style="text-align:center;font-size:clamp(1.6rem,2.4vw,2.2rem);color:#D8A4A4">✓</div>
@@ -1854,7 +1873,7 @@
 
         <!-- ROW: Donna-per-donna -->
         <div style="display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:0;padding:2.4vh 0;border-bottom:1px solid rgba(248,247,243,0.08);align-items:center">
-          <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.1rem,1.7vw,1.5rem);color:var(--ivory)">Donna-per-donna</div>
+          <div style="font-family:'Inria Serif',serif;font-style:italic;font-size:clamp(1.1rem,1.7vw,1.5rem);color:var(--ivory)">Donna-per-donna</div>
           <div style="text-align:center;font-size:clamp(1.4rem,2vw,1.8rem);color:rgba(248,247,243,0.35)">✗</div>
           <div style="text-align:center;font-size:clamp(1.4rem,2vw,1.8rem);color:rgba(248,247,243,0.35)">✗</div>
           <div style="text-align:center;font-size:clamp(1.6rem,2.4vw,2.2rem);color:#D8A4A4">✓</div>
@@ -1862,7 +1881,7 @@
 
         <!-- ROW: Professioniste verificate -->
         <div style="display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:0;padding:2.4vh 0;border-bottom:1px solid rgba(248,247,243,0.08);align-items:center">
-          <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.1rem,1.7vw,1.5rem);color:var(--ivory)">Professioniste verificate</div>
+          <div style="font-family:'Inria Serif',serif;font-style:italic;font-size:clamp(1.1rem,1.7vw,1.5rem);color:var(--ivory)">Professioniste verificate</div>
           <div style="text-align:center;font-size:clamp(1.4rem,2vw,1.8rem);color:rgba(248,247,243,0.35)">✗</div>
           <div style="text-align:center;font-size:clamp(1.4rem,2vw,1.8rem);color:rgba(248,247,243,0.85)">✓</div>
           <div style="text-align:center;font-size:clamp(1.6rem,2.4vw,2.2rem);color:#D8A4A4">✓</div>
@@ -1870,7 +1889,7 @@
 
         <!-- ROW: Premium accessibile -->
         <div style="display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:0;padding:2.4vh 0;border-bottom:1px solid rgba(248,247,243,0.08);align-items:center">
-          <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.1rem,1.7vw,1.5rem);color:var(--ivory)">Premium accessibile</div>
+          <div style="font-family:'Inria Serif',serif;font-style:italic;font-size:clamp(1.1rem,1.7vw,1.5rem);color:var(--ivory)">Premium accessibile</div>
           <div style="text-align:center;font-size:clamp(1.4rem,2vw,1.8rem);color:rgba(248,247,243,0.85)">✓</div>
           <div style="text-align:center;font-size:clamp(1.4rem,2vw,1.8rem);color:rgba(248,247,243,0.35)">✗</div>
           <div style="text-align:center;font-size:clamp(1.6rem,2.4vw,2.2rem);color:#D8A4A4">✓</div>
@@ -1878,7 +1897,7 @@
 
         <!-- ROW: Membership ricorrente -->
         <div style="display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:0;padding:2.4vh 0;border-bottom:1px solid rgba(248,247,243,0.18);align-items:center">
-          <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.1rem,1.7vw,1.5rem);color:var(--ivory)">Membership ricorrente</div>
+          <div style="font-family:'Inria Serif',serif;font-style:italic;font-size:clamp(1.1rem,1.7vw,1.5rem);color:var(--ivory)">Membership ricorrente</div>
           <div style="text-align:center;font-size:clamp(1.4rem,2vw,1.8rem);color:rgba(248,247,243,0.35)">✗</div>
           <div style="text-align:center;font-size:clamp(1.4rem,2vw,1.8rem);color:rgba(248,247,243,0.85)">✓</div>
           <div style="text-align:center;font-size:clamp(1.6rem,2.4vw,2.2rem);color:#D8A4A4">✓</div>
@@ -1888,7 +1907,7 @@
 
       <!-- Killer line -->
       <div style="text-align:center">
-        <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.1rem,1.6vw,1.4rem);color:rgba(248,247,243,0.85);line-height:1.5;margin:0">
+        <p style="font-family:'Inria Serif',serif;font-style:italic;font-size:clamp(1.1rem,1.6vw,1.4rem);color:rgba(248,247,243,0.85);line-height:1.5;margin:0">
           Tra il <em style="color:rgba(248,247,243,0.55);font-style:normal">cleaning commodity</em> e il <em style="color:rgba(248,247,243,0.55);font-style:normal">luxury UHNW</em>,<br>
           c'è uno spazio <em style="color:#D8A4A4;font-style:normal">vuoto.</em>
         </p>
@@ -1913,7 +1932,7 @@
 
       <div class="eyebrow" style="color:#D8A4A4;font-size:11px;letter-spacing:0.4em">09 · Trazione</div>
 
-      <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,4.4vw,5rem);font-weight:300;color:var(--ivory);line-height:1.05;margin:0;text-shadow:0 2px 24px rgba(0,0,0,0.6)">
+      <h2 style="font-family:'Inria Serif',serif;font-size:clamp(2.4rem,4.4vw,5rem);font-weight:300;color:var(--ivory);line-height:1.05;margin:0;text-shadow:0 2px 24px rgba(0,0,0,0.6)">
         Numeri che <em style="color:#D8A4A4">parlano.</em>
       </h2>
 
@@ -1921,22 +1940,22 @@
       <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0;width:100%;max-width:1000px;border-top:1px solid rgba(248,247,243,0.18);border-bottom:1px solid rgba(248,247,243,0.18);padding:4vh 0">
 
         <div style="text-align:center;border-right:1px solid rgba(248,247,243,0.12)">
-          <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,4.8vw,4.4rem);font-weight:300;color:var(--ivory);line-height:0.9">20+</div>
+          <div style="font-family:'Inria Serif',serif;font-size:clamp(2.8rem,4.8vw,4.4rem);font-weight:300;color:var(--ivory);line-height:0.9">20+</div>
           <div style="font-family:'Jost',sans-serif;font-size:9px;letter-spacing:0.3em;text-transform:uppercase;color:#D8A4A4;margin-top:1.5vh">Servizi erogati</div>
         </div>
 
         <div style="text-align:center;border-right:1px solid rgba(248,247,243,0.12)">
-          <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,4.8vw,4.4rem);font-weight:300;color:var(--ivory);line-height:0.9">€1,45</div>
+          <div style="font-family:'Inria Serif',serif;font-size:clamp(2.8rem,4.8vw,4.4rem);font-weight:300;color:var(--ivory);line-height:0.9">€1,45</div>
           <div style="font-family:'Jost',sans-serif;font-size:9px;letter-spacing:0.3em;text-transform:uppercase;color:#D8A4A4;margin-top:1.5vh">CAC · per lead</div>
         </div>
 
         <div style="text-align:center;border-right:1px solid rgba(248,247,243,0.12)">
-          <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,4.8vw,4.4rem);font-weight:300;color:var(--ivory);line-height:0.9">4</div>
+          <div style="font-family:'Inria Serif',serif;font-size:clamp(2.8rem,4.8vw,4.4rem);font-weight:300;color:var(--ivory);line-height:0.9">4</div>
           <div style="font-family:'Jost',sans-serif;font-size:9px;letter-spacing:0.3em;text-transform:uppercase;color:#D8A4A4;margin-top:1.5vh">Abbonamenti attivi</div>
         </div>
 
         <div style="text-align:center">
-          <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,4.8vw,4.4rem);font-weight:300;color:var(--ivory);line-height:0.9">2</div>
+          <div style="font-family:'Inria Serif',serif;font-size:clamp(2.8rem,4.8vw,4.4rem);font-weight:300;color:var(--ivory);line-height:0.9">2</div>
           <div style="font-family:'Jost',sans-serif;font-size:9px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-top:1.5vh">Partnership</div>
         </div>
 
@@ -1944,10 +1963,10 @@
 
       <!-- 162 contesto + partnership names -->
       <div style="display:flex;flex-direction:column;gap:2.2vh;align-items:center">
-        <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.1rem,1.6vw,1.4rem);color:rgba(248,247,243,0.8);line-height:1.4;margin:0;max-width:48ch">
+        <p style="font-family:'Inria Serif',serif;font-style:italic;font-size:clamp(1.1rem,1.6vw,1.4rem);color:rgba(248,247,243,0.8);line-height:1.4;margin:0;max-width:48ch">
           <em style="color:#D8A4A4;font-style:normal">162 donne interessate</em> con €234 di Meta ads.
         </p>
-        <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(0.95rem,1.3vw,1.15rem);color:rgba(216,164,164,0.85);line-height:1.4;margin:0">
+        <p style="font-family:'Inria Serif',serif;font-style:italic;font-size:clamp(0.95rem,1.3vw,1.15rem);color:rgba(216,164,164,0.85);line-height:1.4;margin:0">
           Partnership: <em style="color:var(--ivory);font-style:normal">Tatabui</em> · <em style="color:var(--ivory);font-style:normal">Futura Pilates</em>
         </p>
       </div>
@@ -1963,7 +1982,7 @@
       <!-- SINISTRA: servizi -->
       <div style="background:var(--ivory);display:flex;flex-direction:column;justify-content:center;padding:5vw 4vw 5vw 8vw;border-right:1px solid var(--rose-light)">
         <div class="eyebrow" style="color:var(--cocoa);margin-bottom:1.8rem">04 · I Servizi</div>
-        <h2 style="font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;font-size:clamp(1.6rem,3vw,2.8rem);color:var(--black);line-height:1.15;margin-bottom:2.5rem">
+        <h2 style="font-family:'Inria Serif',Georgia,serif;font-weight:400;font-size:clamp(1.6rem,3vw,2.8rem);color:var(--black);line-height:1.15;margin-bottom:2.5rem">
           La casa è il punto<br>di partenza.
         </h2>
 
@@ -2013,7 +2032,7 @@
           </tbody>
         </table>
 
-        <div style="margin-top:2rem;font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:clamp(0.85rem,1.3vw,1.1rem);color:var(--gray)">La vita intera è il traguardo.</div>
+        <div style="margin-top:2rem;font-family:'Inria Serif',Georgia,serif;font-style:italic;font-size:clamp(0.85rem,1.3vw,1.1rem);color:var(--gray)">La vita intera è il traguardo.</div>
       </div>
 
       <!-- DESTRA: modello di business -->
@@ -2140,7 +2159,7 @@
       <!-- Header -->
       <div style="text-align:center">
         <div class="eyebrow" style="color:rgba(216,164,164,0.6);margin-bottom:1.5vh">10 · Modello</div>
-        <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.9rem,3.4vw,3.6rem);color:var(--ivory);font-weight:300;line-height:1.05">
+        <h2 style="font-family:'Inria Serif',serif;font-size:clamp(1.9rem,3.4vw,3.6rem);color:var(--ivory);font-weight:300;line-height:1.05">
           Pacchetti, abbonamenti,<br><em style="color:#D8A4A4">take rate.</em>
         </h2>
       </div>
@@ -2153,20 +2172,20 @@
           <div style="font-family:'Jost',sans-serif;font-size:9px;letter-spacing:0.35em;text-transform:uppercase;color:var(--gold);margin-bottom:2.5vh;text-align:center">Pacchetti attuali</div>
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:2.5vh 2vw;text-align:center">
             <div>
-              <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3vw,2.8rem);font-weight:300;color:var(--ivory);line-height:0.95">€55</div>
-              <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(0.85rem,1.2vw,1.05rem);color:rgba(216,164,164,0.85);margin-top:0.6vh;font-style:italic">Essential</div>
+              <div style="font-family:'Inria Serif',serif;font-size:clamp(2rem,3vw,2.8rem);font-weight:300;color:var(--ivory);line-height:0.95">€55</div>
+              <div style="font-family:'Inria Serif',serif;font-size:clamp(0.85rem,1.2vw,1.05rem);color:rgba(216,164,164,0.85);margin-top:0.6vh;font-style:italic">Essential</div>
             </div>
             <div>
-              <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3vw,2.8rem);font-weight:300;color:var(--ivory);line-height:0.95">€58</div>
-              <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(0.85rem,1.2vw,1.05rem);color:rgba(216,164,164,0.85);margin-top:0.6vh;font-style:italic">Pet Ritual</div>
+              <div style="font-family:'Inria Serif',serif;font-size:clamp(2rem,3vw,2.8rem);font-weight:300;color:var(--ivory);line-height:0.95">€58</div>
+              <div style="font-family:'Inria Serif',serif;font-size:clamp(0.85rem,1.2vw,1.05rem);color:rgba(216,164,164,0.85);margin-top:0.6vh;font-style:italic">Pet Ritual</div>
             </div>
             <div>
-              <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3vw,2.8rem);font-weight:300;color:var(--ivory);line-height:0.95">€165</div>
-              <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(0.85rem,1.2vw,1.05rem);color:rgba(216,164,164,0.85);margin-top:0.6vh;font-style:italic">Meal Prep</div>
+              <div style="font-family:'Inria Serif',serif;font-size:clamp(2rem,3vw,2.8rem);font-weight:300;color:var(--ivory);line-height:0.95">€165</div>
+              <div style="font-family:'Inria Serif',serif;font-size:clamp(0.85rem,1.2vw,1.05rem);color:rgba(216,164,164,0.85);margin-top:0.6vh;font-style:italic">Meal Prep</div>
             </div>
             <div>
-              <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3vw,2.8rem);font-weight:300;color:var(--ivory);line-height:0.95">€175</div>
-              <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(0.85rem,1.2vw,1.05rem);color:rgba(216,164,164,0.85);margin-top:0.6vh;font-style:italic">Spring Reset</div>
+              <div style="font-family:'Inria Serif',serif;font-size:clamp(2rem,3vw,2.8rem);font-weight:300;color:var(--ivory);line-height:0.95">€175</div>
+              <div style="font-family:'Inria Serif',serif;font-size:clamp(0.85rem,1.2vw,1.05rem);color:rgba(216,164,164,0.85);margin-top:0.6vh;font-style:italic">Spring Reset</div>
             </div>
           </div>
         </div>
@@ -2176,16 +2195,16 @@
           <div style="font-family:'Jost',sans-serif;font-size:9px;letter-spacing:0.35em;text-transform:uppercase;color:#D8A4A4;margin-bottom:2.5vh;text-align:center">Abbonamenti mensili</div>
           <div style="display:flex;flex-direction:column;gap:2.5vh">
             <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid rgba(248,247,243,0.08);padding-bottom:1.5vh">
-              <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(1rem,1.5vw,1.3rem);color:rgba(248,247,243,0.85);font-style:italic">Essenziale<br><span style="font-size:0.7em;color:rgba(248,247,243,0.5);font-style:normal">1 intervento / mese</span></div>
-              <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,2.6vw,2.4rem);font-weight:300;color:var(--ivory)">€49</div>
+              <div style="font-family:'Inria Serif',serif;font-size:clamp(1rem,1.5vw,1.3rem);color:rgba(248,247,243,0.85);font-style:italic">Essenziale<br><span style="font-size:0.7em;color:rgba(248,247,243,0.5);font-style:normal">1 intervento / mese</span></div>
+              <div style="font-family:'Inria Serif',serif;font-size:clamp(1.8rem,2.6vw,2.4rem);font-weight:300;color:var(--ivory)">€49</div>
             </div>
             <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid rgba(216,164,164,0.25);padding-bottom:1.5vh">
-              <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(1rem,1.5vw,1.3rem);color:#D8A4A4;font-style:italic">Regolare ✦<br><span style="font-size:0.7em;color:rgba(248,247,243,0.5);font-style:normal">2 interventi / mese</span></div>
-              <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,2.6vw,2.4rem);font-weight:300;color:var(--ivory)">€99</div>
+              <div style="font-family:'Inria Serif',serif;font-size:clamp(1rem,1.5vw,1.3rem);color:#D8A4A4;font-style:italic">Regolare ✦<br><span style="font-size:0.7em;color:rgba(248,247,243,0.5);font-style:normal">2 interventi / mese</span></div>
+              <div style="font-family:'Inria Serif',serif;font-size:clamp(1.8rem,2.6vw,2.4rem);font-weight:300;color:var(--ivory)">€99</div>
             </div>
             <div style="display:flex;justify-content:space-between;align-items:baseline">
-              <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(1rem,1.5vw,1.3rem);color:rgba(248,247,243,0.85);font-style:italic">Intensivo<br><span style="font-size:0.7em;color:rgba(248,247,243,0.5);font-style:normal">4 interventi / mese</span></div>
-              <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,2.6vw,2.4rem);font-weight:300;color:var(--ivory)">€189</div>
+              <div style="font-family:'Inria Serif',serif;font-size:clamp(1rem,1.5vw,1.3rem);color:rgba(248,247,243,0.85);font-style:italic">Intensivo<br><span style="font-size:0.7em;color:rgba(248,247,243,0.5);font-style:normal">4 interventi / mese</span></div>
+              <div style="font-family:'Inria Serif',serif;font-size:clamp(1.8rem,2.6vw,2.4rem);font-weight:300;color:var(--ivory)">€189</div>
             </div>
           </div>
         </div>
@@ -2195,10 +2214,10 @@
       <!-- TAKE RATE -->
       <div style="text-align:center">
         <div style="font-family:'Jost',sans-serif;font-size:9px;letter-spacing:0.35em;text-transform:uppercase;color:rgba(248,247,243,0.5);margin-bottom:1.5vh">Guadagno</div>
-        <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,3.6vw,3.4rem);font-weight:300;color:var(--ivory);line-height:1">
+        <div style="font-family:'Inria Serif',serif;font-size:clamp(2.2rem,3.6vw,3.4rem);font-weight:300;color:var(--ivory);line-height:1">
           Take rate <em style="color:#D8A4A4;font-style:italic">25%</em> su ogni transazione.
         </div>
-        <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(0.9rem,1.3vw,1.1rem);color:rgba(248,247,243,0.6);margin-top:1.2vh">
+        <div style="font-family:'Inria Serif',serif;font-style:italic;font-size:clamp(0.9rem,1.3vw,1.1rem);color:rgba(248,247,243,0.6);margin-top:1.2vh">
           La piattaforma intermedia. Le professioniste eseguono.
         </div>
       </div>
@@ -2216,7 +2235,7 @@
 
       <div class="eyebrow" style="color:rgba(216,164,164,0.7);margin-bottom:5vh">12 · Il Team</div>
 
-      <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,4vw,4.6rem);font-weight:300;color:var(--ivory);line-height:1.05;margin-bottom:6vh">
+      <h2 style="font-family:'Inria Serif',serif;font-size:clamp(2.2rem,4vw,4.6rem);font-weight:300;color:var(--ivory);line-height:1.05;margin-bottom:6vh">
         Una founder.<br><em style="color:#D8A4A4">Una macchina lean.</em>
       </h2>
 
@@ -2229,28 +2248,28 @@
             <img src="img/ops.jpg" alt="Morena Fornaro" style="width:100%;height:100%;object-fit:cover;object-position:center 20%">
           </div>
           <div>
-            <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(0.95rem,1.4vw,1.2rem);color:var(--ivory);letter-spacing:0.04em">Morena Fornaro</div>
+            <div style="font-family:'Inria Serif',serif;font-size:clamp(0.95rem,1.4vw,1.2rem);color:var(--ivory);letter-spacing:0.04em">Morena Fornaro</div>
             <div style="font-family:'Jost',sans-serif;font-size:7.5px;letter-spacing:0.32em;text-transform:uppercase;color:rgba(216,164,164,0.85);margin-top:0.4vh">Founder & CEO</div>
           </div>
         </div>
 
         <!-- × -->
-        <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.6rem;color:rgba(248,247,243,0.4)">×</div>
+        <div style="font-family:'Inria Serif',serif;font-style:italic;font-size:1.6rem;color:rgba(248,247,243,0.4)">×</div>
 
         <!-- Claude logo small (neutralizzato palette) -->
         <div style="display:flex;flex-direction:column;align-items:center;gap:1.2vh">
           <div style="width:clamp(120px,12vw,160px);height:clamp(120px,12vw,160px);border-radius:50%;background:rgba(248,247,243,0.06);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 32px rgba(0,0,0,0.3);border:1px solid rgba(216,164,164,0.25)">
-            <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(2.4rem,3.4vw,3.4rem);color:rgba(248,247,243,0.85);font-weight:300">Claude</div>
+            <div style="font-family:'Inria Serif',serif;font-style:italic;font-size:clamp(2.4rem,3.4vw,3.4rem);color:rgba(248,247,243,0.85);font-weight:300">Claude</div>
           </div>
           <div>
-            <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(0.95rem,1.4vw,1.2rem);color:var(--ivory);letter-spacing:0.04em">Claude</div>
+            <div style="font-family:'Inria Serif',serif;font-size:clamp(0.95rem,1.4vw,1.2rem);color:var(--ivory);letter-spacing:0.04em">Claude</div>
             <div style="font-family:'Jost',sans-serif;font-size:7.5px;letter-spacing:0.32em;text-transform:uppercase;color:rgba(216,164,164,0.85);margin-top:0.4vh">AI Co-pilot</div>
           </div>
         </div>
 
       </div>
 
-      <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1rem,1.5vw,1.3rem);color:rgba(248,247,243,0.85);line-height:1.5;max-width:55ch;margin-bottom:0.5vh">
+      <p style="font-family:'Inria Serif',serif;font-style:italic;font-size:clamp(1rem,1.5vw,1.3rem);color:rgba(248,247,243,0.85);line-height:1.5;max-width:55ch;margin-bottom:0.5vh">
         Ex corporate banking + post trade finance at Société Générale.
       </p>
       <p style="font-family:'Jost',sans-serif;font-size:0.78rem;color:rgba(248,247,243,0.5);letter-spacing:0.04em">
@@ -2266,19 +2285,19 @@
   ═══════════════════════════════════════ -->
   <section class="slide s-ask" id="slide-14">
     <!-- ghost F -->
-    <div style="position:absolute;bottom:-15vh;right:-5vw;font-family:'Cormorant Garamond',serif;font-size:55vw;font-weight:300;color:rgba(216,164,164,0.04);line-height:1;pointer-events:none;user-select:none">F</div>
+    <div style="position:absolute;bottom:-15vh;right:-5vw;font-family:'Inria Serif',serif;font-size:55vw;font-weight:300;color:rgba(216,164,164,0.04);line-height:1;pointer-events:none;user-select:none">F</div>
 
     <div style="width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:8vh 10vw;text-align:center;position:relative;z-index:2">
 
       <div class="eyebrow" style="color:rgba(216,164,164,0.5);margin-bottom:6vh">Fémina</div>
 
-      <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,4.4vw,5.2rem);font-weight:300;color:var(--ivory);line-height:1.2;max-width:24ch;font-style:italic;margin:0">
+      <h2 style="font-family:'Inria Serif',serif;font-size:clamp(2.4rem,4.4vw,5.2rem);font-weight:300;color:var(--ivory);line-height:1.2;max-width:24ch;font-style:italic;margin:0">
         In una società<br>in cui il tempo<br>è il <em style="color:#D8A4A4;font-style:italic">nuovo lusso,</em>
       </h2>
 
       <div style="width:60px;height:1px;background:rgba(216,164,164,0.6);margin:5vh 0"></div>
 
-      <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,4.4vw,5.2rem);font-weight:300;color:var(--ivory);line-height:1.2;max-width:24ch;margin:0">
+      <h2 style="font-family:'Inria Serif',serif;font-size:clamp(2.4rem,4.4vw,5.2rem);font-weight:300;color:var(--ivory);line-height:1.2;max-width:24ch;margin:0">
         Fémina <em style="color:#D8A4A4">lo restituisce.</em>
       </h2>
 
