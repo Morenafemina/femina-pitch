@@ -1627,26 +1627,42 @@
        05 — TREND (new)
   ═══════════════════════════════════════ -->
   <section class="slide s-market" id="slide-5">
-    <div class="inner">
-      <div class="eyebrow" style="color:var(--rose);margin-bottom:2vh;text-align:center">04 · Trend di mercato</div>
+    <div style="width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:8vh 10vw;text-align:center;gap:3vh">
 
-      <h2 class="display-title" style="color:var(--ivory); font-size:clamp(2.2rem,4vw,4.6rem); margin-bottom:1.5vh;line-height:1.05;text-align:center;font-style:italic;font-weight:300">
-        Il vero lusso, oggi,<br>è il <em style="color:var(--rose);font-style:italic">tempo.</em>
+      <div class="eyebrow" style="color:var(--rose)">04 · Il Lusso del Tempo</div>
+
+      <h2 style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(3rem,6.2vw,7rem);font-weight:300;color:var(--ivory);line-height:1.05;margin:0;max-width:18ch">
+        Il vero lusso,<br>oggi,<br>è il <em style="color:var(--rose);font-style:italic">tempo.</em>
       </h2>
-      <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.1rem,1.6vw,1.4rem);color:rgba(248,247,243,0.75);margin:0 auto 4vh;max-width:50ch;line-height:1.5;text-align:center">
-        Lo dimostrano i trend in crescita <em style="color:var(--gold);font-style:normal">a doppia cifra</em> in questi settori.
+
+      <div style="width:60px;height:1px;background:rgba(216,164,164,0.5);margin-top:2vh"></div>
+
+    </div>
+    <div class="ghost-num">04</div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════
+       05b — TREND DI MERCATO (solo tabella)
+  ═══════════════════════════════════════ -->
+  <section class="slide s-market" id="slide-6">
+    <div class="inner">
+      <div class="eyebrow" style="color:var(--rose);margin-bottom:3vh;text-align:center">05 · Trend di mercato</div>
+
+      <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.2rem,1.8vw,1.6rem);color:rgba(248,247,243,0.8);margin:0 auto 5vh;max-width:54ch;line-height:1.5;text-align:center">
+        Settori che crescono <em style="color:var(--gold);font-style:normal">a doppia cifra.</em>
       </p>
 
       <!-- 4 categorie con % + sparkline -->
       <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid rgba(248,247,243,0.12);border-bottom:1px solid rgba(248,247,243,0.12)">
 
         <!-- LONGEVITY -->
-        <div style="padding:4vh 1.5vw 4vh 0;border-right:1px solid rgba(248,247,243,0.1);text-align:center">
-          <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.2rem,1.8vw,1.6rem);color:var(--ivory);line-height:1.15;margin-bottom:1.5vh">Longevity</div>
-          <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.6rem,2.6vw,2.4rem);font-weight:300;color:#D8A4A4;line-height:0.9">+15%</div>
-          <div style="font-family:'Jost',sans-serif;font-size:6.5px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(248,247,243,0.5);margin-top:0.4vh">CAGR globale</div>
+        <div style="padding:5vh 1.5vw 5vh 0;border-right:1px solid rgba(248,247,243,0.1);text-align:center">
+          <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.3rem,2vw,1.8rem);color:var(--ivory);line-height:1.15;margin-bottom:2vh">Longevity</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.4vw,3rem);font-weight:300;color:#D8A4A4;line-height:0.9">+15%</div>
+          <div style="font-family:'Jost',sans-serif;font-size:7px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(248,247,243,0.5);margin-top:0.6vh">CAGR globale</div>
           <!-- Sparkline exponential -->
-          <svg viewBox="0 0 100 30" preserveAspectRatio="none" style="width:100%;height:5vh;margin-top:1.5vh;display:block">
+          <svg viewBox="0 0 100 30" preserveAspectRatio="none" style="width:100%;height:6vh;margin-top:2vh;display:block">
             <defs><linearGradient id="g-long" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D8A4A4" stop-opacity="0.45"/><stop offset="1" stop-color="#D8A4A4" stop-opacity="0"/></linearGradient></defs>
             <path d="M 0,26 C 30,25 50,22 70,15 C 85,9 95,4 100,2 L 100,30 L 0,30 Z" fill="url(#g-long)"/>
             <path d="M 0,26 C 30,25 50,22 70,15 C 85,9 95,4 100,2" stroke="#D8A4A4" stroke-width="1.2" fill="none" stroke-linecap="round"/>
@@ -1654,12 +1670,11 @@
         </div>
 
         <!-- FUNCTIONAL FITNESS -->
-        <div style="padding:4vh 1.5vw;border-right:1px solid rgba(248,247,243,0.1);text-align:center">
-          <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.2rem,1.8vw,1.6rem);color:var(--ivory);line-height:1.15;margin-bottom:1.5vh">Functional<br>fitness</div>
-          <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.6rem,2.6vw,2.4rem);font-weight:300;color:#D8A4A4;line-height:0.9">+50%</div>
-          <div style="font-family:'Jost',sans-serif;font-size:6.5px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(248,247,243,0.5);margin-top:0.4vh">YoY Italia</div>
-          <!-- Sparkline sharp acceleration -->
-          <svg viewBox="0 0 100 30" preserveAspectRatio="none" style="width:100%;height:5vh;margin-top:1.5vh;display:block">
+        <div style="padding:5vh 1.5vw;border-right:1px solid rgba(248,247,243,0.1);text-align:center">
+          <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.3rem,2vw,1.8rem);color:var(--ivory);line-height:1.15;margin-bottom:2vh">Functional<br>fitness</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.4vw,3rem);font-weight:300;color:#D8A4A4;line-height:0.9">+50%</div>
+          <div style="font-family:'Jost',sans-serif;font-size:7px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(248,247,243,0.5);margin-top:0.6vh">YoY Italia</div>
+          <svg viewBox="0 0 100 30" preserveAspectRatio="none" style="width:100%;height:6vh;margin-top:2vh;display:block">
             <defs><linearGradient id="g-fit" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D8A4A4" stop-opacity="0.45"/><stop offset="1" stop-color="#D8A4A4" stop-opacity="0"/></linearGradient></defs>
             <path d="M 0,27 L 30,25 L 55,22 C 75,18 88,8 100,2 L 100,30 L 0,30 Z" fill="url(#g-fit)"/>
             <path d="M 0,27 L 30,25 L 55,22 C 75,18 88,8 100,2" stroke="#D8A4A4" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
@@ -1667,12 +1682,11 @@
         </div>
 
         <!-- MENTAL WELLNESS -->
-        <div style="padding:4vh 1.5vw;border-right:1px solid rgba(248,247,243,0.1);text-align:center">
-          <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.2rem,1.8vw,1.6rem);color:var(--ivory);line-height:1.15;margin-bottom:1.5vh">Mental<br>wellness</div>
-          <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.6rem,2.6vw,2.4rem);font-weight:300;color:#D8A4A4;line-height:0.9">+19%</div>
-          <div style="font-family:'Jost',sans-serif;font-size:6.5px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(248,247,243,0.5);margin-top:0.4vh">CAGR Italia</div>
-          <!-- Sparkline steady linear -->
-          <svg viewBox="0 0 100 30" preserveAspectRatio="none" style="width:100%;height:5vh;margin-top:1.5vh;display:block">
+        <div style="padding:5vh 1.5vw;border-right:1px solid rgba(248,247,243,0.1);text-align:center">
+          <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.3rem,2vw,1.8rem);color:var(--ivory);line-height:1.15;margin-bottom:2vh">Mental<br>wellness</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.4vw,3rem);font-weight:300;color:#D8A4A4;line-height:0.9">+19%</div>
+          <div style="font-family:'Jost',sans-serif;font-size:7px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(248,247,243,0.5);margin-top:0.6vh">CAGR Italia</div>
+          <svg viewBox="0 0 100 30" preserveAspectRatio="none" style="width:100%;height:6vh;margin-top:2vh;display:block">
             <defs><linearGradient id="g-mind" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D8A4A4" stop-opacity="0.45"/><stop offset="1" stop-color="#D8A4A4" stop-opacity="0"/></linearGradient></defs>
             <path d="M 0,27 C 25,23 50,18 75,11 C 88,7 95,5 100,3 L 100,30 L 0,30 Z" fill="url(#g-mind)"/>
             <path d="M 0,27 C 25,23 50,18 75,11 C 88,7 95,5 100,3" stroke="#D8A4A4" stroke-width="1.2" fill="none" stroke-linecap="round"/>
@@ -1680,12 +1694,11 @@
         </div>
 
         <!-- CURA CASA -->
-        <div style="padding:4vh 0 4vh 1.5vw;text-align:center">
-          <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.2rem,1.8vw,1.6rem);color:var(--ivory);line-height:1.15;margin-bottom:1.5vh">Cura della<br>casa</div>
-          <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.6rem,2.6vw,2.4rem);font-weight:300;color:#D8A4A4;line-height:0.9">+10%</div>
-          <div style="font-family:'Jost',sans-serif;font-size:6.5px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(248,247,243,0.5);margin-top:0.4vh">CAGR premium</div>
-          <!-- Sparkline gentle curve -->
-          <svg viewBox="0 0 100 30" preserveAspectRatio="none" style="width:100%;height:5vh;margin-top:1.5vh;display:block">
+        <div style="padding:5vh 0 5vh 1.5vw;text-align:center">
+          <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.3rem,2vw,1.8rem);color:var(--ivory);line-height:1.15;margin-bottom:2vh">Cura della<br>casa</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.4vw,3rem);font-weight:300;color:#D8A4A4;line-height:0.9">+10%</div>
+          <div style="font-family:'Jost',sans-serif;font-size:7px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(248,247,243,0.5);margin-top:0.6vh">CAGR premium</div>
+          <svg viewBox="0 0 100 30" preserveAspectRatio="none" style="width:100%;height:6vh;margin-top:2vh;display:block">
             <defs><linearGradient id="g-home" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D8A4A4" stop-opacity="0.45"/><stop offset="1" stop-color="#D8A4A4" stop-opacity="0"/></linearGradient></defs>
             <path d="M 0,27 C 20,25 40,21 60,16 C 80,11 95,7 100,5 L 100,30 L 0,30 Z" fill="url(#g-home)"/>
             <path d="M 0,27 C 20,25 40,21 60,16 C 80,11 95,7 100,5" stroke="#D8A4A4" stroke-width="1.2" fill="none" stroke-linecap="round"/>
@@ -1694,34 +1707,32 @@
 
       </div>
 
-      <!-- Closing -->
-      <div style="text-align:center;margin-top:5vh">
-        <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.3rem,2vw,1.8rem);color:var(--ivory);margin:0;line-height:1.4;max-width:36ch;margin:0 auto">
-          E in questi contesti<br><em style="color:var(--gold);font-style:normal">nasce Fémina.</em>
-        </p>
-      </div>
-
-
-      <div class="market-footnote" style="margin-top:2vh;text-align:center;font-size:0.6rem">
-        Fonti: <a href="https://www.corrierenazionale.net/2025/10/24/80-miliardi-il-valore-delleconomia-del-benessere-in-italia-roma-e-milano-le-capitali-del-wellness/" style="color:rgba(184,154,99,0.7);text-decoration:underline" target="_blank">Censis Wellness 2024</a> · ricerca proprietaria su mercato longevity, mental wellness, functional fitness Italia
+      <div class="market-footnote" style="margin-top:3vh;text-align:center;font-size:0.6rem">
+        Fonti: <a href="https://www.corrierenazionale.net/2025/10/24/80-miliardi-il-valore-delleconomia-del-benessere-in-italia-roma-e-milano-le-capitali-del-wellness/" style="color:rgba(184,154,99,0.7);text-decoration:underline" target="_blank">Censis Wellness 2024</a> · ricerca proprietaria
       </div>
     </div>
-    <div class="ghost-num">04</div>
+    <div class="ghost-num">05</div>
   </section>
 
 
   <!-- ═══════════════════════════════════════
        06 — LA SOLUZIONE
   ═══════════════════════════════════════ -->
-  <section class="slide s-solution" id="slide-6">
-    <div style="width:100%;height:100%;background:var(--plum);display:flex;flex-direction:column;justify-content:center;padding:8vh 10vw;gap:6vh;position:relative;overflow:hidden">
+  <section class="slide s-solution" id="slide-7">
+    <div style="width:100%;height:100%;background:var(--plum);display:flex;flex-direction:column;justify-content:center;padding:7vh 10vw;gap:5vh;position:relative;overflow:hidden">
 
       <!-- ghost F -->
       <div style="position:absolute;right:-0.05em;bottom:-0.1em;font-family:'Cormorant Garamond',serif;font-size:35vw;font-weight:300;color:rgba(248,247,243,0.025);line-height:1;pointer-events:none;user-select:none">F</div>
 
+      <!-- Fémina serif logo on top -->
+      <div style="position:relative;z-index:2;text-align:center;margin-bottom:-2vh">
+        <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,4vw,4rem);font-weight:300;color:var(--ivory);letter-spacing:0.02em;line-height:1">Fémina</div>
+        <div style="width:48px;height:1px;background:rgba(216,164,164,0.5);margin:1.4vh auto 0"></div>
+      </div>
+
       <!-- HEADER -->
       <div style="position:relative;z-index:2;text-align:center">
-        <div class="eyebrow" style="color:rgba(216,164,164,0.85);margin-bottom:2vh;letter-spacing:0.3em">05 · La Soluzione</div>
+        <div class="eyebrow" style="color:rgba(216,164,164,0.85);margin-bottom:2vh;letter-spacing:0.3em">06 · La Soluzione</div>
         <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,4.2vw,4.6rem);font-weight:300;color:var(--ivory);line-height:1.1">
           Un ecosistema<br>di <em style="color:#D8A4A4">fiducia.</em>
         </h2>
@@ -1765,9 +1776,9 @@
   <!-- ═══════════════════════════════════════
        05 — MERCATO TAM/SAM/SOM
   ═══════════════════════════════════════ -->
-  <section class="slide s-market" id="slide-7">
+  <section class="slide s-market" id="slide-8">
     <div class="inner">
-      <div class="eyebrow" style="color:var(--rose);text-align:center">06 · Dimensione del Mercato</div>
+      <div class="eyebrow" style="color:var(--rose);text-align:center">07 · Dimensione del Mercato</div>
       <h2 class="display-title" style="color:var(--ivory); font-size:clamp(2.4rem,4.4vw,5rem); margin-bottom:1.5vh;line-height:1.05;text-align:center">
         Frammentato.<br><em style="color:var(--rose);font-style:italic">Sotto-orchestrato.</em>
       </h2>
@@ -1798,11 +1809,11 @@
   <!-- ═══════════════════════════════════════
        05b — COMPETITIVE LANDSCAPE
   ═══════════════════════════════════════ -->
-  <section class="slide s-competitors" id="slide-8">
+  <section class="slide s-competitors" id="slide-9">
     <div style="width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;padding:7vh 9vw;gap:4vh">
 
       <div style="text-align:center">
-        <div class="eyebrow" style="color:#D8A4A4;opacity:0.8;margin-bottom:1.5vh;letter-spacing:0.3em">07 · Panorama Competitivo</div>
+        <div class="eyebrow" style="color:#D8A4A4;opacity:0.8;margin-bottom:1.5vh;letter-spacing:0.3em">08 · Panorama Competitivo</div>
         <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.6vw,3.8rem);font-weight:300;color:#F8F7F3;line-height:1.05">
           Una categoria <em style="color:#D8A4A4">che non esiste.</em><br>In Italia.
         </h2>
@@ -1865,36 +1876,56 @@
   <!-- ═══════════════════════════════════════
        07 — TRACTION (Instagram)
   ═══════════════════════════════════════ -->
-  <section class="slide s-instagram" id="slide-9" style="position:relative;overflow:hidden">
+  <section class="slide s-instagram" id="slide-10" style="position:relative;overflow:hidden">
     <!-- Background: Fémina homepage -->
-    <img src="img/home-femina.png" alt="Fémina homepage" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;z-index:0;opacity:0.22;filter:saturate(1.1) blur(2px)">
+    <img src="img/home-femina.png" alt="Fémina homepage" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;z-index:0;opacity:0.20;filter:saturate(1.1) blur(2px)">
     <!-- Dark vignette per leggibilità -->
-    <div style="position:absolute;inset:0;background:radial-gradient(ellipse at center, rgba(10,10,10,0.82) 0%, rgba(10,10,10,0.92) 100%);z-index:1"></div>
+    <div style="position:absolute;inset:0;background:radial-gradient(ellipse at center, rgba(10,10,10,0.84) 0%, rgba(10,10,10,0.94) 100%);z-index:1"></div>
 
     <canvas id="glitter-canvas" style="display:none"></canvas>
 
-    <div style="width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:8vh 10vw;position:relative;z-index:2;text-align:center;gap:6vh">
+    <div style="width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:6vh 8vw;position:relative;z-index:2;text-align:center;gap:4vh">
 
-      <div class="eyebrow" style="color:#D8A4A4;font-size:11px;letter-spacing:0.4em">08 · Trazione</div>
+      <div class="eyebrow" style="color:#D8A4A4;font-size:11px;letter-spacing:0.4em">09 · Trazione</div>
 
-      <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,6vw,6.5rem);font-weight:300;color:var(--ivory);line-height:1;margin:0;text-shadow:0 2px 24px rgba(0,0,0,0.6)">
-        162 <em style="color:#D8A4A4">donne interessate.</em>
+      <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,4.4vw,5rem);font-weight:300;color:var(--ivory);line-height:1.05;margin:0;text-shadow:0 2px 24px rgba(0,0,0,0.6)">
+        Numeri che <em style="color:#D8A4A4">parlano.</em>
       </h2>
 
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:0;width:100%;max-width:720px;border-top:1px solid rgba(248,247,243,0.18);border-bottom:1px solid rgba(248,247,243,0.18);padding:4vh 0">
+      <!-- 4 BIG NUMBERS -->
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:0;width:100%;max-width:1000px;border-top:1px solid rgba(248,247,243,0.18);border-bottom:1px solid rgba(248,247,243,0.18);padding:4vh 0">
+
         <div style="text-align:center;border-right:1px solid rgba(248,247,243,0.12)">
-          <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(3.6rem,6.5vw,6rem);font-weight:300;color:var(--ivory);line-height:0.9">70</div>
-          <div style="font-family:'Jost',sans-serif;font-size:10px;letter-spacing:0.3em;text-transform:uppercase;color:#D8A4A4;margin-top:1.5vh">Clienti</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,4.8vw,4.4rem);font-weight:300;color:var(--ivory);line-height:0.9">20+</div>
+          <div style="font-family:'Jost',sans-serif;font-size:9px;letter-spacing:0.3em;text-transform:uppercase;color:#D8A4A4;margin-top:1.5vh">Servizi erogati</div>
         </div>
+
+        <div style="text-align:center;border-right:1px solid rgba(248,247,243,0.12)">
+          <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,4.8vw,4.4rem);font-weight:300;color:var(--ivory);line-height:0.9">€1,45</div>
+          <div style="font-family:'Jost',sans-serif;font-size:9px;letter-spacing:0.3em;text-transform:uppercase;color:#D8A4A4;margin-top:1.5vh">CAC · per lead</div>
+        </div>
+
+        <div style="text-align:center;border-right:1px solid rgba(248,247,243,0.12)">
+          <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,4.8vw,4.4rem);font-weight:300;color:var(--ivory);line-height:0.9">4</div>
+          <div style="font-family:'Jost',sans-serif;font-size:9px;letter-spacing:0.3em;text-transform:uppercase;color:#D8A4A4;margin-top:1.5vh">Abbonamenti attivi</div>
+        </div>
+
         <div style="text-align:center">
-          <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(3.6rem,6.5vw,6rem);font-weight:300;color:var(--ivory);line-height:0.9">92</div>
-          <div style="font-family:'Jost',sans-serif;font-size:10px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-top:1.5vh">Professioniste</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,4.8vw,4.4rem);font-weight:300;color:var(--ivory);line-height:0.9">2</div>
+          <div style="font-family:'Jost',sans-serif;font-size:9px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-top:1.5vh">Partnership</div>
         </div>
+
       </div>
 
-      <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.2rem,1.8vw,1.6rem);color:rgba(248,247,243,0.75);line-height:1.5;margin:0;max-width:48ch">
-        Con <em style="color:#D8A4A4;font-style:normal">€234</em> di Meta ads.
-      </p>
+      <!-- 162 contesto + partnership names -->
+      <div style="display:flex;flex-direction:column;gap:2.2vh;align-items:center">
+        <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.1rem,1.6vw,1.4rem);color:rgba(248,247,243,0.8);line-height:1.4;margin:0;max-width:48ch">
+          <em style="color:#D8A4A4;font-style:normal">162 donne interessate</em> con €234 di Meta ads.
+        </p>
+        <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(0.95rem,1.3vw,1.15rem);color:rgba(216,164,164,0.85);line-height:1.4;margin:0">
+          Partnership: <em style="color:var(--ivory);font-style:normal">Tatabui</em> · <em style="color:var(--ivory);font-style:normal">Futura Pilates</em>
+        </p>
+      </div>
 
     </div>
   </section>
@@ -1995,70 +2026,70 @@
   <!-- ═══════════════════════════════════════
        09 — ROADMAP
   ═══════════════════════════════════════ -->
-  <section class="slide s-roadmap" id="slide-11">
+  <section class="slide s-roadmap" id="slide-12">
     <div style="text-align:center;margin-bottom:2vh">
-      <div class="eyebrow" style="color:rgba(184,154,99,0.6);margin-bottom:1vh">10 · Roadmap</div>
-      <h2 class="display-title" style="color:var(--ivory);font-size:clamp(2rem,3.4vw,3.6rem);line-height:1.05">Una sola direzione.<br><em style="color:var(--gold)">Dodici mesi alla volta.</em></h2>
+      <div class="eyebrow" style="color:rgba(184,154,99,0.6);margin-bottom:1vh">11 · Roadmap</div>
+      <h2 class="display-title" style="color:var(--ivero);font-size:clamp(2rem,3.4vw,3.6rem);line-height:1.05;color:var(--ivory)">Una sola direzione.<br><em style="color:var(--gold)">Dodici mesi alla volta.</em></h2>
     </div>
 
     <!-- ROADMAP SINGLE TRACK, BIGGER -->
-    <div style="width:94%;max-width:1280px;margin-top:5vh;position:relative">
+    <div style="width:94%;max-width:1320px;margin-top:5vh;position:relative">
 
       <div style="position:relative;padding-top:1vh">
         <!-- horizontal line behind dots -->
-        <div style="position:absolute;top:30px;left:0;right:0;height:1px;background:rgba(248,247,243,0.14)"></div>
-        <div style="position:absolute;top:30px;left:0;width:42%;height:2px;background:var(--gold)"></div>
+        <div style="position:absolute;top:32px;left:0;right:0;height:1px;background:rgba(248,247,243,0.14)"></div>
+        <div style="position:absolute;top:32px;left:0;width:42%;height:2px;background:var(--gold)"></div>
 
         <!-- items -->
-        <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:1.5rem;position:relative">
+        <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:1.8rem;position:relative">
 
           <div class="rm-item done" style="text-align:center">
-            <div class="rm-dot done" style="width:60px;height:60px;font-size:1.4rem;margin:0 auto 1.6vh">✓</div>
+            <div class="rm-dot done" style="width:64px;height:64px;font-size:1.5rem;margin:0 auto 1.8vh">✓</div>
             <div class="rm-date" style="font-size:11px;letter-spacing:0.3em">Q1 2026</div>
-            <div class="rm-title" style="font-size:clamp(1rem,1.5vw,1.3rem);margin-top:1vh">Validazione</div>
-            <div class="rm-desc" style="font-size:clamp(0.78rem,1.1vw,1rem);margin-top:0.6vh">150+ form</div>
+            <div class="rm-title" style="font-size:clamp(1.05rem,1.6vw,1.4rem);margin-top:1vh">Validazione</div>
+            <div class="rm-desc" style="font-size:clamp(0.82rem,1.15vw,1.05rem);margin-top:0.6vh">150+ form</div>
           </div>
 
           <div class="rm-item done" style="text-align:center">
-            <div class="rm-dot done" style="width:60px;height:60px;font-size:1.4rem;margin:0 auto 1.6vh">✓</div>
+            <div class="rm-dot done" style="width:64px;height:64px;font-size:1.5rem;margin:0 auto 1.8vh">✓</div>
             <div class="rm-date" style="font-size:11px;letter-spacing:0.3em">Q2 2026</div>
-            <div class="rm-title" style="font-size:clamp(1rem,1.5vw,1.3rem);margin-top:1vh">MVP &amp; Invitalia</div>
-            <div class="rm-desc" style="font-size:clamp(0.78rem,1.1vw,1rem);margin-top:0.6vh">4 abbonamenti</div>
+            <div class="rm-title" style="font-size:clamp(1.05rem,1.6vw,1.4rem);margin-top:1vh">MVP &amp; Invitalia</div>
+            <div class="rm-desc" style="font-size:clamp(0.82rem,1.15vw,1.05rem);margin-top:0.6vh">4 abbonamenti</div>
           </div>
 
           <div class="rm-item active" style="text-align:center">
-            <div class="rm-dot active" style="width:60px;height:60px;font-size:1.4rem;margin:0 auto 1.6vh">→</div>
+            <div class="rm-dot active" style="width:64px;height:64px;font-size:1.5rem;margin:0 auto 1.8vh">→</div>
             <div class="rm-date" style="font-size:11px;letter-spacing:0.3em">Q3 2026</div>
-            <div class="rm-title" style="font-size:clamp(1rem,1.5vw,1.3rem);margin-top:1vh">SRL &amp; Crescita</div>
-            <div class="rm-desc" style="font-size:clamp(0.78rem,1.1vw,1rem);margin-top:0.6vh">60 clienti · 40 pro</div>
+            <div class="rm-title" style="font-size:clamp(1.05rem,1.6vw,1.4rem);margin-top:1vh">SRL &amp; Crescita</div>
+            <div class="rm-desc" style="font-size:clamp(0.82rem,1.15vw,1.05rem);margin-top:0.6vh">60 clienti · 40 pro</div>
           </div>
 
           <div class="rm-item" style="text-align:center">
-            <div class="rm-dot" style="width:60px;height:60px;font-size:1.4rem;margin:0 auto 1.6vh">4</div>
+            <div class="rm-dot" style="width:64px;height:64px;font-size:1.5rem;margin:0 auto 1.8vh">4</div>
             <div class="rm-date" style="font-size:11px;letter-spacing:0.3em">Q4 2026</div>
-            <div class="rm-title" style="font-size:clamp(1rem,1.5vw,1.3rem);margin-top:1vh">Principali città<br>del Nord Italia</div>
-            <div class="rm-desc" style="font-size:clamp(0.78rem,1.1vw,1rem);margin-top:0.6vh">Milano · Torino · app v1</div>
+            <div class="rm-title" style="font-size:clamp(1.05rem,1.6vw,1.4rem);margin-top:1vh">Consolidamento</div>
+            <div class="rm-desc" style="font-size:clamp(0.82rem,1.15vw,1.05rem);margin-top:0.6vh">120 clienti · app v1</div>
           </div>
 
           <div class="rm-item" style="text-align:center">
-            <div class="rm-dot" style="width:60px;height:60px;font-size:1.4rem;margin:0 auto 1.6vh;background:var(--plum);color:var(--ivory);border-color:var(--plum)">✦</div>
-            <div class="rm-date" style="font-size:11px;letter-spacing:0.3em">Q2 2027</div>
-            <div class="rm-title" style="font-size:clamp(1rem,1.5vw,1.3rem);margin-top:1vh;color:var(--rose)">Italia ↑</div>
-            <div class="rm-desc" style="font-size:clamp(0.78rem,1.1vw,1rem);margin-top:0.6vh">Roma · Bologna · Firenze</div>
+            <div class="rm-dot" style="width:64px;height:64px;font-size:1.5rem;margin:0 auto 1.8vh;background:var(--plum);color:var(--ivory);border-color:var(--plum)">✦</div>
+            <div class="rm-date" style="font-size:11px;letter-spacing:0.3em">Q1 2027</div>
+            <div class="rm-title" style="font-size:clamp(1.05rem,1.6vw,1.4rem);margin-top:1vh;color:var(--rose)">Milano,<br>you're next 👀</div>
+            <div class="rm-desc" style="font-size:clamp(0.82rem,1.15vw,1.05rem);margin-top:0.6vh">Replica · 90 gg</div>
           </div>
 
           <div class="rm-item" style="text-align:center">
-            <div class="rm-dot" style="width:60px;height:60px;font-size:1rem;margin:0 auto 1.6vh;background:linear-gradient(135deg,var(--plum),#D8A4A4);color:var(--ivory);border-color:var(--plum)">OS</div>
+            <div class="rm-dot" style="width:64px;height:64px;font-size:1rem;margin:0 auto 1.8vh;background:linear-gradient(135deg,var(--plum),#D8A4A4);color:var(--ivory);border-color:var(--plum)">OS</div>
             <div class="rm-date" style="font-size:11px;letter-spacing:0.3em">Q4 2027</div>
-            <div class="rm-title" style="font-size:clamp(1rem,1.5vw,1.3rem);margin-top:1vh;color:var(--rose)">Fémina Operating<br>System live</div>
-            <div class="rm-desc" style="font-size:clamp(0.78rem,1.1vw,1rem);margin-top:0.6vh">AI · smart home</div>
+            <div class="rm-title" style="font-size:clamp(1.05rem,1.6vw,1.4rem);margin-top:1vh;color:var(--rose)">Principali città<br>Nord Italia</div>
+            <div class="rm-desc" style="font-size:clamp(0.82rem,1.15vw,1.05rem);margin-top:0.6vh">Fémina OS live · AI</div>
           </div>
 
         </div>
       </div>
 
     </div>
-    <div class="ghost-num" style="color:rgba(255,255,255,0.025)">10</div>
+    <div class="ghost-num" style="color:rgba(255,255,255,0.025)">11</div>
   </section>
 
 
@@ -2067,65 +2098,72 @@
   <!-- ═══════════════════════════════════════
        08 — TEAM
   ═══════════════════════════════════════ -->
-  <section class="slide s-team" id="slide-10">
-    <div style="width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;padding:7vh 9vw;gap:5vh">
+  <section class="slide s-team" id="slide-11">
+    <div style="width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;padding:6vh 8vw;gap:4vh">
 
       <!-- Header -->
       <div style="text-align:center">
-        <div class="eyebrow" style="color:rgba(216,164,164,0.6);margin-bottom:1.5vh">09 · Modello</div>
+        <div class="eyebrow" style="color:rgba(216,164,164,0.6);margin-bottom:1.5vh">10 · Modello</div>
         <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.9rem,3.4vw,3.6rem);color:var(--ivory);font-weight:300;line-height:1.05">
-          I pacchetti sono il <em style="color:#D8A4A4">wedge.</em><br>Da qui scaliamo.
+          Pacchetti, abbonamenti,<br><em style="color:#D8A4A4">take rate.</em>
         </h2>
       </div>
 
-      <!-- 4 PACCHETTI HERO -->
-      <div style="border-top:1px solid rgba(248,247,243,0.15);border-bottom:1px solid rgba(248,247,243,0.15);padding:3.5vh 0;display:grid;grid-template-columns:repeat(4,1fr);gap:2vw;text-align:center">
+      <!-- DUE COLONNE: Pacchetti | Abbonamenti -->
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:4vw;border-top:1px solid rgba(248,247,243,0.15);border-bottom:1px solid rgba(248,247,243,0.15);padding:3.5vh 0">
+
+        <!-- COL 1: PACCHETTI ATTUALI -->
         <div>
-          <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,4vw,3.6rem);font-weight:300;color:var(--ivory);line-height:0.95">€55</div>
-          <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(0.95rem,1.4vw,1.2rem);color:rgba(216,164,164,0.85);margin-top:0.8vh;font-style:italic">Essential</div>
+          <div style="font-family:'Jost',sans-serif;font-size:9px;letter-spacing:0.35em;text-transform:uppercase;color:var(--gold);margin-bottom:2.5vh;text-align:center">Pacchetti attuali</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:2.5vh 2vw;text-align:center">
+            <div>
+              <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3vw,2.8rem);font-weight:300;color:var(--ivory);line-height:0.95">€55</div>
+              <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(0.85rem,1.2vw,1.05rem);color:rgba(216,164,164,0.85);margin-top:0.6vh;font-style:italic">Essential</div>
+            </div>
+            <div>
+              <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3vw,2.8rem);font-weight:300;color:var(--ivory);line-height:0.95">€58</div>
+              <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(0.85rem,1.2vw,1.05rem);color:rgba(216,164,164,0.85);margin-top:0.6vh;font-style:italic">Pet Ritual</div>
+            </div>
+            <div>
+              <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3vw,2.8rem);font-weight:300;color:var(--ivory);line-height:0.95">€165</div>
+              <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(0.85rem,1.2vw,1.05rem);color:rgba(216,164,164,0.85);margin-top:0.6vh;font-style:italic">Meal Prep</div>
+            </div>
+            <div>
+              <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3vw,2.8rem);font-weight:300;color:var(--ivory);line-height:0.95">€175</div>
+              <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(0.85rem,1.2vw,1.05rem);color:rgba(216,164,164,0.85);margin-top:0.6vh;font-style:italic">Spring Reset</div>
+            </div>
+          </div>
         </div>
-        <div>
-          <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,4vw,3.6rem);font-weight:300;color:var(--ivory);line-height:0.95">€58</div>
-          <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(0.95rem,1.4vw,1.2rem);color:rgba(216,164,164,0.85);margin-top:0.8vh;font-style:italic">Pet Ritual</div>
+
+        <!-- COL 2: ABBONAMENTI MENSILI -->
+        <div style="border-left:1px solid rgba(248,247,243,0.12);padding-left:4vw">
+          <div style="font-family:'Jost',sans-serif;font-size:9px;letter-spacing:0.35em;text-transform:uppercase;color:#D8A4A4;margin-bottom:2.5vh;text-align:center">Abbonamenti mensili</div>
+          <div style="display:flex;flex-direction:column;gap:2.5vh">
+            <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid rgba(248,247,243,0.08);padding-bottom:1.5vh">
+              <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(1rem,1.5vw,1.3rem);color:rgba(248,247,243,0.85);font-style:italic">Essenziale<br><span style="font-size:0.7em;color:rgba(248,247,243,0.5);font-style:normal">1 intervento / mese</span></div>
+              <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,2.6vw,2.4rem);font-weight:300;color:var(--ivory)">€49</div>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid rgba(216,164,164,0.25);padding-bottom:1.5vh">
+              <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(1rem,1.5vw,1.3rem);color:#D8A4A4;font-style:italic">Regolare ✦<br><span style="font-size:0.7em;color:rgba(248,247,243,0.5);font-style:normal">2 interventi / mese</span></div>
+              <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,2.6vw,2.4rem);font-weight:300;color:var(--ivory)">€99</div>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:baseline">
+              <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(1rem,1.5vw,1.3rem);color:rgba(248,247,243,0.85);font-style:italic">Intensivo<br><span style="font-size:0.7em;color:rgba(248,247,243,0.5);font-style:normal">4 interventi / mese</span></div>
+              <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,2.6vw,2.4rem);font-weight:300;color:var(--ivory)">€189</div>
+            </div>
+          </div>
         </div>
-        <div>
-          <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,4vw,3.6rem);font-weight:300;color:var(--ivory);line-height:0.95">€165</div>
-          <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(0.95rem,1.4vw,1.2rem);color:rgba(216,164,164,0.85);margin-top:0.8vh;font-style:italic">Meal Prep</div>
-        </div>
-        <div>
-          <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,4vw,3.6rem);font-weight:300;color:var(--ivory);line-height:0.95">€175</div>
-          <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(0.95rem,1.4vw,1.2rem);color:rgba(216,164,164,0.85);margin-top:0.8vh;font-style:italic">Spring Reset</div>
-        </div>
+
       </div>
 
-      <!-- 4 REVENUE STREAMS (pulito, no small text) -->
-      <div>
-        <div style="text-align:center;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1rem,1.5vw,1.3rem);color:rgba(248,247,243,0.7);margin-bottom:2.5vh">
-          Da qui generiamo revenue su:
+      <!-- TAKE RATE -->
+      <div style="text-align:center">
+        <div style="font-family:'Jost',sans-serif;font-size:9px;letter-spacing:0.35em;text-transform:uppercase;color:rgba(248,247,243,0.5);margin-bottom:1.5vh">Guadagno</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,3.6vw,3.4rem);font-weight:300;color:var(--ivory);line-height:1">
+          Take rate <em style="color:#D8A4A4;font-style:italic">25%</em> su ogni transazione.
         </div>
-
-        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:2vw;text-align:center">
-
-          <div>
-            <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.1rem,1.7vw,1.5rem);color:#D8A4A4;font-style:italic;line-height:1.2">Fee<br>attivazione</div>
-            <div style="font-family:'Jost',sans-serif;font-size:8px;letter-spacing:0.32em;text-transform:uppercase;color:rgba(248,247,243,0.5);margin-top:1.2vh">Consulenze</div>
-          </div>
-
-          <div>
-            <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.1rem,1.7vw,1.5rem);color:#D8A4A4;font-style:italic;line-height:1.2">Membership</div>
-            <div style="font-family:'Jost',sans-serif;font-size:8px;letter-spacing:0.32em;text-transform:uppercase;color:rgba(248,247,243,0.5);margin-top:1.2vh">Concierge premium</div>
-          </div>
-
-          <div>
-            <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.1rem,1.7vw,1.5rem);color:#D8A4A4;font-style:italic;line-height:1.2">Academy</div>
-            <div style="font-family:'Jost',sans-serif;font-size:8px;letter-spacing:0.32em;text-transform:uppercase;color:rgba(248,247,243,0.5);margin-top:1.2vh">Corsi clienti</div>
-          </div>
-
-          <div>
-            <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.1rem,1.7vw,1.5rem);color:#D8A4A4;font-style:italic;line-height:1.2">B2B</div>
-            <div style="font-family:'Jost',sans-serif;font-size:8px;letter-spacing:0.32em;text-transform:uppercase;color:rgba(248,247,243,0.5);margin-top:1.2vh">Welfare aziendale</div>
-          </div>
-
+        <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(0.9rem,1.3vw,1.1rem);color:rgba(248,247,243,0.6);margin-top:1.2vh">
+          La piattaforma intermedia. Le professioniste eseguono.
         </div>
       </div>
 
@@ -2137,10 +2175,10 @@
   <!-- ═══════════════════════════════════════
        13 — TEAM
   ═══════════════════════════════════════ -->
-  <section class="slide s-team" id="slide-12">
+  <section class="slide s-team" id="slide-13">
     <div style="width:100%;height:100%;background:var(--plum);display:flex;flex-direction:column;justify-content:center;align-items:center;padding:8vh 10vw;text-align:center;position:relative">
 
-      <div class="eyebrow" style="color:rgba(216,164,164,0.7);margin-bottom:5vh">11 · Il Team</div>
+      <div class="eyebrow" style="color:rgba(216,164,164,0.7);margin-bottom:5vh">12 · Il Team</div>
 
       <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,4vw,4.6rem);font-weight:300;color:var(--ivory);line-height:1.05;margin-bottom:6vh">
         Una founder.<br><em style="color:#D8A4A4">Una macchina lean.</em>
@@ -2190,7 +2228,7 @@
   <!-- ═══════════════════════════════════════
        14 — CHIUSURA
   ═══════════════════════════════════════ -->
-  <section class="slide s-ask" id="slide-13">
+  <section class="slide s-ask" id="slide-14">
     <!-- ghost F -->
     <div style="position:absolute;bottom:-15vh;right:-5vw;font-family:'Cormorant Garamond',serif;font-size:55vw;font-weight:300;color:rgba(216,164,164,0.04);line-height:1;pointer-events:none;user-select:none">F</div>
 
@@ -2218,7 +2256,7 @@
 </div><!-- .deck -->
 
 <script>
-  const totalSlides = 13;
+  const totalSlides = 14;
   let current = 1;
 
   function changeSlide(dir) {
