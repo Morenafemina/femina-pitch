@@ -44,6 +44,8 @@
       width: 100%;
       height: 100%;
       display: flex;
+      align-items: center;
+      justify-content: center;
       opacity: 0;
       pointer-events: none;
       transition: opacity 0.55s cubic-bezier(0.22, 1, 0.36, 1);
@@ -397,6 +399,9 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%;
       height: 100%;
       max-width: 1400px;
     }
@@ -538,6 +543,9 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%;
       height: 100%;
     }
     .s-market .display-title {
@@ -1724,10 +1732,10 @@
       <!-- ghost F -->
       <div style="position:absolute;right:-0.05em;bottom:-0.1em;font-family:'Cormorant Garamond',serif;font-size:35vw;font-weight:300;color:rgba(248,247,243,0.025);line-height:1;pointer-events:none;user-select:none">F</div>
 
-      <!-- Fémina serif logo on top -->
-      <div style="position:relative;z-index:2;text-align:center;margin-bottom:-2vh">
-        <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,4vw,4rem);font-weight:300;color:var(--ivory);letter-spacing:0.02em;line-height:1">Fémina</div>
-        <div style="width:48px;height:1px;background:rgba(216,164,164,0.5);margin:1.4vh auto 0"></div>
+      <!-- Fémina official logo on top -->
+      <div style="position:relative;z-index:2;text-align:center;margin-bottom:-1vh">
+        <img src="img/femina-logo.png" alt="Fémina" style="height:clamp(60px,7vh,90px);width:auto;display:inline-block;filter:invert(1) brightness(1.05)">
+        <div style="width:48px;height:1px;background:rgba(216,164,164,0.5);margin:1vh auto 0"></div>
       </div>
 
       <!-- HEADER -->
@@ -2044,65 +2052,76 @@
        09 — ROADMAP
   ═══════════════════════════════════════ -->
   <section class="slide s-roadmap" id="slide-12">
-    <div style="text-align:center;margin-bottom:2vh">
-      <div class="eyebrow" style="color:rgba(184,154,99,0.6);margin-bottom:1vh">11 · Roadmap</div>
-      <h2 class="display-title" style="color:var(--ivero);font-size:clamp(2rem,3.4vw,3.6rem);line-height:1.05;color:var(--ivory)">Una sola direzione.<br><em style="color:var(--gold)">Dodici mesi alla volta.</em></h2>
-    </div>
+    <div style="width:100%;display:flex;flex-direction:column;align-items:center;padding:6vh 4vw">
 
-    <!-- ROADMAP SINGLE TRACK, BIGGER -->
-    <div style="width:94%;max-width:1320px;margin-top:5vh;position:relative">
+      <div style="text-align:center;margin-bottom:2vh">
+        <div class="eyebrow" style="color:rgba(184,154,99,0.6);margin-bottom:1vh">11 · Roadmap</div>
+        <h2 class="display-title" style="color:var(--ivory);font-size:clamp(2rem,3.4vw,3.6rem);line-height:1.05">Una sola direzione.<br><em style="color:var(--gold)">Dodici mesi alla volta.</em></h2>
+      </div>
 
-      <div style="position:relative;padding-top:1vh">
-        <!-- horizontal line behind dots -->
-        <div style="position:absolute;top:32px;left:0;right:0;height:1px;background:rgba(248,247,243,0.14)"></div>
-        <div style="position:absolute;top:32px;left:0;width:42%;height:2px;background:var(--gold)"></div>
+      <!-- ROADMAP 7 MILESTONES -->
+      <div style="width:96%;max-width:1380px;margin-top:5vh;position:relative">
 
-        <!-- items -->
-        <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:1.8rem;position:relative">
+        <div style="position:relative;padding-top:1vh">
+          <!-- horizontal line behind dots -->
+          <div style="position:absolute;top:32px;left:0;right:0;height:1px;background:rgba(248,247,243,0.14)"></div>
+          <div style="position:absolute;top:32px;left:0;width:36%;height:2px;background:var(--gold)"></div>
 
-          <div class="rm-item done" style="text-align:center">
-            <div class="rm-dot done" style="width:64px;height:64px;font-size:1.5rem;margin:0 auto 1.8vh">✓</div>
-            <div class="rm-date" style="font-size:11px;letter-spacing:0.3em">Q1 2026</div>
-            <div class="rm-title" style="font-size:clamp(1.05rem,1.6vw,1.4rem);margin-top:1vh">Validazione</div>
-            <div class="rm-desc" style="font-size:clamp(0.82rem,1.15vw,1.05rem);margin-top:0.6vh">150+ form</div>
+          <!-- 7 items -->
+          <div style="display:grid;grid-template-columns:repeat(7,1fr);gap:1.2rem;position:relative">
+
+            <div class="rm-item done" style="text-align:center">
+              <div class="rm-dot done" style="width:62px;height:62px;font-size:1.4rem;margin:0 auto 1.8vh">✓</div>
+              <div class="rm-date" style="font-size:10px;letter-spacing:0.28em">Q1 2026</div>
+              <div class="rm-title" style="font-size:clamp(0.95rem,1.4vw,1.25rem);margin-top:1vh">Validazione</div>
+              <div class="rm-desc" style="font-size:clamp(0.74rem,1vw,0.95rem);margin-top:0.6vh">150+ form</div>
+            </div>
+
+            <div class="rm-item done" style="text-align:center">
+              <div class="rm-dot done" style="width:62px;height:62px;font-size:1.4rem;margin:0 auto 1.8vh">✓</div>
+              <div class="rm-date" style="font-size:10px;letter-spacing:0.28em">Q2 2026</div>
+              <div class="rm-title" style="font-size:clamp(0.95rem,1.4vw,1.25rem);margin-top:1vh">MVP</div>
+              <div class="rm-desc" style="font-size:clamp(0.74rem,1vw,0.95rem);margin-top:0.6vh">4 abbonamenti</div>
+            </div>
+
+            <div class="rm-item active" style="text-align:center">
+              <div class="rm-dot active" style="width:62px;height:62px;font-size:1.4rem;margin:0 auto 1.8vh">→</div>
+              <div class="rm-date" style="font-size:10px;letter-spacing:0.28em">Q3 2026</div>
+              <div class="rm-title" style="font-size:clamp(0.95rem,1.4vw,1.25rem);margin-top:1vh">SRL &amp; Crescita</div>
+              <div class="rm-desc" style="font-size:clamp(0.74rem,1vw,0.95rem);margin-top:0.6vh">60 clienti · 40 pro</div>
+            </div>
+
+            <div class="rm-item" style="text-align:center">
+              <div class="rm-dot" style="width:62px;height:62px;font-size:1.4rem;margin:0 auto 1.8vh">4</div>
+              <div class="rm-date" style="font-size:10px;letter-spacing:0.28em">Q4 2026</div>
+              <div class="rm-title" style="font-size:clamp(0.95rem,1.4vw,1.25rem);margin-top:1vh">Consolidamento</div>
+              <div class="rm-desc" style="font-size:clamp(0.74rem,1vw,0.95rem);margin-top:0.6vh">120 clienti · app v1</div>
+            </div>
+
+            <div class="rm-item" style="text-align:center">
+              <div class="rm-dot" style="width:62px;height:62px;font-size:1.4rem;margin:0 auto 1.8vh;background:var(--plum);color:var(--ivory);border-color:var(--plum)">✦</div>
+              <div class="rm-date" style="font-size:10px;letter-spacing:0.28em">Q1 2027</div>
+              <div class="rm-title" style="font-size:clamp(0.95rem,1.4vw,1.25rem);margin-top:1vh;color:var(--rose)">Milano,<br>you're next 👀</div>
+              <div class="rm-desc" style="font-size:clamp(0.74rem,1vw,0.95rem);margin-top:0.6vh">Replica · 90 gg</div>
+            </div>
+
+            <div class="rm-item" style="text-align:center">
+              <div class="rm-dot" style="width:62px;height:62px;font-size:1.4rem;margin:0 auto 1.8vh;background:var(--plum);color:var(--ivory);border-color:var(--plum)">★</div>
+              <div class="rm-date" style="font-size:10px;letter-spacing:0.28em">Q3 2027</div>
+              <div class="rm-title" style="font-size:clamp(0.95rem,1.4vw,1.25rem);margin-top:1vh;color:var(--rose)">Principali città<br>Nord Italia</div>
+              <div class="rm-desc" style="font-size:clamp(0.74rem,1vw,0.95rem);margin-top:0.6vh">Bologna · Verona · Padova</div>
+            </div>
+
+            <div class="rm-item" style="text-align:center">
+              <div class="rm-dot" style="width:62px;height:62px;font-size:0.95rem;margin:0 auto 1.8vh;background:linear-gradient(135deg,var(--plum),#D8A4A4);color:var(--ivory);border-color:var(--plum)">OS</div>
+              <div class="rm-date" style="font-size:10px;letter-spacing:0.28em">Fine 2027</div>
+              <div class="rm-title" style="font-size:clamp(0.95rem,1.4vw,1.25rem);margin-top:1vh;color:var(--rose)">Fémina Operating<br>System live</div>
+              <div class="rm-desc" style="font-size:clamp(0.74rem,1vw,0.95rem);margin-top:0.6vh">AI · smart home</div>
+            </div>
+
           </div>
-
-          <div class="rm-item done" style="text-align:center">
-            <div class="rm-dot done" style="width:64px;height:64px;font-size:1.5rem;margin:0 auto 1.8vh">✓</div>
-            <div class="rm-date" style="font-size:11px;letter-spacing:0.3em">Q2 2026</div>
-            <div class="rm-title" style="font-size:clamp(1.05rem,1.6vw,1.4rem);margin-top:1vh">MVP &amp; Invitalia</div>
-            <div class="rm-desc" style="font-size:clamp(0.82rem,1.15vw,1.05rem);margin-top:0.6vh">4 abbonamenti</div>
-          </div>
-
-          <div class="rm-item active" style="text-align:center">
-            <div class="rm-dot active" style="width:64px;height:64px;font-size:1.5rem;margin:0 auto 1.8vh">→</div>
-            <div class="rm-date" style="font-size:11px;letter-spacing:0.3em">Q3 2026</div>
-            <div class="rm-title" style="font-size:clamp(1.05rem,1.6vw,1.4rem);margin-top:1vh">SRL &amp; Crescita</div>
-            <div class="rm-desc" style="font-size:clamp(0.82rem,1.15vw,1.05rem);margin-top:0.6vh">60 clienti · 40 pro</div>
-          </div>
-
-          <div class="rm-item" style="text-align:center">
-            <div class="rm-dot" style="width:64px;height:64px;font-size:1.5rem;margin:0 auto 1.8vh">4</div>
-            <div class="rm-date" style="font-size:11px;letter-spacing:0.3em">Q4 2026</div>
-            <div class="rm-title" style="font-size:clamp(1.05rem,1.6vw,1.4rem);margin-top:1vh">Consolidamento</div>
-            <div class="rm-desc" style="font-size:clamp(0.82rem,1.15vw,1.05rem);margin-top:0.6vh">120 clienti · app v1</div>
-          </div>
-
-          <div class="rm-item" style="text-align:center">
-            <div class="rm-dot" style="width:64px;height:64px;font-size:1.5rem;margin:0 auto 1.8vh;background:var(--plum);color:var(--ivory);border-color:var(--plum)">✦</div>
-            <div class="rm-date" style="font-size:11px;letter-spacing:0.3em">Q1 2027</div>
-            <div class="rm-title" style="font-size:clamp(1.05rem,1.6vw,1.4rem);margin-top:1vh;color:var(--rose)">Milano,<br>you're next 👀</div>
-            <div class="rm-desc" style="font-size:clamp(0.82rem,1.15vw,1.05rem);margin-top:0.6vh">Replica · 90 gg</div>
-          </div>
-
-          <div class="rm-item" style="text-align:center">
-            <div class="rm-dot" style="width:64px;height:64px;font-size:1rem;margin:0 auto 1.8vh;background:linear-gradient(135deg,var(--plum),#D8A4A4);color:var(--ivory);border-color:var(--plum)">OS</div>
-            <div class="rm-date" style="font-size:11px;letter-spacing:0.3em">Q4 2027</div>
-            <div class="rm-title" style="font-size:clamp(1.05rem,1.6vw,1.4rem);margin-top:1vh;color:var(--rose)">Principali città<br>Nord Italia</div>
-            <div class="rm-desc" style="font-size:clamp(0.82rem,1.15vw,1.05rem);margin-top:0.6vh">Fémina OS live · AI</div>
-          </div>
-
         </div>
+
       </div>
 
     </div>
