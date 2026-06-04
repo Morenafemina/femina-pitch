@@ -1556,14 +1556,16 @@
       }
       /* Light-background slides */
       .slide#slide-2, .slide#slide-4 { background: var(--ivory) !important; }
-      /* Plum-background slides */
-      .slide#slide-7, .slide#slide-13 { background: var(--plum) !important; }
-      /* Cover F glyph: clamp to page height (use absolute units, vw is unreliable in Chrome print) */
+      /* Plum-background slides (incl. cover) */
+      .slide#slide-1, .slide#slide-7, .slide#slide-13 { background: var(--plum) !important; }
+      /* Cover F glyph: small, anchored to the left */
       .s-cover .cover-bg-num {
-        font-size: 4.5in !important;
+        font-size: 3in !important;
         line-height: 0.85 !important;
+        color: rgba(255,255,255,0.07) !important;
         top: 50% !important;
-        transform: translate(-50%, -42%) !important;
+        left: 8% !important;
+        transform: translateY(-50%) !important;
       }
       /* Ghost slide numbers shouldn't overflow either */
       .ghost-num { font-size: 3in !important; }
