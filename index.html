@@ -1558,10 +1558,15 @@
       .slide#slide-2, .slide#slide-4 { background: var(--ivory) !important; }
       /* Plum-background slides */
       .slide#slide-7, .slide#slide-13 { background: var(--plum) !important; }
-      /* Cover F glyph: cap height under page height */
-      .s-cover .cover-bg-num { font-size: 40vw !important; }
+      /* Cover F glyph: clamp to page height (use absolute units, vw is unreliable in Chrome print) */
+      .s-cover .cover-bg-num {
+        font-size: 4.5in !important;
+        line-height: 0.85 !important;
+        top: 50% !important;
+        transform: translate(-50%, -42%) !important;
+      }
       /* Ghost slide numbers shouldn't overflow either */
-      .ghost-num { font-size: 22vw !important; }
+      .ghost-num { font-size: 3in !important; }
       .slide:last-child {
         page-break-after: auto !important;
       }
