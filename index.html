@@ -1527,10 +1527,16 @@
         size: 13.333in 7.5in;
         margin: 0;
       }
+      * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        color-adjust: exact !important;
+      }
       html, body {
-        background: var(--ivory) !important;
         width: 13.333in;
         height: auto !important;
+        background: var(--black) !important;
+        overflow: visible !important;
       }
       .nav, .watermark, .progress-bar { display: none !important; }
       .deck { width: 13.333in; height: auto; position: relative; }
@@ -1546,7 +1552,12 @@
         break-after: page !important;
         transition: none !important;
         overflow: hidden !important;
+        background: var(--black);
       }
+      /* Light-background slides */
+      .slide#slide-2, .slide#slide-4 { background: var(--ivory) !important; }
+      /* Plum-background slides */
+      .slide#slide-7, .slide#slide-13 { background: var(--plum) !important; }
       .slide:last-child {
         page-break-after: auto !important;
       }
