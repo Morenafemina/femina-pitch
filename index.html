@@ -1521,6 +1521,37 @@
     /* LTV / econ numbers in oro */
     .unit-econ .econ-num { color: var(--gold); }
 
+    /* ─── PRINT / PDF EXPORT ─── */
+    @media print {
+      @page {
+        size: 13.333in 7.5in;
+        margin: 0;
+      }
+      html, body {
+        background: var(--ivory) !important;
+        width: 13.333in;
+        height: auto !important;
+      }
+      .nav, .watermark, .progress-bar { display: none !important; }
+      .deck { width: 13.333in; height: auto; position: relative; }
+      .slide {
+        position: relative !important;
+        inset: auto !important;
+        width: 13.333in !important;
+        height: 7.5in !important;
+        opacity: 1 !important;
+        pointer-events: all !important;
+        page-break-after: always !important;
+        page-break-inside: avoid !important;
+        break-after: page !important;
+        transition: none !important;
+        overflow: hidden !important;
+      }
+      .slide:last-child {
+        page-break-after: auto !important;
+      }
+    }
+
   </style>
 </head>
 <body>
