@@ -1558,15 +1558,15 @@
       .slide#slide-2, .slide#slide-4 { background: var(--ivory) !important; }
       /* Plum-background slides (incl. cover) */
       .slide#slide-1, .slide#slide-7, .slide#slide-13 { background: var(--plum) !important; }
-      /* Cover F glyph: upper-right corner, generous bleed */
+      /* Cover F glyph: centered behind FÉMINA wordmark */
       .s-cover .cover-bg-num {
-        font-size: 7.5in !important;
+        font-size: 6.5in !important;
         line-height: 1 !important;
         color: rgba(255,255,255,0.08) !important;
-        top: -10% !important;
-        left: auto !important;
-        right: -3% !important;
-        transform: none !important;
+        top: 50% !important;
+        left: 50% !important;
+        right: auto !important;
+        transform: translate(-50%, -45%) !important;
       }
       /* Ghost slide numbers shouldn't overflow either */
       .ghost-num { font-size: 3in !important; }
